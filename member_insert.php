@@ -4,8 +4,12 @@
     $pw = $_POST["pw"];
     
     $sql = "insert into user (id, pw) values ($id, $pw)";
-    mysqli_query($con, $sql);
+    $result = mysqli_query($con, $sql);
+    
+    if($result){
+    echo "쿼리성공";
+    }else{
+    echo "쿼리실패";
+    }
     mysqli_close($con);
-
-
 ?>
