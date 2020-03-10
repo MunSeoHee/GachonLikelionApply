@@ -7,13 +7,17 @@
             echo("아이디를 입력해주세요");
         }
         else{
+            if (mysqli_connect_errno()){
+                echo "DB 연결에 실패했습니다 " . mysqli_connect_error();
+            }
             $sql = "select * from user where id=$id";
             $resutl = mysqli_query($con, $sql);
+            
             if($result){
                 echo "쿼리성공";
               }else{
                 echo "쿼리실패";
-                echo("쿼리오류 발생: " . mysqli_error($conn));
+                echo("쿼리오류 발생: " . mysqli_error($con));
               }
             $res = mysqli_num_rows($result);
 
