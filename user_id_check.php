@@ -13,6 +13,8 @@
                 echo "쿼리성공";
               }else{
                 echo "쿼리실패";
+                $error = mysql_error($con);
+                echo "$error";
               }
             $res = mysqli_num_rows($result);
 
