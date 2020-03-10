@@ -9,7 +9,11 @@
         else{
             $sql = "select * from user where id='$id'";
             $resutl = mysqli_query($con, $sql);
-            echo $result;
+            if($result){
+                echo "쿼리성공";
+              }else{
+                echo "쿼리실패";
+              }
             $res = mysqli_num_rows($result);
 
             if($res){
