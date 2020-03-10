@@ -18,4 +18,10 @@
     }else{
     echo "쿼리실패".mysql_error($con);
     }
+
+    echo " 
+        <script>
+            location.href = 'main.php';
+        </script>
+    ";
 ?>
