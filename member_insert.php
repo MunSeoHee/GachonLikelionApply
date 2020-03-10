@@ -3,7 +3,7 @@
     $id = $_POST["id"];
     $pw = $_POST["pw"];
     
-    $sql = "insert into user (id, pw) values ($id, $pw)";
+    $sql = "insert into user (id, pw) values ('$id', '$pw')";
     $result = mysqli_query($con, $sql);
     
     if($con){
