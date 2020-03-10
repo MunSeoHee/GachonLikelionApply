@@ -27,6 +27,6 @@
         }
     ?>
 <div>
-    <a href="#" onClick="useID('<?=$userid?>')">사용하기</a>
+    <a href="#" onClick="useID('<?=$id?>')">사용하기</a>
     <div onclick="javascript:self.close()">close</div>
 </div>
