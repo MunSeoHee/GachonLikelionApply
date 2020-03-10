@@ -23,10 +23,10 @@
             }
             else{
                 echo "아이디 사용이 가능합니다";
-                echo "<a href='#' onClick='useID('<?=$userid?>');'>사용하기</a>";
             }
         }
     ?>
 <div>
+    <a href="#" onClick="useID('<?=$userid?>')">사용하기</a>
     <div onclick="javascript:self.close()">close</div>
 </div>
