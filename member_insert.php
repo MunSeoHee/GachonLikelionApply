@@ -10,7 +10,6 @@
     echo "쿼리성공";
     }else{
     echo "쿼리실패";
-    echo mysql_error();
+    echo mysql_error($con);
     }
-    mysqli_close($con);
 ?>
