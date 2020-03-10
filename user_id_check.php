@@ -11,7 +11,7 @@
                 echo "DB 연결에 실패했습니다 " . mysqli_connect_error();
             }
             $sql = "select * from user where id='$id'";
-            $resutl = mysqli_query($con, $sql);
+            $result = mysqli_query($con, $sql);
             
             if($result){
                 echo "쿼리성공";
