@@ -5,7 +5,7 @@
     
     $sql = "insert into user (id, pw) values ($id, $pw)";
     mysqli_query($con, $sql);
-    mysqli_close();
+    mysqli_close($con);
 
 
 ?>
