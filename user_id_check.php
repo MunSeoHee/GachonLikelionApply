@@ -1,3 +1,10 @@
+<script>
+    function useID(v){
+        opener.document.all.checkid.value=1;
+        opener.document.all.userid.value=v;
+        window.close();
+    }
+</script>
 <h1>아이디 중복 체크<h1>
 <p>
     <?php
@@ -7,18 +14,8 @@
             echo("아이디를 입력해주세요");
         }
         else{
-            if (mysqli_connect_errno()){
-                echo "DB 연결에 실패했습니다 " . mysqli_connect_error();
-            }
             $sql = "select * from user where id='$id'";
             $result = mysqli_query($con, $sql);
-            
-            if($result){
-                echo "쿼리성공";
-              }else{
-                echo "쿼리실패";
-                echo("쿼리오류 발생: " . mysqli_error($con));
-              }
             $res = mysqli_num_rows($result);
 
             if($res){
@@ -26,6 +23,7 @@
             }
             else{
                 echo "아이디 사용이 가능합니다";
+                echo "<a href='#' onClick='useID('<?=$userid?>');'>사용하기</a>";
             }
         }
     ?>
