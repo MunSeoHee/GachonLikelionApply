@@ -13,7 +13,9 @@
             $res = mysqli_num_rows($result);
 
             if($res){
-                echo "아이디가 중복됩니다<br>다른 아이디를 사용해주세요";
+                echo "<script> alert('이미 존재하는 아이디입니다.');</script>";
+                echo "<script> window.history.back();</script>";
+                exit();
             }
             else{
                 echo "아이디 사용이 가능합니다";
