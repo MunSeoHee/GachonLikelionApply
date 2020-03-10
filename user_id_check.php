@@ -20,5 +20,5 @@
         }
     ?>
 <div>
-    <div onclick="javascript:self.close()">;
+    <div onclick="javascript:self.close()">close</div>
 </div>
