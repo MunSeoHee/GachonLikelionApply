@@ -9,15 +9,13 @@
         else{
             $sql = "select * from user where id='$id'";
             $resutl = mysqli_query($con, $sql);
+            echo $result;
             $res = mysqli_num_rows($result);
 
             if($res){
-                echo $res;
                 echo "아이디가 중복됩니다<br>다른 아이디를 사용해주세요";
             }
             else{
-                echo $result;
-                echo $res;
                 echo "아이디 사용이 가능합니다";
             }
         }
