@@ -3,7 +3,7 @@ $con = mysqli_connect(
     '18.224.229.40',
     'admin',
     'admin',
-    'db',
+    'sys',
     '3306'
 );
 ?>
