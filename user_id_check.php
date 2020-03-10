@@ -13,7 +13,7 @@
                 echo "쿼리성공";
               }else{
                 echo "쿼리실패";
-                echo mysql_error();
+                echo("쿼리오류 발생: " . mysqli_error($conn));
               }
             $res = mysqli_num_rows($result);
 
