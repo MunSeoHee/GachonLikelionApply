@@ -18,5 +18,5 @@
 <form name="member" method="post" action="member_insert.php">
     <input type="text" name="id">
     <input type="password" name="pw">
-    <button onclick="check_input()">제출</button>
+    <div onclick="check_input()">제출</div>
 </form>
