@@ -16,7 +16,6 @@
     if($result){
     echo "쿼리성공";
     }else{
-    echo "쿼리실패";
-    echo mysql_error($con);
+    echo "쿼리실패".mysql_error($con);
     }
 ?>
