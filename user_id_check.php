@@ -1,10 +1,4 @@
-<script>
-    function useID(v){
-        opener.document.all.checkid.value=1;
-        opener.document.all.userid.value=v;
-        window.close();
-    }
-</script>
+
 <h1>아이디 중복 체크<h1>
 <p>
     <?php
@@ -26,6 +20,13 @@
             }
         }
     ?>
+    <script>
+    function useID(v){
+        opener.document.all.checkid.value=1;
+        opener.document.all.userid.value=v;
+        window.close();
+    }
+</script>
 <div>
     <a href="#" onClick="useID('<?=$id?>')">사용하기</a>
     <div onclick="javascript:self.close()">close</div>
