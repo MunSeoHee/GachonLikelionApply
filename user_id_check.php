@@ -9,7 +9,7 @@
         else{
             $sql = "select * from user where id='$id'";
             $resutl = mysqli_query($con, $sql);
-            $res = mysqli_num_row($result);
+            $res = mysqli_num_rows($result);
 
             if($res){
                 echo "아이디가 중복됩니다<br>다른 아이디를 사용해주세요";
