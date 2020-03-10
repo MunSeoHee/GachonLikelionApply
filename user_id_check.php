@@ -1,12 +1,18 @@
 <h1>아이디 중복 체크<h1>
 <p>
     <?php
-        include_once 'settings.php';
         $id = $_GET["id"];
         if(!$id){
             echo("아이디를 입력해주세요");
         }
         else{
+            $con = mysqli_connect(
+                '18.224.229.40',
+                'admin',
+                'admin',
+                'sys',
+                '3306'
+            );
             $sql = "select * from user where id='$id'";
             $resutl = mysqli_query($con, $sql);
             if($result){
