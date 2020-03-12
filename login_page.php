@@ -10,7 +10,7 @@
             document.login.pw.focus();
             return;
         }
-        documeny.login.submit();
+        document.login.submit();
     }
 </script>
 
