@@ -30,7 +30,7 @@
     else{
 ?>
         <p><?=$id?>님</p>
-        <p>로그아웃</p>
+        <a href="logout.php">로그아웃</a>
 <?php
     }
 ?>
