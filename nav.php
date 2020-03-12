@@ -26,8 +26,8 @@
         $userlevel = "";
     }
 ?>
-<nav class="navbar navbar-light bg-light">
-    <div class="row d-flex justify-content-between">
+<nav class="navbar navbar-light bg-light ">
+    <div class="row justify-content-between">
         <div class="col">
             <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
         </div>
