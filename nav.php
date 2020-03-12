@@ -26,27 +26,30 @@
         $userlevel = "";
     }
 ?>
-<nav class="navbar navbar-light bg-light ">
-    <div class="row justify-content-between">
-        <div class="col">
-            <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
+<nav class="navbar navbar-light" style="background-color: black;">
+    <div class="container">
+        <div class="row w-100 d-flex justify-content-between">
+            <div class="col">
+                <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
+            </div>
+            <div class="col text-right">
+                <?php
+                    if(!$id){
+                ?>
+                        <a href="login_page.php">로그인</a>
+                        <a href="signin_page.php">회원가입</a>
+                <?php
+                    }
+                    else{
+                ?>
+                        <p><?=$id?>님</p>
+                        <a href="logout.php">로그아웃</a>
+                <?php
+                    }
+                ?>
+            <div>
         </div>
-        <div class="col">
-            <?php
-                if(!$id){
-            ?>
-                    <a href="login_page.php">로그인</a>
-                    <a href="signin_page.php">회원가입</a>
-            <?php
-                }
-                else{
-            ?>
-                    <p><?=$id?>님</p>
-                    <a href="logout.php">로그아웃</a>
-            <?php
-                }
-            ?>
-        <div>
     </div>
+   
 </nav>
 </body>
