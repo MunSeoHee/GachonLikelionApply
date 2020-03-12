@@ -17,5 +17,5 @@
 <form name="login" method="post" action="login.php">
     <input type="text" name="id" placeholder="아이디">
     <input type="password" name="pw" placeholder="비밀번호">
-    <div onclick="check_input()">로그인</div>
+    <div><button onclick="check_input()">로그인</button></div>
 <form>
