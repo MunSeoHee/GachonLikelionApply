@@ -32,6 +32,7 @@
             session_start();
             $_SESSION["id"] = $row["id"];
             $_SESSION["pw"] = $row["pw"];
+            $_SESSION["userlevel"] = $row["userlevel"];
             echo("
                 <script>
                     location.href = 'main.php';
