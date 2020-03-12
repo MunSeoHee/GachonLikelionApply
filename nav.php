@@ -32,7 +32,7 @@
             <div class="col">
                 <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
             </div>
-            <div class="col text-right">
+            <div class="col text-right text-light">
                 <?php
                     if(!$id){
                 ?>
@@ -42,7 +42,7 @@
                     }
                     else{
                 ?>
-                        <p><?=$id?>님</p>
+                        <?=$id?>님
                         <a href="logout.php">로그아웃</a>
                 <?php
                     }
