@@ -20,17 +20,44 @@
         }
         document.member.submit();
     }
-</script>
+    </script>
+<style>
+    @font-face { font-family: 'Arita-buri-SemiBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff%27') format('woff'); font-weight: normal; font-style: normal; }
+            @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff%27') format('woff'); font-weight: normal; font-style: normal; }
+            h2{
+                color:#B49920;
+                font-family:'GmarketSansBold'; 
+            }
+            p{
+                color:#B49920;
+                font-family:'Arita-buri-SemiBold';
+            }
+    </style>  
 </head>
 <body>
-    <!--회원가입 정보 입력 란-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
+      </nav>
+       <div class="container mt-5">
+        <div class="row mt-5">
+          <div class="col-sm mt-5">         
+          </div>
+          <div class="col-sm mt-5 text-center">
+             <!--회원가입 정보 입력 란-->
 <form name="member" method="post" action="member_insert.php">
     <!--id 입력 칸-->
-    <input type="text" name="id">
+    <p class="mt-5">아이디</p>
+    <input class="border-warning" type="text" name="id"><br><br>
     <!--비밀번호 입력 칸-->
-    <input type="password" name="pw">
+    <p>비밀번호</p>
+    <input class="border-warning" type="password" name="pw">
     <!--제출 버튼-->
-    <div style="cursor:pointer" onclick="check_input()">제출</div>
+    <div style="cursor:pointer" onclick="check_input()">회원가입</div>
+          </div>
+          <div class="col-sm mt-5">         
+          </div>
+        </div>
+      </div>
 </form>
 </body>
 </html>
