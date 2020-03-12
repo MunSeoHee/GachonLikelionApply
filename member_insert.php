@@ -17,7 +17,7 @@
     //아이디가 DB에 없을 경우
     else{
         //DB에 user 정보 삽입
-        $sql = "insert into user (id, pw) values ('$id', '$pw')";
+        $sql = "insert into user (id, pw, userlevel) values ('$id', '$pw', 1)";
         $result = mysqli_query($con, $sql);
         //결과가 성공적일 경우
         if($result){
