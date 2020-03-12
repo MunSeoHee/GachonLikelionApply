@@ -3,11 +3,11 @@
     $pw = $_POST["pw"];
 
     include_once "settings.php";
+
     $sql = "select * from user where id='$id'";
     $result = mysqli_query($con, $sql);
     $res_num = mysqli_num_rows($result);
-
-    if($res_num){
+    if(!$res_num){
         echo("
             <script>
                 window.alert('등록되지 않은 아이디입니다!')
