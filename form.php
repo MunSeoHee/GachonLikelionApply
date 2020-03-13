@@ -64,7 +64,8 @@
 	<body>
 		<!--배경이미지-->
 		<div class="bgimg container-fluid contents">
-			<div class="row">
+		<?php include_once "nav.php"; ?>
+			<div class="row contents">
 				<div class="col">
 				</div>
 				<div class="col">
