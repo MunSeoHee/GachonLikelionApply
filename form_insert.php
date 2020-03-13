@@ -1,4 +1,5 @@
 <?php
+session_start();
     if(isset($_SESSION["id"])){
         $id = $_SESSION["id"];
     }
@@ -25,7 +26,6 @@
 
     $result = mysqli_query($con, $sql);
 
-    echo $result;
     if($result){
         echo("
             <script>
