@@ -13,7 +13,7 @@
 	<script>
     function apply(){
         location.href = 'login_page.php';
-    }
+    };
 	
    $(function() {
   var text = $(".text");
