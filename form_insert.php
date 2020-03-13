@@ -5,7 +5,6 @@
     else{
         $id = "";
     }
-    echo $id;
     $name=$_POST["name"];
     $major=$_POST["major"];
     $year=$_POST["year"];
@@ -13,8 +12,8 @@
     $phone=$_POST["phone"];
     $dgree=$_POST["dgree"];
     $question1=$_POST["question1"];
-    $question2=$_POST["question2"];
-    $question3=$_POST["question3"];
+    $question2=$_POST["que2"];
+    $question3=$_POST["quest3"];
     $date = date("Y-m-d H:i:s");
     include_once "settings.php";
 
@@ -32,7 +31,12 @@
         ");
     }
     else{
-        echo mysqli_error($con);
+        echo("
+            <script>
+                window.alert('지원서 작성에 실패했습니다.')
+                history.go(-1)
+            </script>
+        ");
        
     }
 
