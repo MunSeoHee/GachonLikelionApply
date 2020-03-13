@@ -174,8 +174,7 @@
 					<!--3번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>
-						<textarea name="question3" class="form-control" 
-						id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea name="question3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 					
 					<!--제출버튼-->
