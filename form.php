@@ -168,13 +168,13 @@
 					<!--2번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무</p></label>
-						<textarea id="question2" name="que2" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea id="question2" name="que2" class="form-control" rows="3"></textarea>
 					</div>
 					</form>
 					<!--3번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>
-						<textarea id="question3" name="quest3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea id="question3" name="quest3" class="form-control" rows="3"></textarea>
 					</div>
 					
 					<!--제출버튼-->
