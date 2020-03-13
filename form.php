@@ -84,9 +84,9 @@
             document.written.question1.focus();
             return;
         }
-		if(!document.written.question2.value){
+		if(!document.getElementById('question2').value){
             alert("질문 문항 2을 작성하세요");
-            document.written.question2.focus();
+            document.getElementById('question2').focus();
             return;
         }
 		if(!document.written.question3.value){
@@ -168,13 +168,13 @@
 					<!--2번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무</p></label>
-						<textarea name="question2" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea id="question2" name="question2" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 					</form>
 					<!--3번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>
-						<textarea name="question3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea id="question3" name="question3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 					
 					<!--제출버튼-->
