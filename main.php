@@ -14,13 +14,7 @@
     function apply(){
         location.href = 'login_page.php';
     }
-	var target_id='#image_point';
-
-$('body, html').css('scrollTop', $(target_id).offset().top);
-
-$('body, html').animate({ scrollTop: $(target_id).offset().top }, 1000);
-
-window.scrollTo(0, $(target_id).offset().top);
+	
    $(function() {
   var text = $(".text");
   $(window).scroll(function() {
