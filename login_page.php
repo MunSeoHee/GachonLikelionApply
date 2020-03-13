@@ -5,7 +5,23 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- 모바일 뷰포트 -->
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript">
+    var scrollTab = function (sObj) {
+    $.scrollTo($("#" + sObj), 500);
+    }
+
+    // 앵커를 활용한 부드러운 이동
+    </script>
   <style>
+      html,body {height:100%; margin:0; padding:0;}
+
+        #contents {min-height:100%;}
+        /* 위의 부분이 div를 화면에 꽉 차게 만들어 주는 스타일 */
     .bgimg {
     border: 0;
     padding: 0; 
@@ -45,10 +61,8 @@
 </head>
 
 <body>
-<div class="bgimg container-fluid">
-<nav class="navbar navbar-light" style="background-color: black;">
-    <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
-  </nav>
+<div class="bgimg container-fluid contents">
+    <?php include_once "nav.php"; ?>
   <div class="container">
     <div class="row">
       <div class="col-sm">
