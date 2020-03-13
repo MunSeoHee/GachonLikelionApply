@@ -66,7 +66,6 @@
 		<div class="bgimg container-fluid contents">
 			<div class="row">
 				<div class="col">
-					margin:10%;
 				</div>
 				<div class="col">
 					<h1>회원가입</h1>
