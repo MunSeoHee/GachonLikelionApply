@@ -8,20 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- 모바일 뷰포트 -->
-    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
-    <script type="text/javascript">
-    var scrollTab = function (sObj) {
-    $.scrollTo($("#" + sObj), 500);
-    }
-
-    // 앵커를 활용한 부드러운 이동
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+		maximum-scale=1.0, minimum-scale=1.0">
     </script>
   <style>
-      html,body {height:100%; margin:0; padding:0;}
-
-        #contents {min-height:100%;}
-        /* 위의 부분이 div를 화면에 꽉 차게 만들어 주는 스타일 */
     .bgimg {
     border: 0;
     padding: 0; 
@@ -61,7 +51,7 @@
 </head>
 
 <body>
-<div class="bgimg container-fluid contents">
+<div class="bgimg container-fluid">
     <?php include_once "nav.php"; ?>
   <div class="container">
     <div class="row">
