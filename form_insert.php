@@ -5,6 +5,7 @@
     else{
         $id = "";
     }
+    echo $id;
     $name=$_POST["name"];
     $major=$_POST["major"];
     $year=$_POST["year"];
@@ -14,6 +15,8 @@
     $question1=$_POST["question1"];
     $question2=$_POST["que2"];
     $question3=$_POST["quest3"];
+    echo $question2;
+    echo $question3;
     $date = date("Y-m-d H:i:s");
     include_once "settings.php";
 
