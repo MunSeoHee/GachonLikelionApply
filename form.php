@@ -47,6 +47,56 @@
 				color:rgb(243, 212, 73);
 			}
 	</style>
+	<script>
+		function check_input(){
+        if(!document.written.name.value){
+            alert("이름을 입력하세요");
+            document.written.name.focus();
+            return;
+        }
+        if(!document.written.major.value){
+            alert("학과를 입력하세요");
+            document.written.major.focus();
+            return;
+        }
+		if(!document.written.year.value){
+            alert("입학년도를 입력하세요");
+            document.written.year.focus();
+            return;
+        }
+		if(!document.written.gender.value){
+            alert("성별을 입력하세요");
+            document.written.gender.focus();
+            return;
+        }
+		if(!document.written.phone.value){
+            alert("전화번호를 입력하세요");
+            document.written.phone.focus();
+            return;
+        }
+		if(!document.written.dgree.value){
+            alert("학년을 입력하세요");
+            document.written.dgree.focus();
+            return;
+        }
+		if(!document.written.question1.value){
+            alert("질문 문항 1을 작성하세요");
+            document.written.question1.focus();
+            return;
+        }
+		if(!document.written.question2.value){
+            alert("질문 문항 2을 작성하세요");
+            document.written.question2.focus();
+            return;
+        }
+		if(!document.written.question3.value){
+            alert("질문 문항 3을 작성하세요");
+            document.written.question3.focus();
+            return;
+        }
+        document.written.submit();
+    }
+	</script>
 
 
 	<title>회원가입</title>
@@ -62,29 +112,33 @@
 				<div class="col-lg-4">
 					<h1>회원가입</h1>
 					<hr></hr>
-					<form>
+					<form name="written" method="post" action="form_insert.php">
 						<!--색상 class="text-warning"-->
 						<!--이름-->
 						<div class="form-group mb-4">
 							
 							<label for="exampleFormControlInput1" class="text-warning"><p>이름</p></label>
-							<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="홍길동">
+							<input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="홍길동">
 							
 						</div>
+						<div class="form-group mb-4">
+							<label for="exampleFormControlInput1" class="text-warning"><p>학과</p></label>
+							<input type="text" name="major" class="form-control" id="exampleFormControlInput1" placeholder="학과">
+						</div>
 						
-						<!--이메일-->
+						<!--입학년도-->
 						<div class="form-group mb-4" >
 				
-						<label for="exampleFormControlInput1"class="text-warning"><p>이메일</p></label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						<label for="exampleFormControlInput1"class="text-warning"><p>입학년도</p></label>
+						<input type="number" name="year" class="form-control" id="exampleFormControlInput1" placeholder="입학년도">
 						</div>
 				
 						<!--성별-->
 						<div class="form-group mb-4">
 						<label for="exampleFormControlSelect1"class="text-warning"><p>성별</p></label>
-						<select class="form-control" id="exampleFormControlSelect1">
-							<option>남자</option>
-							<option>여자</option>
+						<select name="gender" class="form-control" id="exampleFormControlSelect1">
+							<option value="1">남자</option>
+							<option value="2">여자</option>
 						</select>
 						</div>
 				
@@ -92,35 +146,35 @@
 						<div class="form-group mb-4">
 				
 							<label for="exampleFormControlInput1"class="text-warning"><p>연락처</p></label>
-							<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="010-xxxx-xxxx">
+							<input name="phone" type="number" class="form-control" id="exampleFormControlInput1" placeholder="010xxxxxxxx">
 						</div>
 					<!--학년-->
 						<div class="form-group mb-4">
 							<label for="exampleFormControlSelect1"class="text-warning"><p>학년</p></label>
-							<select class="form-control" id="exampleFormControlSelect1">
-							<option>1학년</option>
-							<option>2학년</option>
-							<option>3학년</option>
-							<option>4학년</option>
+							<select name="dgree" class="form-control" id="exampleFormControlSelect1">
+							<option value="1">1학년</option>
+							<option value="2">2학년</option>
+							<option value="3">3학년</option>
+							<option value="4">4학년</option>
 							</select>
 						</div>
 					<!--질문 텍스트에리어 3개(서희요청)-->
 					<!--1번질문-->
 						<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은</p></label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 						</div>
 					</form>
 					<!--2번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무</p></label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea name="question2" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 					</form>
 					<!--3번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>
-						<textarea class="form-control" 
+						<textarea name="question3" class="form-control" 
 						id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 					
@@ -128,7 +182,7 @@
 					<div class ="row">
 					<div class="col"></div>
 					<div class="col">
-					<button type="button" class="btn btn-secondary btn-lg">제출</button>
+					<div class="btn btn-secondary btn-lg" onclick="check_input()">제출</div>
 					</div>
 					<div class="col"></div>
 					</div>
