@@ -10,25 +10,18 @@
 
 
 <script>
-   var target_id='#image_point';
-
-$('body, html').css('scrollTop', $(target_id).offset().top);
-
-$('body, html').animate({ scrollTop: $(target_id).offset().top }, 1000);
-
-window.scrollTo(0, $(target_id).offset().top);
-   $(function() {
-  var text = $(".text");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll>200) {
-      text.removeClass("hidden");
-    } else {
-      text.addClass("hidden");
-    }
-  });
+  $(document).ready(function(){
+    $("#my-btn").trigger("click");
 });
+
+  
+  function check(){
+    var text = $(".text");
+ 
+    text.removeClass("hidden");
+  
+  };
+
 // function start1(){
 //    text.removeClass("hidden");
 // }
@@ -98,7 +91,7 @@ body {
 
 </head>
 
-<body>
+<body onclick="check()" id="my-btn">
    <div class>
 
   <!--깐지글자-->
