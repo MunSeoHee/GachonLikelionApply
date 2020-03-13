@@ -89,9 +89,9 @@
             document.getElementById('question2').focus();
             return;
         }
-		if(!document.written.question3.value){
+		if(!document.getElementById('question3').value){
             alert("질문 문항 3을 작성하세요");
-            document.written.question3.focus();
+            document.getElementById('question3').focus();
             return;
         }
         document.written.submit();
