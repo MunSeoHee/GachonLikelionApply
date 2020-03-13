@@ -33,12 +33,7 @@
     }
     else{
         echo mysqli_error($con);
-        echo("
-            <script>
-                window.alert('지원서 작성에 실패했습니다.')
-                history.go(-1)
-            </script>
-        ");
+       
     }
 
 ?>
