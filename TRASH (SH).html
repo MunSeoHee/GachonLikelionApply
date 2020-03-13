@@ -1,39 +1,44 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<meta charset="UTF-8">
+
+<title>MAiN</title>
 
 <script>
-	
-	$(function() {
+  //자동스크롤함수//
+function startScroll(interval) {
+    setInterval("autoScroll()", interval);
+}
+ 
+function autoScroll() {
+    window.scrollBy(0,20); // 10픽셀 위로 스크롤
+}
+  //자동스크롤함수//
+
+//스크롤펼치는함수//
+$(function() {
   var text = $(".text");
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll>200) {
+    if (scroll>10) {
       text.removeClass("hidden");
     } else {
       text.addClass("hidden");
     }
   });
 });
-// function start1(){
-// 	text.removeClass("hidden");
-// }
-// window.onload = setTimeout(function(){
-// 		start1()
-// },2000)
-
-	
-
+//스크롤펼치는함수//
 </script>
 
+
+<!-- 여기부터 스타일 -->
 <style>
 	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
@@ -57,6 +62,7 @@ body {
   height: 130vh;
   font-family:'GmarketSansBold'; 
 }
+
 .text {
   position: fixed;
   top: 30%;
@@ -66,9 +72,6 @@ body {
   border-bottom: 0;	
 }
 
-.text.hidden {
-  border-bottom: 0.1rem solid #fff;
-}
 
 .text li {
   display: inline-block;
@@ -84,36 +87,29 @@ body {
   padding-left: 1rem;
 }
 .text li.spaced {
-  padding-left: 0.5em;
+  padding-left: 0.5rem;
 }
 
 .text.hidden li.ghost {
   opacity: 0;
   max-width: 0;
 }
-
 </style>
-
+<!-- 스타일 끝 -->
 </head>
 
-<body>
-	<div class>
 
-  <!--깐지글자-->
-  
-      <ul class="text hidden">
-        <li>멋</li>
-        <li class="ghost">쟁</li>
-        <li class="ghost">이</li>
-        <li>사</li>
-        <li class="ghost">자</li>
-        <li class="ghost">처</li>
-        <li class="ghost">럼</li>
-        <div list class col> <li class="ghost"><button type="button" class="btn btn-dark ghost">APPLY</button></li></div>
-       
-      </ul>
-
-    </div>
+<body onload="startScroll(0)">
+<div id="scrollDiv" style="overflow:auto" ><ul class="text hidden">
+    <li>멋</li>
+    <li class="ghost">쟁</li>
+    <li class="ghost">이</li>
+    <li>사</li>
+    <li class="ghost">자</li>
+    <li class="ghost">처</li>
+    <li class="ghost">럼</li>
+    <br>
+    <li class="ghost ml-5 pl-5"> <button type="button" class="btn btn-dark ghost">APPLY</button></li>
+  </ul></div>
 </body>
-
 </html>
