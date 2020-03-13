@@ -5,7 +5,7 @@
     else{
         $id = "";
     }
-
+    echo $id;
     $name=$_POST["name"];
     $major=$_POST["major"];
     $year=$_POST["year"];
@@ -19,10 +19,11 @@
     include_once "settings.php";
 
     $sql="insert into written (name, major, year, gender, phone, dgree, question1, question2, question3, date, userid)
-            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date', '$id')"
+            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date', '$id')";
 
     $result = mysqli_query($con, $sql);
 
+    echo $result;
     if($result){
         echo("
             <script>
