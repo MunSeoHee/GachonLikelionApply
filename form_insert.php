@@ -5,13 +5,6 @@
     else{
         $id = "";
     }
-    if(isset($_SESSION["pw"])){
-        $pw = $_SESSION["pw"];
-    }
-    else{
-        $pw = "";
-    }
-    
 
     $name=$_POST["name"];
     $major=$_POST["major"];
@@ -25,8 +18,8 @@
     $date = date("Y-m-d H:i:s");
     include_once "settings.php";
 
-    $sql="insert into written (name, major, year, gender, phone, dgree, question1, question2, question3, date)
-            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date')"
+    $sql="insert into written (name, major, year, gender, phone, dgree, question1, question2, question3, date, userid)
+            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date', '$id')"
 
     $result = mysqli_query($con, $sql);
 
