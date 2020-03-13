@@ -16,7 +16,7 @@
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 200) {
+    if (scroll>200) {
       text.removeClass("hidden");
     } else {
       text.addClass("hidden");
@@ -54,12 +54,12 @@
 }
 body {
   background-color: #000;
-  height: 200vh;
-  font-family: 'Muli', sans-serif;
+  height: 130vh;
+  font-family:'GmarketSansBold'; 
 }
 .text {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   list-style: none;
@@ -67,21 +67,21 @@ body {
 }
 
 .text.hidden {
-  border-bottom: 1px solid #fff;
+  border-bottom: 0.1rem solid #fff;
 }
 
 .text li {
   display: inline-block;
   float: left;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 3rem;
   color:rgba(243, 212, 73, 0.904);
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transition: all 2.3s ease-in-out;
   max-width: 2em;
 }
 .text.hidden li.spaced {
-  padding-left: 0;
+  padding-left: 1rem;
 }
 .text li.spaced {
   padding-left: 0.5em;
@@ -97,18 +97,23 @@ body {
 </head>
 
 <body>
-	
-	<!--깐지글자-->
-	<ul class="text hidden">
-		<li>멋</li>
-		<li class="ghost">쟁</li>
-		<li class="ghost">이</li>
-		<li>사</li>
-		<li class="ghost">자</li>
-		<li class="ghost">처</li>
-		<li class="ghost">럼</li>
-	  </ul>
+	<div class>
 
+  <!--깐지글자-->
+  
+      <ul class="text hidden">
+        <li>멋</li>
+        <li class="ghost">쟁</li>
+        <li class="ghost">이</li>
+        <li>사</li>
+        <li class="ghost">자</li>
+        <li class="ghost">처</li>
+        <li class="ghost">럼</li>
+        <div list class col> <li class="ghost"><button type="button" class="btn btn-dark ghost">APPLY</button></li></div>
+       
+      </ul>
+
+    </div>
 </body>
 
 </html>
