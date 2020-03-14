@@ -14,7 +14,7 @@
      $check = "1";
      $ck["check"] = $check;
      ?>
-    <input type="button" value="클릭" onclick="button1_click();">
+    <input type="button" value="클릭ㅋ" onclick="button1_click();">
 </form>
 </body>
 </html> 
