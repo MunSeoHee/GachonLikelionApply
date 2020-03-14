@@ -10,7 +10,7 @@
     
 <form action="servertimetest.php">
     <label>first testpage</label>
-    <input type="submit" value="클릭">
+    <input type="submit" value="클릭" method = "post" name = "check" >
 </form>
 </body>
 </html> 
