@@ -20,7 +20,9 @@ if(date("H") =="20"){
     //     echo "<script> alert('2 받음.');</script>";
     // }
 }else{
-    echo "<script> alert('아직 시간이 아닙니다.',header('location:'.$prevPage););</script>";
+    echo "<script> alert('아직 시간이 아닙니다.');
+        header('location:'.$prevPage);
+        </script>";
     //history.back();
     //sleep(3);
     //header('location:'.$prevPage);
