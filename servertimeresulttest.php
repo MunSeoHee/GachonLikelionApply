@@ -2,6 +2,16 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
+    <script>
+    function button1_click() {
+        alert("a");
+    <?
+     $check = "1";
+     $ck["check"] = $check;
+     include "servertimetest.php";
+     ?>
+    }
+</script>
 </head>
 <title>PHP</title>
 
@@ -18,13 +28,3 @@
 </form>
 </body>
 </html> 
-<script>
-    function button1_click() {
-        alert("a");
-    <?
-     $check = "1";
-     $ck["check"] = $check;
-     include "servertimetest.php";
-     ?>
-    }
-</script>
