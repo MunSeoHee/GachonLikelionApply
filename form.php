@@ -106,7 +106,18 @@
 	<body class="bgimg">
 		<!--배경이미지-->
 		<div class=" container-fluid">
-		<?php include_once "nav.php"; ?>
+		<?php 
+			include_once "nav.php"; 
+			if($id==""){
+				echo("
+					<script>
+						alert('지원서 작성은 로그인 후 해주세요!');
+						history.go(-1);
+					</script>
+				");
+				exit;
+			}
+		?>
 			<div class="row d-flex justify-content-center">
 				
 				<div class="col-lg-4">
