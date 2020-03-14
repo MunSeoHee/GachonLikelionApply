@@ -50,8 +50,8 @@
 </script>
 </head>
 
-<body>
-<div class="bgimg container-fluid">
+<body class="bgimg">
+<div class=" container-fluid">
     <?php include_once "nav.php"; ?>
   <div class="container">
     <div class="row">
