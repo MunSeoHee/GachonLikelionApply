@@ -11,10 +11,10 @@
 <form action="servertimetest.php" method="post">
     <label>first testpage</label>
     <?php
-     $check = "1";
-     $ck["check"] = $check;
+    //  $check = "1";
+    //  $ck["check"] = $check;
      ?>
-    <input type="button" value="클릭ㅋ" onclick="button1_click();">
+    <input type="button" value="클릭ㅋ" onclick="button1_click()">
 </form>
 </body>
 </html> 
