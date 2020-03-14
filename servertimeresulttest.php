@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="ko">
-    <?php
-    include "servertimecheck.php";
-    ?>
+
 <head>
     <meta charset="utf-8">
     <script>
@@ -19,7 +17,9 @@
 <title>PHP</title>
 
 <body>
-    
+<?php
+    include "servertimecheck.php";
+    ?>
 <form method="post">
     <label>first testpage</label>
     <input type="submit" name="test" id="test" value="RUN" />
