@@ -50,8 +50,8 @@
 </script>
 </head>
 
-<body>
-<div class="bgimg container-fluid">
+<body class="bgimg">
+<div class=" container-fluid">
     <?php include_once "nav.php"; ?>
   <div class="container">
     <div class="row">
@@ -98,6 +98,9 @@
             공식 오리엔테이션 :2020.00.00 
       </p>
     </div>
+    <?php
+      if($id==""){
+    ?>
       <div class="container">
         <div class="row">
           <div class="col-sm">          
@@ -120,6 +123,25 @@
           </div>
         </div>
       </div>
+      <?php 
+      }
+      else{
+        ?>
+        <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col d-flex justify-content-center">
+          <a href="form.php" class="btn btn-dark">지원서 작성하기</a>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+          
+      </div>
+      <?php
+    }
+    ?>
     </div>     
 </body>
 </html>
