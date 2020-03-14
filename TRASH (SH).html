@@ -34,7 +34,7 @@ $(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll>10) {
+    if (scroll) {
       text.removeClass("hidden");
     } else {
       text.addClass("hidden");
@@ -49,26 +49,25 @@ $(function() {
 .bgimg {
 				border: 0;
 				padding: 0; 
-				background-image: url(\img1.jpg);
+				background-image: url(\wal.jpg);
 				min-height: 100%;
 				background-position: center;
 				background-size: cover;
-        background-color: rgba( 255, 255, 255, 0.5 );
+        background-color: rgb(0, 0, 0);
 			}
-
-
-	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
-	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+      @font-face { font-family: 'MapoHongdaeFreedom'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoHongdaeFreedomA.woff') format('woff'); font-weight: normal; font-style: normal; }
+     	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+    	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
 	li{
+    font-size:15rem;
 		color:rgba(243, 212, 73, 0.904);
-		font-family:'GmarketSansBold'; 
+    font-family: 'GmarketSansBold';
 	}
 	p{
 		font-size: 130%;
 		color:rgba(230, 207, 105, 0.945);
 		font-family: 'yg-jalnan'; 
 	}
-	@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
 
 * {
   margin: 0;
@@ -76,7 +75,7 @@ $(function() {
 }
 body {
   background-color: #000;
-  height: 130vh;
+  height: 101vh;
   font-family:'GmarketSansBold'; 
 }
 
@@ -84,7 +83,7 @@ body {
   position: fixed;
   top: 30%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-40%) translateY(10%);
   list-style: none;
   border-bottom: 0;	
 }
@@ -111,6 +110,8 @@ body {
   opacity: 0;
   max-width: 0;
 }
+
+
 </style>
 
 </head>
@@ -128,7 +129,8 @@ body {
         <li class="ghost">처</li>
         <li class="ghost">럼</li>
         <br><br><br><br>
-        <li class="ghost margin 50%"> <button type="button" class="btn btn-dark ghost" onclick="apply()">APPLY</button></li>
+        <li class="ghost pl-5 ml-5"> <button type="button"  class="btn btn-dark ghost ml-5"onclick="apply()">APPLY</button></li>
+        
     <br> <br> <br><br><br>
 
     <p  font-size: 5em; >
