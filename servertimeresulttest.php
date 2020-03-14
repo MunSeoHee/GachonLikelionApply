@@ -12,6 +12,7 @@
     <label>first testpage</label>
     <?php
      $check = "1";
+     $ck["check"] = $check;
      ?>
     <input type="submit" value="클릭" >
 </form>
