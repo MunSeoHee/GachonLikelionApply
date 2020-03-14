@@ -6,12 +6,9 @@
 <title>PHP</title>
 
 <body>
-    <?php
-    include_once "servertimetest.php"; 
-    ?>
     <h1>현재 서버시간 : </h1>
     
-<form action="servertimetesgt.php">
+<form action="servertimetest.php">
     <label>first testpage</label>
     <input type="submit" value="클릭">
 </form>
