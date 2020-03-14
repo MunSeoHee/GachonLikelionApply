@@ -106,7 +106,18 @@
 	<body class="bgimg">
 		<!--배경이미지-->
 		<div class=" container-fluid">
-		<?php include_once "nav.php"; ?>
+		<?php 
+			include_once "nav.php"; 
+			if($id==""){
+				echo("
+					<script>
+						alert('지원서 작성은 로그인 후 해주세요!');
+						history.go(-1);
+					</script>
+				");
+				exit;
+			}
+		?>
 			<div class="row d-flex justify-content-center">
 				
 				<div class="col-lg-4">
@@ -164,13 +175,13 @@
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은</p></label>
 						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 						</div>
-					</form>
+					
 					<!--2번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무</p></label>
 						<textarea name="que2" id="question2" class="form-control" rows="3"></textarea>
 					</div>
-					</form>
+					
 					<!--3번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>

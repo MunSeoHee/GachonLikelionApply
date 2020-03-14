@@ -12,7 +12,11 @@
             document.member.id.focus();
             return;
         }
-
+        if(document.member.id.value == "admin"){
+            alert("다른 아이디를 사용해주세요!");
+            document.member.id.focus();
+            return;
+        }
         if(!document.member.pw.value){
             alert("비밀번호를 입력해주세요");
             document.member.pw.focus();
