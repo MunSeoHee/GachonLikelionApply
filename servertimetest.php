@@ -24,8 +24,10 @@ if(date("H") =="20"){
     if($check == "1"){
         echo "<script> alert('1 받음.');</script>";
     }
-    if($check == "2"){
+    else if($check == "2"){
         echo "<script> alert('2 받음.');</script>";
+    }else{
+        echo "<script> alert('3 받음.');</script>";
     }
 }
 ?>

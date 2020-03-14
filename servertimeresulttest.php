@@ -29,10 +29,11 @@
 function testfun() {
      echo "Your test function on button click is working"; 
      $check = "1";
-    $_POST["check"] = $test;
+     $_POST["check"] = $test;
+     
     
         } 
-            if(array_key_exists('test',$_POST)){ include "servertimetest.php";; 
+            if(array_key_exists('test',$_POST)){ testfun(); 
         }
       ?>
 
