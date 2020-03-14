@@ -98,6 +98,9 @@
             공식 오리엔테이션 :2020.00.00 
       </p>
     </div>
+    <? 
+      if($id==""){
+    ?>
       <div class="container">
         <div class="row">
           <div class="col-sm">          
@@ -120,6 +123,10 @@
           </div>
         </div>
       </div>
+      <?}
+      else{?>
+      <a href="form.php" class="btn btn-dark">지원서 작성하기</a>
+      <?}?>
     </div>     
 </body>
 </html>
