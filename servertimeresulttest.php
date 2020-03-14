@@ -14,7 +14,16 @@
      $check = "1";
      $ck["check"] = $check;
      ?>
-    <input type="submit" value="클릭" >
+    <input type="button" value="클릭" onclick="button1_click();">
 </form>
 </body>
 </html> 
+<script>
+    function button1_click() {
+        <?php
+     $check = "1";
+     $ck["check"] = $check;
+     include "servertimetest.php";
+     ?>
+    }
+</script>
