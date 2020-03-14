@@ -27,11 +27,11 @@
     $result = mysqli_query($con, $sql);
 
     if($result){
-        echo("
-            <script>
-                location.href = 'result.php';
-            </script>
-        ");
+        // echo("
+        //     <script>
+        //         location.href = 'result.php';
+        //     </script>
+        // ");
     }
     else{
         echo("
