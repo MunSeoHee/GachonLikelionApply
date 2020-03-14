@@ -98,7 +98,7 @@
             공식 오리엔테이션 :2020.00.00 
       </p>
     </div>
-    <? 
+    <?php
       if($id==""){
     ?>
       <div class="container">
@@ -123,10 +123,14 @@
           </div>
         </div>
       </div>
-      <?}
-      else{?>
+      <?php 
+      }
+      else{
+        ?>
       <a href="form.php" class="btn btn-dark">지원서 작성하기</a>
-      <?}?>
+      <?php
+    }
+    ?>
     </div>     
 </body>
 </html>
