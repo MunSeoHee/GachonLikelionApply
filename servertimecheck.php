@@ -2,7 +2,7 @@
 <?php
 // $check = $_POST["check"];
 echo "테스트 제대로 되나?";
-echo "<script> alert('test.');</script>";
+//echo "<script> alert('test.');</script>";
 $prevPage = $_SERVER['HTTP_REFERER'];
 date_default_timezone_set('Asia/Seoul');
 //echo "<script> alert('1 받음.');</script>";
@@ -20,7 +20,7 @@ if(date("H") =="20"){
     //     echo "<script> alert('2 받음.');</script>";
     // }
 }else{
-    echo "<script> alert('아직 시간이 아닙니다.\n 현재 시간 : ');</script>";
+    echo "<script> alert('아직 시간이 아닙니다.');</script>";
     header('location:'.$prevPage);
     // if($check == "1"){
     //     echo "<script> alert('1 받음.');</script>";
