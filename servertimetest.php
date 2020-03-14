@@ -16,8 +16,8 @@ if(date("H") =="20"){
         echo "<script> alert('2 받음.');</script>";
     }
 }else{
-    header('location:'.$prevPage);
     echo "<script> alert('아직 시간이 아닙니다.\n 현재 시간 : '". date("H:i:s").");</script>";
+    header('location:'.$prevPage);
 }
 ?>
 <!-- ubuntu@ec2-18-224-229-40.us-east-2.compute.amazonaws.com -->
