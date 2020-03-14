@@ -21,9 +21,7 @@ if(date("H") =="20"){
     // }
 }else{
     echo "<script> alert('아직 시간이 아닙니다.');
-            <?php
-            header('location:'.$prevPage);
-            ?>
+            history.back();
         </script>";
     //history.back();
     //sleep(3);
