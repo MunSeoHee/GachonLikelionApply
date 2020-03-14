@@ -3,8 +3,8 @@
 $check = $_POST["check"];
 $prevPage = $_SERVER['HTTP_REFERER'];
 date_default_timezone_set('Asia/Seoul');
-echo "<script> alert('1 받음.');</script>";
-echo $check;
+//echo "<script> alert('1 받음.');</script>";
+echo $_POST["check"];
 // echo "현재 날짜 : ". date("Y-m-d")."<br/>";
 // echo "현재 시간 : ". date("H:i:s")."<br/>";
 // echo "현재 일시 : ". date("Y-m-d H:i:s")."<br/>";
@@ -20,9 +20,9 @@ if(date("H") =="20"){
 }else{
     echo "<script> alert('아직 시간이 아닙니다.\n 현재 시간 : ');</script>";
     //header('location:'.$prevPage);
-    // if($check == "1"){
-    //     echo "<script> alert('1 받음.');</script>";
-    // }
+    if($check == "1"){
+        echo "<script> alert('1 받음.');</script>";
+    }
     if($check == "2"){
         echo "<script> alert('2 받음.');</script>";
     }
