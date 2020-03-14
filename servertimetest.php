@@ -20,9 +20,9 @@ if(date("H") =="20"){
 }else{
     echo "<script> alert('아직 시간이 아닙니다.\n 현재 시간 : ');</script>";
     //header('location:'.$prevPage);
-    if($check == "1"){
-        echo "<script> alert('1 받음.');</script>";
-    }
+    // if($check == "1"){
+    //     echo "<script> alert('1 받음.');</script>";
+    // }
     if($check == "2"){
         echo "<script> alert('2 받음.');</script>";
     }
