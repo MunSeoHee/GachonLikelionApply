@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="ko">
+    <?php
+    include "servertimecheck.php";
+    ?>
 <head>
     <meta charset="utf-8">
     <script>
@@ -30,8 +33,6 @@ function testfun() {
      echo "Your test function on button click is working"; 
      $check = "1";
      $_POST["check"] = $test;
-     
-    
         } 
             if(array_key_exists('test',$_POST)){ testfun(); 
         }
