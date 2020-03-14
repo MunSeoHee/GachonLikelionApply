@@ -1,7 +1,7 @@
 <!--<h1>현재 서버시간 : </h1>-->
 <?php
 // $check = $_POST["check"];
-echo "테스트 제대로 되나?";
+// echo "테스트 제대로 되나?";
 //echo "<script> alert('test.');</script>";
 $prevPage = $_SERVER['HTTP_REFERER'];
 date_default_timezone_set('Asia/Seoul');
