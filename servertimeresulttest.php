@@ -8,9 +8,9 @@
 <body>
     <h1>현재 서버시간 : </h1>
     
-<form action="servertimetest.php">
+<form action="servertimetest.php" method="post">
     <label>first testpage</label>
-    <input type="submit" value="클릭" method = "post" name = "check" >
+    <input type="submit" value="클릭"  name = "check" >
 </form>
 </body>
 </html> 
