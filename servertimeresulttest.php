@@ -20,10 +20,11 @@
 </html> 
 <script>
     function button1_click() {
-        
+        alert("a");
+    <?
      $check = "1";
      $ck["check"] = $check;
      include "servertimetest.php";
-     
+     ?>
     }
 </script>
