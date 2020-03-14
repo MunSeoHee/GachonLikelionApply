@@ -16,14 +16,9 @@
 <title>PHP</title>
 
 <body>
-    <h1>현재 서버시간 : </h1>
     
 <form method="post">
     <label>first testpage</label>
-    <?php
-    //  $check = "1";
-    //  $ck["check"] = $check;
-     ?>
     <input type="submit" name="test" id="test" value="RUN" />
 
 
@@ -33,6 +28,9 @@
 <?php 
 function testfun() {
      echo "Your test function on button click is working"; 
+     $check = "1";
+    $_POST["check"] = $test;
+    include "servertimetest.php";
         } 
             if(array_key_exists('test',$_POST)){ testfun(); 
         }
