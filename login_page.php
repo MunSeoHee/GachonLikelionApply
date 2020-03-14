@@ -127,7 +127,18 @@
       }
       else{
         ?>
-      <a href="form.php" class="btn btn-dark">지원서 작성하기</a>
+        <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col">
+          <a href="form.php" class="btn btn-dark">지원서 작성하기</a>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+          
+      </div>
       <?php
     }
     ?>
