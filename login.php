@@ -1,5 +1,5 @@
 <?php
-    $id = $_POST["email"];
+    $email = $_POST["email"];
     $pw = $_POST["pw"];
 
     include_once "settings.php";
@@ -10,7 +10,7 @@
     if(!$res_num){
         echo("
             <script>
-                window.alert('등록되지 않은 아이디입니다!')
+                window.alert('등록되지 않은 이메일입니다!')
                 history.go(-1)
             </script>
         ");

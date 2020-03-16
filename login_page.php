@@ -63,7 +63,7 @@
         </h1>
         <form name="user" method="post" action="login.php">
           <div class="form-group text-center">
-            <label for="exampleInputEmail1">아이디</label>
+            <label for="exampleInputEmail1">이메일</label>
             <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
