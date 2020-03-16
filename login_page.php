@@ -70,7 +70,7 @@
             <label for="exampleInputPassword1">비밀번호</label>
             <input name="pw" type="password" class="form-control" id="exampleInputPassword1">
           </div>              
-          <a onclick="check_input()" class="btn btn-dark">로그인</a>
+          <a onclick="check_input()" class="btn btn-dark text-light">로그인</a>
           <a href="signin_page.php" class="btn btn-dark">회원가입</a>
         </form>
       </div>
