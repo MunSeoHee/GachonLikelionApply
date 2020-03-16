@@ -55,7 +55,7 @@
             <label for="exampleInputPassword1">비밀번호</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
           </div>              
-          <a href="login_page.php" class="btn btn-dark">로그인</a>
+          <a href="login.php" class="btn btn-dark">로그인</a>
           <a href="signin_page.php" class="btn btn-dark">회원가입</a>
         </form>
       </div>
