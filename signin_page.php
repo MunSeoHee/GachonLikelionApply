@@ -60,7 +60,7 @@
             <form name="member" method="post" action="member_insert.php">
                 <!--id 입력 칸-->
                 <p class="mt-5">이메일</p>
-                <input class="border-warning" type="text" name="email"><br><br>
+                <input class="border-warning" type="email" name="email"><br><br>
                 <!--비밀번호 입력 칸-->
                 <p>비밀번호</p>
                 <input class="border-warning" type="password" name="pw">
