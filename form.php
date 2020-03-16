@@ -173,7 +173,7 @@
 					<!--1번질문-->
 						<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은</p></label>
-						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  onKeyUp="javascript:fnChkByte(this,'80')" rows="3"></textarea>
 						</div>
 					
 					<!--2번질문-->
