@@ -48,9 +48,9 @@
 </head>
 <body>
 <div class="bgimg container-fluid" style="height:100vh">
-    <nav class="navbar navbar-light" style="background-color: black;">
-        <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
-      </nav>
+<?php 
+      include_once "nav.php"; 
+?>
        <div class="container mt-5">
         <div class="row mt-5">
           <div class="col-sm mt-5">         
