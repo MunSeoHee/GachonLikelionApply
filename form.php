@@ -107,7 +107,7 @@
 		<div class=" container-fluid">
 		<?php 
 			include_once "nav.php"; 
-			if($id==""){
+			if($email==""){
 				echo("
 					<script>
 						alert('지원서 작성은 로그인 후 해주세요!');

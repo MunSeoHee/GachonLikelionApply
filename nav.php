@@ -30,11 +30,11 @@
 <body>
 <?php
     session_start();
-    if(isset($_SESSION["id"])){
-        $id = $_SESSION["id"];
+    if(isset($_SESSION["email"])){
+        $email = $_SESSION["email"];
     }
     else{
-        $id = "";
+        $email = "";
     }
     if(isset($_SESSION["pw"])){
         $pw = $_SESSION["pw"];
@@ -57,7 +57,7 @@
             </div>
             <div class="col text-right text-light">
                 <?php
-                    if(!$id){
+                    if(!$email){
                 ?>
                         <a href="login_page.php">로그인</a>
                         <a href="signin_page.php">회원가입</a>
@@ -65,7 +65,7 @@
                     }
                     else{
                 ?>
-                        <?=$id?>님
+                        <?=$email?>님
                         <a href="logout.php">로그아웃</a>
                 <?php
                     }

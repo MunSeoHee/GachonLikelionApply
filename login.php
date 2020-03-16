@@ -1,10 +1,10 @@
 <?php
-    $id = $_POST["id"];
+    $id = $_POST["email"];
     $pw = $_POST["pw"];
 
     include_once "settings.php";
 
-    $sql = "select * from user where id='$id'";
+    $sql = "select * from user where email='$email'";
     $result = mysqli_query($con, $sql);
     $res_num = mysqli_num_rows($result);
     if(!$res_num){
@@ -30,7 +30,7 @@
         }
         else{
             session_start();
-            $_SESSION["id"] = $row["id"];
+            $_SESSION["email"] = $row["email"];
             $_SESSION["pw"] = $row["pw"];
             $_SESSION["userlevel"] = $row["userlevel"];
             echo("

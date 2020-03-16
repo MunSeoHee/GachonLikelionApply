@@ -1,10 +1,10 @@
 <?php
     session_start();
-    if(isset($_SESSION["id"])){
-        $id = $_SESSION["id"];
+    if(isset($_SESSION["email"])){
+        $email = $_SESSION["email"];
     }
     else{
-        $id = "";
+        $email = "";
     }
     // echo $id;
     $name=$_POST["name"];
@@ -22,7 +22,7 @@
     include_once "settings.php";
 
     $sql="insert into written (name, major, year, gender, phone, degree, question1, question2, question3, date, userid)
-            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date', '$id')";
+            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date', '$email')";
 
     $result = mysqli_query($con, $sql);
 
