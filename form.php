@@ -47,6 +47,15 @@
 			}
 	</style>
 	<script>
+		$(document).ready(function(){ 
+			$('#input_text').keyup(function(){ 
+				if ($(this).val().length > $(this).attr('maxlength')) { 
+					alert('제한길이 초과'); 
+					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
+				} 
+			}); 
+		});
+
 		function check_input(){
         if(!document.written.name.value){
             alert("이름을 입력하세요");
@@ -172,7 +181,7 @@
 					<!--1번질문-->
 						<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은</p></label>
-						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  onKeyUp="javascript:fnChkByte(this,'80')" rows="3"></textarea>
+						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text" rows="3"></textarea>
 						</div>
 					
 					<!--2번질문-->
