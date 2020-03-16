@@ -30,11 +30,11 @@
 <body>
 <?php
     session_start();
-    if(isset($_SESSION["id"])){
-        $id = $_SESSION["id"];
+    if(isset($_SESSION["email"])){
+        $email = $_SESSION["email"];
     }
     else{
-        $id = "";
+        $email = "";
     }
     if(isset($_SESSION["pw"])){
         $pw = $_SESSION["pw"];
@@ -50,14 +50,14 @@
     }
 ?>
 <nav class="navbar navbar-light" style="background-color: black;">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row w-100 d-flex justify-content-between">
             <div class="col">
                 <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
             </div>
             <div class="col text-right text-light">
                 <?php
-                    if(!$id){
+                    if(!$email){
                 ?>
                         <a href="login_page.php">로그인</a>
                         <a href="signin_page.php">회원가입</a>
@@ -65,7 +65,7 @@
                     }
                     else{
                 ?>
-                        <?=$id?>님
+                        <?=$email?>님
                         <a href="logout.php">로그아웃</a>
                 <?php
                     }

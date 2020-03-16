@@ -7,9 +7,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
     function check_input(){
-        if(!document.user.id.value){
-            alert("아이디를 입력해주세요");
-            document.user.id.focus();
+        if(!document.user.email.value){
+            alert("이메일을 입력해주세요");
+            document.user.email.focus();
             return;
         }
         if(!document.user.pw.value){
@@ -63,8 +63,8 @@
         </h1>
         <form name="user" method="post" action="login.php">
           <div class="form-group text-center">
-            <label for="exampleInputEmail1">아이디</label>
-            <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1">이메일</label>
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">비밀번호</label>

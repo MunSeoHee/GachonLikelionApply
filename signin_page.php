@@ -7,13 +7,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
     function check_input(){
-        if(!document.member.id.value){
-            alert("아이디를 입력해주세요");
+        if(!document.member.email.value){
+            alert("이메일을 입력해주세요");
             document.member.id.focus();
             return;
         }
-        if(document.member.id.value == "admin"){
-            alert("다른 아이디를 사용해주세요!");
+        if(document.member.email.value == "admin"){
+            alert("다른 이메일을 사용해주세요!");
             document.member.id.focus();
             return;
         }
@@ -59,8 +59,8 @@
              <!--회원가입 정보 입력 란-->
             <form name="member" method="post" action="member_insert.php">
                 <!--id 입력 칸-->
-                <p class="mt-5">아이디</p>
-                <input class="border-warning" type="text" name="id"><br><br>
+                <p class="mt-5">이메일</p>
+                <input class="border-warning" type="email" name="email"><br><br>
                 <!--비밀번호 입력 칸-->
                 <p>비밀번호</p>
                 <input class="border-warning" type="password" name="pw">

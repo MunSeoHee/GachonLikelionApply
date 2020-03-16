@@ -47,6 +47,29 @@
 			}
 	</style>
 	<script>
+		$(document).ready(function(){ 
+			$('#input_text1').keyup(function(){ 
+				if ($(this).val().length > $(this).attr('maxlength')) { 
+					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
+				} 
+			}); 
+		});
+		$(document).ready(function(){ 
+			$('#input_text2').keyup(function(){ 
+				if ($(this).val().length > $(this).attr('maxlength')) { 
+					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
+				} 
+			}); 
+		});
+		$(document).ready(function(){ 
+			$('#input_text3').keyup(function(){ 
+				if ($(this).val().length > $(this).attr('maxlength')) { 
+					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
+				} 
+			}); 
+		});
+
+
 		function check_input(){
         if(!document.written.name.value){
             alert("이름을 입력하세요");
@@ -107,7 +130,7 @@
 		<div class=" container-fluid">
 		<?php 
 			include_once "nav.php"; 
-			if($id==""){
+			if($email==""){
 				echo("
 					<script>
 						alert('지원서 작성은 로그인 후 해주세요!');
@@ -171,20 +194,20 @@
 					<!--질문 텍스트에리어 3개(서희요청)-->
 					<!--1번질문-->
 						<div class="form-group mb-4">
-						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은</p></label>
-						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  onKeyUp="javascript:fnChkByte(this,'80')" rows="3"></textarea>
+						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은 (1000자)</p></label>
+						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text1" rows="3"></textarea>
 						</div>
 					
 					<!--2번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무</p></label>
-						<textarea name="que2" id="question2" class="form-control" rows="3"></textarea>
+						<textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
 					</div>
 					
 					<!--3번질문-->
 					<div class="form-group mb-4">
 						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>
-						<textarea name="quest3" id="question3" class="form-control" rows="3"></textarea>
+						<textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3"></textarea>
 					</div>
 					
 					<!--제출버튼-->
