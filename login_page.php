@@ -5,6 +5,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    function check_input(){
+        if(!document.user.id.value){
+            alert("아이디를 입력해주세요");
+            document.user.id.focus();
+            return;
+        }
+        if(!document.user.pw.value){
+            alert("비밀번호를 입력해주세요");
+            document.user.pw.focus();
+            return;
+        }
+        document.user.submit();
+    }
+    </script>
   <style>
     .bgimg {
     border: 0;
@@ -46,7 +61,7 @@
         <h1>
         ㅡ
         </h1>
-        <form>
+        <form name="user" method="post" action="login.php">
           <div class="form-group text-center">
             <label for="exampleInputEmail1">아이디</label>
             <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -55,7 +70,7 @@
             <label for="exampleInputPassword1">비밀번호</label>
             <input name="pw" type="password" class="form-control" id="exampleInputPassword1">
           </div>              
-          <a href="login.php" class="btn btn-dark">로그인</a>
+          <a onclick="check_input()" class="btn btn-dark">로그인</a>
           <a href="signin_page.php" class="btn btn-dark">회원가입</a>
         </form>
       </div>
