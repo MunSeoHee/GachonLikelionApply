@@ -48,12 +48,12 @@
         </h1>
         <form>
           <div class="form-group text-center">
-            <label for="exampleInputEmail1">이메일</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1">아이디</label>
+            <input name="id" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">비밀번호</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input name="pw" type="password" class="form-control" id="exampleInputPassword1">
           </div>              
           <a href="login.php" class="btn btn-dark">로그인</a>
           <a href="signin_page.php" class="btn btn-dark">회원가입</a>
