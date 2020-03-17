@@ -46,8 +46,8 @@
             }
     </style>  
 </head>
-<body>
-<div class="bgimg container-fluid" style="height:100vh">
+<body class="bgimg">
+<div class="container-fluid" style="height:100vh">
 <?php 
       include_once "nav.php"; 
 ?>
@@ -163,7 +163,7 @@
                     </div>
                     <label class="custom-control-label" for="jb-checkbox">개인정보 수집 및 이용에 동의합니다.</label><br><br>    
                              <!--제출 버튼-->
-                    <div style="cursor:pointer" onclick="check_input()"><p>회원가입</p></div>
+                    <div style="cursor:pointer" onclick="check_input()" class="mt-5"><p>회원가입</p></div>
                 </form>       
             </div>           
         </div>
