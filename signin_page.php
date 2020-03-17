@@ -72,25 +72,25 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">이름</label>
                         <div class="col-sm-8">
-                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                            <input type="text" name="name" readonly class="form-control" id="staticEmail" value="홍길동">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">학과</label>
                         <div class="col-sm-8">
-                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                            <input type="text" name="major" class="form-control" id="staticEmail" value="동양어문학과">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">입학년도</label>
                         <div class="col-sm-8">
-                            <input type="number" readonly class="form-control" id="staticEmail" value="2020">
+                            <input type="number" name="year" class="form-control" id="staticEmail" value="2020">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">성별</label>
                         <div class="col-sm-8">
-                            <select class="form-control">
+                            <select name="gender" class="form-control">
                                 <option value="1">남자</option>
                                 <option value="2">여자</option>
                             </select>
@@ -99,13 +99,13 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label>
                         <div class="col-sm-8">
-                            <input type="number" readonly class="form-control" id="staticEmail" value="01012341234">
+                            <input type="number" name="phone" class="form-control" id="staticEmail" value="01012341234">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">학년</label>
                         <div class="col-sm-8">
-                            <select class="form-control">
+                            <select name="degree" class="form-control">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -116,11 +116,11 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">복전/부전</label>
                         <div class="col-sm-8">
-                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                            <input type="text" name="doublemajor" readonly class="form-control" id="staticEmail" value="기계공학과">
                         </div>
                     </div>
                     <!--제출 버튼-->
-                    <div style="cursor:pointer" onclick="check_input()"><p>회원가입</p></div>
+                    <div style="cursor:pointer" class="btn btn-warning" onclick="check_input()"><p>회원가입</p></div>
                 </form>
         
             </div>
