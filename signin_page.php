@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <!--제출 버튼-->
-                    <div style="cursor:pointer" class="btn btn-warning text-light" onclick="check_input()">회원가입</div>
+                    <div style="cursor:pointer" class="btn btn-warning text-light mt-5" onclick="check_input()">회원가입</div>
                 </form>
         
             </div>
