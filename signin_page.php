@@ -56,7 +56,7 @@
             <div class="col-sm mt-5">         
             </div>
             <div class="col-sm mt-5 text-center">
-                <form>
+                <form name="member" method="post" action="member_insert.php">
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">이메일</label>
                         <div class="col-sm-8">
