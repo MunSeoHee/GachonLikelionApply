@@ -58,38 +58,38 @@
             <div class="col-sm mt-5 text-center">
                 <form>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">이메일</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">이메일</label>
+                        <div class="col-sm-8">
                             <input type="email" name="email" class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label text-white">비밀번호</label>
-                        <div class="col-sm-10">
+                        <label for="inputPassword" class="col-sm-4 col-form-label text-white">비밀번호</label>
+                        <div class="col-sm-8">
                             <input type="password" name="pw" class="form-control" id="inputPassword">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">이름</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">이름</label>
+                        <div class="col-sm-8">
                             <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">학과</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">학과</label>
+                        <div class="col-sm-8">
                             <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">입학년도</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">입학년도</label>
+                        <div class="col-sm-8">
                             <input type="number" readonly class="form-control" id="staticEmail" value="2020">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">성별</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">성별</label>
+                        <div class="col-sm-8">
                             <select class="form-control">
                                 <option value="1">남자</option>
                                 <option value="2">여자</option>
@@ -97,14 +97,14 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">연락처</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label>
+                        <div class="col-sm-8">
                             <input type="number" readonly class="form-control" id="staticEmail" value="01012341234">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">학년</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">학년</label>
+                        <div class="col-sm-8">
                             <select class="form-control">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -114,8 +114,8 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-white">복전/부전</label>
-                        <div class="col-sm-10">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">복전/부전</label>
+                        <div class="col-sm-8">
                             <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
