@@ -200,13 +200,13 @@
 					
 					<!--2번질문-->
 					<div class="form-group mb-4">
-						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무</p></label>
+						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무 (1000자)</p></label>
 						<textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
 					</div>
 					
 					<!--3번질문-->
 					<div class="form-group mb-4">
-						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요</p></label>
+						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요 (1000자)</p></label>
 						<textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3"></textarea>
 					</div>
 					

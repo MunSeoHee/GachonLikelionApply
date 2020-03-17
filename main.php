@@ -25,7 +25,17 @@ function autoScroll() {
     window.scrollBy(0,20); // 20픽셀 위로 스크롤
 }
   //자동스크롤함수//
+  $(document).ready(function(){
+    $("#my-btn").trigger("click");
+});
 
+  
+  function check(){
+    var text = $(".text");
+ 
+    text.removeClass("hidden");
+  
+  };
 
 
 //스크롤펼치는함수//
@@ -42,6 +52,37 @@ $(function() {
   });
 });
 //스크롤펼치는함수//
+
+//서버시간 표시
+var srv_time = "<?php print date("F d, Y H:i:s", time()); ?>";
+var now = new Date(srv_time);
+setInterval("server_time()", 1000);
+function server_time()
+{
+    now.setSeconds(now.getSeconds()+1);
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var date = now.getDate();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    if (month < 10){
+        month = "0" + month;
+    }
+    if (date < 10){
+        date = "0" + date;
+    }
+    if (hours < 10){
+        hours = "0" + hours;
+    }
+    if (minutes < 10){
+        minutes = "0" + minutes;
+    }
+    if (seconds < 10){
+        seconds = "0" + seconds;
+    }
+    document.getElementById("server_time").innerHTML = "현재 서버시간 : " + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+}
 </script>
 <style>
 
@@ -117,7 +158,7 @@ body {
 </head>
 
 <body>
-<body class="bgimg" onload="startScroll(0) ">
+<body class="bgimg" onclick ="check()"><!-- onload="startScroll(0) ">-->
 <div id="scrollDiv" style="overflow:auto" >
   <!-- 깐지글자 -->
       <ul class="text hidden">
@@ -131,15 +172,16 @@ body {
         <br><br><br><br>
         <li class="ghost pl-5 ml-5"> <button type="button"  class="btn btn-dark ghost ml-5"onclick="apply()">APPLY</button></li>
         
-    <br> <br> <br><br><br>
-
-    <p  font-size: 5em; >
-      모집 : 2020.00.00~2020.00.00 00:00 <br>
-      서류 및 면접 : 2020.00.00~2020.00.00 <br>
-      공식 오리엔테이션 :2020.00.00 
-   </p>
+        <br> <br> <br><br><br>
+        
+        <p  font-size: 5em; >
+          모집 : 2020.00.00~2020.00.00 00:00 <br>
+          서류 및 면접 : 2020.00.00~2020.00.00 <br>
+          공식 오리엔테이션 :2020.00.00 
+        </p>
       </ul>
-
+      
+      <!-- <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div> -->
     </div>
 
 
