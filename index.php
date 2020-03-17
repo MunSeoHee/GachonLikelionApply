@@ -11,8 +11,8 @@
 		maximum-scale=1.0, minimum-scale=1.0">
   <style>
       /* FAQ */
-    /* .faq{border-bottom:0px solid #ddd;margin:1em 0;}
-    .faq .faqHeader{position:relative;zoom:1}
+     .faq{border-bottom:0px solid #ddd;margin:1em 0;}
+    /*.faq .faqHeader{position:relative;zoom:1}
     .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
     .faq .faqBody{margin:0;padding:0}
     .faq .faqBody .article{list-style:none}
@@ -42,15 +42,9 @@
 		}
      @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff%27') format('woff'); font-weight: normal; font-style: normal; }
         @font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff%27') format('woff'); font-weight: normal; font-style: normal; }
-        h2,label,h1{
-            color:rgba(243, 212, 73, 0.904);
-            font-family:'GmarketSansBold'; 
-        }
-        p{
-            font-size: 120%;
-            color:rgba(243, 212, 73, 0.904);
-            font-family: 'yg-jalnan'; 
-        }
+        ul{
+   list-style:none;
+   }
         #videobcg
         {
           position:absolute;
