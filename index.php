@@ -11,7 +11,7 @@
 		maximum-scale=1.0, minimum-scale=1.0">
   <style>
       /* FAQ */
-    .faq{border-bottom:0px solid #ddd;margin:1em 0;}
+    /* .faq{border-bottom:0px solid #ddd;margin:1em 0;}
     .faq .faqHeader{position:relative;zoom:1}
     .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
     .faq .faqBody{margin:0;padding:0}
@@ -32,7 +32,7 @@
     color: #444444;
     line-height: 22px;
     border-top: 1px solid #bdbdbd;
-    margin:5px 0 0 0;}
+    margin:5px 0 0 0;} */
 
     .bg {
     border: 0;
