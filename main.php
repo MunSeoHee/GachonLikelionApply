@@ -17,32 +17,15 @@
         location.href = 'login_page.php';
     };
  //자동스크롤함수//
-//  function startScroll(interval) {
-//     setInterval("autoScroll()", interval);
-// }
+ function startScroll(interval) {
+    setInterval("autoScroll()", interval);
+}
  
-// function autoScroll() {
-//     window.scrollBy(0,20); // 20픽셀 위로 스크롤
-// }
-//   //자동스크롤함수//
-
-
-
-// //스크롤펼치는함수//
-// $(function() {
-//   var text = $(".text");
-//   $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-
-//     if (scroll) {
-//       text.removeClass("hidden");
-//     } else {
-//       text.addClass("hidden");
-//     }
-//   });
-// });
-//스크롤펼치는함수//
-$(document).ready(function(){
+function autoScroll() {
+    window.scrollBy(0,20); // 20픽셀 위로 스크롤
+}
+  //자동스크롤함수//
+  $(document).ready(function(){
     $("#my-btn").trigger("click");
 });
 
@@ -53,6 +36,23 @@ $(document).ready(function(){
     text.removeClass("hidden");
   
   };
+
+
+//스크롤펼치는함수//
+$(function() {
+  var text = $(".text");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll) {
+      text.removeClass("hidden");
+    } else {
+      text.addClass("hidden");
+    }
+  });
+});
+//스크롤펼치는함수//
+
 //서버시간 표시
 var srv_time = "<?php print date("F d, Y H:i:s", time()); ?>";
 var now = new Date(srv_time);
@@ -158,7 +158,7 @@ body {
 </head>
 
 <body>
-<body class="bgimg" onload="startScroll(0) ">
+<body class="bgimg" onclick ="check()"><!-- onload="startScroll(0) ">-->
 <div id="scrollDiv" style="overflow:auto" >
   <!-- 깐지글자 -->
       <ul class="text hidden">
@@ -181,8 +181,8 @@ body {
         </p>
       </ul>
       
+      <!-- <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div> -->
     </div>
-    <!-- <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div> -->
 
 
 </body>
