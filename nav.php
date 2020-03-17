@@ -50,20 +50,24 @@
                 <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
             </div>
             <div class="col text-right text-light">
+                <div class="row">
                 <?php
                     if(!$email){
                 ?>
-                        <a href="login_page.php">로그인</a>
-                        <a href="signin_page.php">회원가입</a>
+                        <div class="col"><a href="login_page.php">로그인</a></div>
+                        <div class="col"><a href="signin_page.php">회원가입</a></div>
+                        
+                        
                 <?php
                     }
                     else{
-                ?>
-                        <?=$email?>님
-                        <a href="logout.php">로그아웃</a>
+                ?>      <div class="col"><?=$email?>님</div>
+                        <div class="col"><a href="logout.php">로그아웃</a></div>
                 <?php
                     }
                 ?>
+                </div>
+                
             <div>
         </div>
     </div>
