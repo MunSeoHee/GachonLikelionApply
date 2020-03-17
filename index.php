@@ -6,15 +6,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
     <meta charset="utf-8">
+    <!-- 모바일 뷰포트 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+		maximum-scale=1.0, minimum-scale=1.0">
   <style>
       /* FAQ */
-.faq{border-bottom:0px solid #ddd;margin:1em 0;}
-.faq .faqHeader{position:relative;zoom:1}
-.faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
-.faq .faqBody{margin:0;padding:0}
-.faq .faqBody .article{list-style:none}
-.faq .q{margin:}
-.faq .q a{display:block;text-align:left; 
+    .faq{border-bottom:0px solid #ddd;margin:1em 0;}
+    .faq .faqHeader{position:relative;zoom:1}
+    .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
+    .faq .faqBody{margin:0;padding:0}
+    .faq .faqBody .article{list-style:none}
+    .faq .q{margin:}
+    .faq .q a{display:block;text-align:left; 
     background:url("faq1_icon_q.png") no-repeat 0 0;
     padding:0 0 0 35px;
     font-size:18px;
@@ -22,7 +25,7 @@
     font-weight:bold;
     line-height: 27px;
     cursor:pointer;
-    margin: 10px 0; !important}
+    margin: 10px 0!important;}
 .faq .q a:hover, .faq .q a:active, .faq .q a:focus{}
 .faq .a{background:#f8f8f8 url("faq1_icon_a.png") no-repeat 40px 10px;padding: 10px 75px 10px 75px;
     font-size: 16px;
@@ -30,10 +33,11 @@
     line-height: 22px;
     border-top: 1px solid #bdbdbd;
     margin:5px 0 0 0;}
-    .bgimg {
+
+    .bg {
     border: 0;
     padding: 0; 
-    background-color: black;
+    background-color: black!important;
     min-height: 100%;    
 		}
      @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff%27') format('woff'); font-weight: normal; font-style: normal; }
@@ -95,7 +99,7 @@
               </script>
        
 </head>
-<body class="bgimg">
+<body class="bg">
 <div class="container-fluid" style="height:100vh">
 <?php 
       include_once "nav.php"; 
