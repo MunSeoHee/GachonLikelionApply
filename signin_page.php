@@ -60,31 +60,31 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">이메일</label>
                         <div class="col-sm-10">
-                            <input type="email" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            <input type="email" name="email" class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">비밀번호</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="password" name="pw" class="form-control" id="inputPassword">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">이름</label>
                         <div class="col-sm-10">
-                            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">학과</label>
                         <div class="col-sm-10">
-                            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">입학년도</label>
                         <div class="col-sm-10">
-                            <input type="number" readonly class="form-control-plaintext" id="staticEmail" value="2020">
+                            <input type="number" readonly class="form-control" id="staticEmail" value="2020">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -99,7 +99,7 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">연락처</label>
                         <div class="col-sm-10">
-                            <input type="number" readonly class="form-control-plaintext" id="staticEmail" value="01012341234">
+                            <input type="number" readonly class="form-control" id="staticEmail" value="01012341234">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -116,7 +116,7 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">복전/부전</label>
                         <div class="col-sm-10">
-                            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
                         </div>
                     </div>
                     <!--제출 버튼-->
