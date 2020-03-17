@@ -118,6 +118,27 @@
         }
         document.written.submit();
     }
+////
+<textarea style="width:600px;" class="DOC_TEXT" name="DOC_TEXT" placeholder="선택하신 서류사항 항목에 대한 내용을 200자 이내로 기재해주세요.">
+</textarea>
+<br />
+<span style="color:#aaa;" id="counter">(0 / 최대 200자)</span>
+
+//서류사항 textarea 체크
+$('.DOC_TEXT').keyup(function (e){
+    var content = $(this).val();
+    $('#counter').html("("+content.length+" / 최대 200자)");    //글자수 실시간 카운팅
+
+    if (content.length > 200){
+        alert("최대 200자까지 입력 가능합니다.");
+        $(this).val(content.substring(0, 200));
+        $('#counter').html("(200 / 최대 200자)");
+    }
+});
+////
+
+
+
 	</script>
 
 
@@ -179,8 +200,9 @@
 						<div class="form-group mb-4">
 				
 							<label for="exampleFormControlInput1"class="text-warning"><p>연락처</p></label>
-							<input name="phone" type="number" class="form-control" id="exampleFormControlInput1" placeholder="010xxxxxxxx">
-						</div>
+							<input name="phone" type="text" class="form-control" id="exampleFormControlInput1" placeholder="010xxxxxxxx">
+            </div>
+            
 					<!--학년-->
 						<div class="form-group mb-4">
 							<label for="exampleFormControlSelect1"class="text-warning"><p>학년</p></label>
@@ -191,36 +213,71 @@
 							<option value="4">4학년</option>
 							</select>
 						</div>
-					<!--질문 텍스트에리어 3개(서희요청)-->
 					<!--1번질문-->
 						<div class="form-group mb-4">
-						<label for="exampleFormControlTextarea1"class="text-warning"><p>주량은 (1000자)</p></label>
-						<textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text1" rows="3"></textarea>
-						</div>
-					
-					<!--2번질문-->
-					<div class="form-group mb-4">
-						<label for="exampleFormControlTextarea1"class="text-warning"><p>여자일시 남친 유무 (1000자)</p></label>
-						<textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
-					</div>
-					
-					<!--3번질문-->
-					<div class="form-group mb-4">
-						<label for="exampleFormControlTextarea1"class="text-warning"><p>남자일시 가세요 (1000자)</p></label>
-						<textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3"></textarea>
-					</div>
-					
-					<!--제출버튼-->
-					<div class ="row">
-					<div class="col"></div>
-					<div class="col">
-					<div class="btn btn-secondary btn-lg" onclick="check_input()">제출</div>
-					</div>
-					<div class="col"></div>
-					</div>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
+              <textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text1" rows="3"></textarea>
+              </div>
+            
+            <!--2번질문-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
+              <textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+            </div>
+            
+            <!--3번질문-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
+              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+            </div>
 
+ <!--4번질문-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
+              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+            </div>
+ <!--5번질문-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
+              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
+              아르바이트: 주말 아르바이트13~15
+              격전: 토요일오전 9~"></textarea>
+            </div>
+ <!--6번질문-->
+            <div class="form-group mb-4">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
+              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+            </div>
+ <!--7번질문-->
+ <p>면접희망날짜<p>
+            <div class="">
+              <div class="row d-inline-flex p-3 bd-highlight mr-5 "><input type="radio" name="IDATE" value="4월1일"><p>4월1일(수)</div>
+                <div class="row d-inline-flex p-3 bd-highlight mr-5"><input type="radio" name="IDATE" value="4월1일"><p>4월1일(수)</div>
+                  <div class="row d-inline-flex p-3 bd-highlight mr-2"><input type="radio" name="IDATE" value="4월1일"><p>4월1일(수)</div>    
+             </div>
+ <!--8번질문-->
+             <div class="form-group mb-4">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
+              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+            </div>
+ <!--8번질문-->
+            <p>그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org
+            </p>
+
+              <!--제출버튼-->
+              <div class ="row">
+              <div class="col"></div>
+              <div class="col">
+              <div class="btn btn-secondary btn-lg" onclick="check_input()">제출</div>
+              </div>
+              <div class="col"></div>
+              </div>
+            </div>
+</div>
+        
 					</form>	
-				</div>
+      
+          
 				
 			</div>
 
@@ -231,4 +288,3 @@
 
 			
 </html>
->>>>>>> 421e235a4522f47a8e171909da48abba52c125aa
