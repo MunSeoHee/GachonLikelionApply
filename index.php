@@ -120,7 +120,7 @@
     <div class="col-sm">      
     </div>
   </div>
-  <div class="row">
+  <div class="row bg-white">
   <div class="pl-md-5 py-3 ml-md-5 mt-5 ml-4" style="font-weight: bold;">
         <h2 style="font-weight: bold; color:#707070;">FAQ</h2>
         <div class="border-bottom mr-5" style="max-width: 600px; height: 10px;"></div>
