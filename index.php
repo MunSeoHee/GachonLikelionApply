@@ -33,9 +33,9 @@
     line-height: 22px;
     border-top: 1px solid #bdbdbd;
     margin:5px 0 0 0;} */
-    a:link { color: black; text-decoration: none;}
-    a:visited { color: black; text-decoration: none;}
-    
+    p > a:link { color: black; text-decoration: none;}
+    p > a:visited { color: black; text-decoration: none;}
+    p > a:hover { color: black!important; text-decoration: none!important;}
     .bg {
     border: 0;
     padding: 0; 
@@ -128,7 +128,6 @@
                     <div class="faqHeader">
                         <!--button type="button" class="showAll">답변 모두 여닫기</button-->
                     </div>
-                    <style>a:hover { color: black!important; text-decoration: none!important;}</style>
                     <ul class="faqBody ml-5 p-0">
                         <li class="article" id="a1">
                             <p class="q row text-body border-bottom pb-3"><a href="#a1" class="text-body" style="font-weight: bold;">Q. 지원일정은 어떻게 되나요?</a></p>
