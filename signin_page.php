@@ -53,24 +53,79 @@
 ?>
        <div class="container mt-5">
         <div class="row mt-5">
-          <div class="col-sm mt-5">         
-          </div>
-        <div class="col-sm mt-5 text-center">
-             <!--회원가입 정보 입력 란-->
-            <form name="member" method="post" action="member_insert.php">
-                <!--id 입력 칸-->
-                <p class="mt-5">이메일</p>
-                <input class="border-warning" type="email" name="email"><br><br>
-                <!--비밀번호 입력 칸-->
-                <p>비밀번호</p>
-                <input class="border-warning" type="password" name="pw">
-                <!--제출 버튼-->
-                <div style="cursor:pointer" onclick="check_input()"><p>회원가입</p></div>                   
-                                                     
-            </form>            
-        </div>
-        <div class="col-sm mt-5">         
-        </div> 
+            <div class="col-sm mt-5">         
+            </div>
+            <div class="col-sm mt-5 text-center">
+                <form name="member" method="post" action="member_insert.php">
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">이메일</label>
+                        <div class="col-sm-8">
+                            <input type="email" name="email" class="form-control" id="staticEmail" value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-4 col-form-label text-white">비밀번호</label>
+                        <div class="col-sm-8">
+                            <input type="password" name="pw" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">이름</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="name" readonly class="form-control" id="staticEmail" value="홍길동">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">학과</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="major" class="form-control" id="staticEmail" value="동양어문학과">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">입학년도</label>
+                        <div class="col-sm-8">
+                            <input type="number" name="year" class="form-control" id="staticEmail" value="2020">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">성별</label>
+                        <div class="col-sm-8">
+                            <select name="gender" class="form-control">
+                                <option value="1">남자</option>
+                                <option value="2">여자</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label>
+                        <div class="col-sm-8">
+                            <input type="number" name="phone" class="form-control" id="staticEmail" value="01012341234">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">학년</label>
+                        <div class="col-sm-8">
+                            <select name="degree" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label text-white">복전/부전</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="doublemajor" readonly class="form-control" id="staticEmail" value="기계공학과">
+                        </div>
+                    </div>
+                    <!--제출 버튼-->
+                    <div style="cursor:pointer" class="btn btn-warning text-light mt-5" onclick="check_input()">회원가입</div>
+                </form>
+        
+            </div>
+            <div class="col-sm mt-5">         
+            </div> 
         </div>
     </div>
 </div>
