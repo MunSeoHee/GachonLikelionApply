@@ -117,11 +117,10 @@
         </div>
     </div>
     <div class="row bg-white mt-5">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row ml-5">
                 <div class="" style="font-weight: bold;">
-                    <h2 style="font-weight: bold; color:#707070;">FAQ</h2>
-                    <div class="border-bottom mr-5" style="max-width: 600px; height: 10px;"></div>
+                    <h2 style="font-weight: bold;">FAQ</h2>
                 </div>
             </div>
             <div class="row">   
