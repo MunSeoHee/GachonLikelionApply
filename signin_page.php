@@ -55,13 +55,10 @@
         <div class="row mt-5">
             <div class="col-sm mt-5">         
             </div>
-            <div class="col-sm mt-5 text-center">
-<<<<<<< HEAD:signin_page.html
-                
-                <form>
-=======
+            <div class="col-sm mt-5 text-center">               
+
                 <form name="member" method="post" action="member_insert.php">
->>>>>>> 24c13496de94ed422f804ea1506c407892c2bb87:signin_page.php
+
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">이메일</label>
                         <div class="col-sm-8">
