@@ -131,8 +131,8 @@
                     </div>
                     <ul class="faqBody ml-5 p-0">
                         <li class="article" id="a1">
-                            <p class="q row text-body border-bottom p-3"><a href="#a1">지원일정을 알려주세요</a></p>
-                            <p class="a container-fluid row bg-light text-muted p-3" style="font-size:90%">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a1">지원일정을 알려주세요</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%">
                                 지원 접수 기간은 3/23(월) 부터 3/27(금)까지입니다.<br>
                                 ●3.23 - 3.27 서류접수기간<br>
                                 ●3.29 서류합격발표<br>
