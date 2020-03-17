@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="row">   
-                <div class="faq">
+                <div class="faq container-fluid">
                     <div class="faqHeader">
                         <!--button type="button" class="showAll">답변 모두 여닫기</button-->
                     </div>
