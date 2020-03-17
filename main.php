@@ -14,7 +14,7 @@
 	<script>
 
     function apply(){
-        location.href = 'login_page.php';
+        location.href = 'index.php';
     };
  //자동스크롤함수//
  function startScroll(interval) {
