@@ -54,14 +54,14 @@
                 <?php
                     if(!$email){
                 ?>
-                        <div class="col"><a href="login_page.php">로그인</a></div>
+                        <div class="col d-flex justify-content-end"><a href="login_page.php">로그인</a></div>
                         <div class="col"><a href="signin_page.php">회원가입</a></div>
                         
                         
                 <?php
                     }
                     else{
-                ?>      <div class="col"><?=$email?>님</div>
+                ?>      <div class="col d-flex justify-content-end"><?=$email?>님</div>
                         <div class="col"><a href="logout.php">로그아웃</a></div>
                 <?php
                     }
