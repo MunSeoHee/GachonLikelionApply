@@ -35,7 +35,7 @@
     margin:5px 0 0 0;} */
     a:link { color: black; text-decoration: none;}
     a:visited { color: black; text-decoration: none;}
-    a:hover { color: black; text-decoration: none;}
+    a:hover { color: black!important; text-decoration: none!important;}
     .bg {
     border: 0;
     padding: 0; 
