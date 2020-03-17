@@ -120,7 +120,7 @@
         <div class="container mt-5">
             <div class="row ml-5">
                 <div class="" style="font-weight: bold;">
-                    <h2 style="font-weight: bold;">FAQ</h2>
+                    <h2 style="font-weight: bold; color:black;">FAQ</h2>
                 </div>
             </div>
             <div class="row">   
