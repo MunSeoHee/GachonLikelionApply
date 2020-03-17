@@ -131,12 +131,12 @@
                     <ul class="faqBody ml-5 p-0">
                         <li class="article" id="a1">
                             <p class="q row text-body border-bottom pb-3"><a href="#a1">Q. 지원일정은 어떻게 되나요?</a></p>
-                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:130%">
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 지원 접수 기간은 3/23(월) 부터 3/27(금)까지입니다.<br>
-                                ●3.23 - 3.27 서류접수기간<br>
-                                ●3.29 서류합격발표<br>
-                                ●4. 1 - 4. 3 면접<br>
-                                ●4. 5 최종 합격 발표<br>
+                                ● 3.23 - 3.27 서류접수기간<br>
+                                ● 3.29 서류합격발표<br>
+                                ● 4.01 - 4.03 면접<br>
+                                ● 4.05 최종 합격 발표<br>
                             </p>
                         </li>
                         <li class="article" id="a2">
