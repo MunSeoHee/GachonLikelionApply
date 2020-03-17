@@ -31,7 +31,7 @@
     border-top: 1px solid #bdbdbd;
     margin:5px 0 0 0;}
 
-    .bgimg {
+    .bg {
     border: 0;
     padding: 0; 
     background-color: black!important;
@@ -96,7 +96,7 @@
               </script>
        
 </head>
-<body class="bgimg">
+<body class="bg">
 <div class="container-fluid" style="height:100vh">
 <?php 
       include_once "nav.php"; 
