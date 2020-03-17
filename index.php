@@ -161,6 +161,69 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="container mt-5">
+            <div class="row ml-5">
+                <div class="" style="font-weight: bold;">
+                    <h2 style="font-weight: bold; color:black;">활동안내</h2>
+                </div>
+            </div>
+            <div class="row">   
+                <div class="faq container-fluid">
+                    <div class="faqHeader">
+                        <!--button type="button" class="showAll">답변 모두 여닫기</button-->
+                    </div>
+                    <ul class="faqBody ml-5 p-0">
+                        <li class="article" id="a1">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a1" style="font-weight: bold;">1. 주요 활동 및 일정</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
+                                정규 세션 : 매주 목(오후 6시 ~ 9시), 토(오후 3시 ~ 7시)<br>
+                                OT 및 첫 세션 : 4/9 (목) 오후 6시<br>
+                                중앙 해커톤 : 9월 말 예정<br>
+                                중앙 VC 피칭 : 12월 초 예정<br><br>
+                                멋쟁이 사자처럼 8기 활동은 1년 단위로 이루어집니다<br>
+                                2주에 1번씩 팀 프로젝트 진행하여 아이디어 회의 및 기획, 간단한 개발을 진행할 예정입니다
+                            </p>
+                        </li>
+                        <li class="article" id="a2">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a2" style="font-weight: bold;">2. 활동 규칙</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
+                                1. 모든 회원은 정규 세션 및 중앙 공식 행사에 참여해야 합니다<br>
+                                2. 모든 회원은 4회 이상 결석 시 제명되며, 제명당한 회원은 멋쟁이 사자차럼 가천대학교의 활동에 참여가 제한됩니다<br>
+                                3. 결석 사유에 대한 인정은 가천대학교 학칙에서 인정하는 결석 사유만 인정합니다<br>
+                                4. 병원 방문의 경우 '진단서' 혹은 '진료 확인서'를 운영진에게 확인시켜 줄 경우, 결석 사유로 인정합니다<br>
+                                5. 지각에 대한 패널티가 부가 될 수 있습니다
+                            </p>
+                        </li>
+                        <li class="article" id="a3">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a3" style="font-weight: bold;">3. 팀 프로젝트에 대하여</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
+                                매주 토요일은 팀프로젝트를 진행하는 날입니다<br>
+                                팀은 2주에 한 번씩 랜덤으로 매칭되며, 함께하는 운영진 또한 매번 변경됩니다<br>
+                                2주 동안 팀별로 모여 아이디어 회의 및 기획을 진행하고 기획한 아이디어를 간단한 코딩을 이용해 구체화시키는 활동을 진행할 예정입니다<br>
+                                목요일에 특별한 스터디 교육이 없을 경우, 목요일에도 팀 프로젝트를 진행 할 수 있습니다
+                            </p>
+                        </li>
+                        <li class="article" id="a4">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a4" style="font-weight: bold;">4. 커리큘럼에 대하여</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
+                                기존의 멋쟁이 사자처럼은 코딩 교육 동아리였다면, 이번 8기는 스타트업 사관학교를 지향하고 있습니다<br>
+                                코딩 교육과 더불어 간단한 디자인, 아이디어 및 기획, 창업과 관련된 교육도 진행 될 예정입니다<br><br>
+                                코딩의 경우<br>
+                                Python 언어 기반의 프레임워크인 Django를 사용하여 웹서비스를 제작하는 교육을 받게 됩니다<br>
+                                html, css, JS 등의 웹 프로그래밍 기초와 git, github, 협업에 관한 내용을 간단히 다루게 되며<br>
+                                웹 서비스를 실질적으로 사용 할 수 있도록 aws를 이용한 배포 방식에 대한 수업도 진행 될 예정입니다<br>
+                                <br>
+                                스타트업 사관학교를 지향하는 만큼 아이디어 및 기획과 네트워킹을 중심으로 운영됩니다<br>
+                                코딩 교육이 존재는 하지만, 팀 프로젝트가 더욱 중요시 될 것이며<br>
+                                아이디어를 실현시키기 위한 기본적인 코딩 교육을 제공해드리고, 더 나은 서비스를 개발하기 위한 개개인의 노력이 필요할 것이라 생각합니다
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
         
   </div>
