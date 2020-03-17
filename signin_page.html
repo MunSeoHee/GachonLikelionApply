@@ -56,8 +56,12 @@
             <div class="col-sm mt-5">         
             </div>
             <div class="col-sm mt-5 text-center">
+<<<<<<< HEAD:signin_page.html
                 
                 <form>
+=======
+                <form name="member" method="post" action="member_insert.php">
+>>>>>>> 24c13496de94ed422f804ea1506c407892c2bb87:signin_page.php
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">이메일</label>
                         <div class="col-sm-8">
@@ -73,25 +77,25 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">이름</label>
                         <div class="col-sm-8">
-                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                            <input type="text" name="name" readonly class="form-control" id="staticEmail" value="홍길동">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">학과</label>
                         <div class="col-sm-8">
-                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                            <input type="text" name="major" class="form-control" id="staticEmail" value="동양어문학과">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">입학년도</label>
                         <div class="col-sm-8">
-                            <input type="number" readonly class="form-control" id="staticEmail" value="2020">
+                            <input type="number" name="year" class="form-control" id="staticEmail" value="2020">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">성별</label>
                         <div class="col-sm-8">
-                            <select class="form-control">
+                            <select name="gender" class="form-control">
                                 <option value="1">남자</option>
                                 <option value="2">여자</option>
                             </select>
@@ -100,13 +104,13 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label>
                         <div class="col-sm-8">
-                            <input type="number" readonly class="form-control" id="staticEmail" value="01012341234">
+                            <input type="number" name="phone" class="form-control" id="staticEmail" value="01012341234">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">학년</label>
                         <div class="col-sm-8">
-                            <select class="form-control">
+                            <select name="degree" class="form-control">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -117,7 +121,7 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">복전/부전</label>
                         <div class="col-sm-8">
-                            <input type="text" readonly class="form-control" id="staticEmail" value="email@example.com">
+                            <input type="text" name="doublemajor" readonly class="form-control" id="staticEmail" value="기계공학과">
                         </div>
                         <div style="border: 1px solid #ced4da; border-radius: 5px; height: 300px; overflow: scroll; font-size: 10px; padding: 17px; line-height:1.9em;">
                             멋쟁이사자처럼 가천대학교는 「정보통신 이용촉진 및 정보보호등에 관한 법률」, 「개인정보보호법 제15조」 등 법령상의 개인정보보호 규정을 준수하며,
@@ -160,11 +164,18 @@
                         <br><br>
                         ○ 정보주체는 개인정보 수집·이용 동의를 거부 할 수 있으며, 이 경우 "주소"에서 제공하는 서비스를 이용하는데 제한이 있을 수 있습니다.
                     </div>
+<<<<<<< HEAD:signin_page.html
                     <label class="custom-control-label" for="jb-checkbox">개인정보 수집 및 이용에 동의합니다.</label><br><br>
     
                              <!--제출 버튼-->
                     <div style="cursor:pointer" onclick="check_input()"><p>회원가입</p></div>
                 </form>       
+=======
+                    <!--제출 버튼-->
+                    <div style="cursor:pointer" class="btn btn-warning text-light mt-5" onclick="check_input()">회원가입</div>
+                </form>
+        
+>>>>>>> 24c13496de94ed422f804ea1506c407892c2bb87:signin_page.php
             </div>
             <div class="col-sm mt-5">         
             </div> 

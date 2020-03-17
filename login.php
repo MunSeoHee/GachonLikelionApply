@@ -31,6 +31,7 @@
         else{
             session_start();
             $_SESSION["email"] = $row["email"];
+            $_SESSION["name"] = $row["name"];
             $_SESSION["pw"] = $row["pw"];
             $_SESSION["userlevel"] = $row["userlevel"];
             echo("

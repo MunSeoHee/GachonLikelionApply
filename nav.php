@@ -24,11 +24,11 @@
 <body>
 <?php
     session_start();
-    if(isset($_SESSION["email"])){
-        $email = $_SESSION["email"];
+    if(isset($_SESSION["name"])){
+        $name = $_SESSION["name"];
     }
     else{
-        $email = "";
+        $name = "";
     }
     if(isset($_SESSION["pw"])){
         $pw = $_SESSION["pw"];
@@ -52,7 +52,7 @@
             <div class="col text-right text-light">
                 <div class="row">
                 <?php
-                    if(!$email){
+                    if(!$name){
                 ?>
                         <div class="col d-flex justify-content-end"><a href="login_page.php">로그인</a></div>
                         <div class="col-lg-3 d-flex justify-content-start"><a href="signin_page.php">회원가입</a></div>
@@ -61,7 +61,7 @@
                 <?php
                     }
                     else{
-                ?>      <div class="col d-flex justify-content-end"><?=$email?>님</div>
+                ?>      <div class="col d-flex justify-content-end"><?=$name?>님</div>
                         <div class="col-lg-3 d-flex justify-content-start"><a href="logout.php">로그아웃</a></div>
                 <?php
                     }
