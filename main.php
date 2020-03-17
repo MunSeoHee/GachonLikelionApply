@@ -160,8 +160,8 @@ body {
         <li class="ghost">처</li>
         <li class="ghost">럼</li>
         <br><br><br><br>
-        <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div>
         <li class="ghost pl-5 ml-5"> <button type="button"  class="btn btn-dark ghost ml-5"onclick="apply()">APPLY</button></li>
+        <!-- <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div> -->
         
     <br> <br> <br><br><br>
     
