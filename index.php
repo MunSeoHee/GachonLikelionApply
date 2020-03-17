@@ -130,7 +130,7 @@
                     </div>
                     <ul class="faqBody ml-5 p-0">
                         <li class="article" id="a1">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a1" style="font-weight: bold;">Q. 지원일정은 어떻게 되나요?</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a1" class="text-body" style="font-weight: bold;">Q. 지원일정은 어떻게 되나요?</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 지원 접수 기간은 3/23(월) 부터 3/27(금)까지입니다.<br>
                                 ● 3.23 - 3.27 서류접수기간<br>
@@ -140,7 +140,7 @@
                             </p>
                         </li>
                         <li class="article" id="a2">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a2" style="font-weight: bold;">Q. 특별한 지원 자격이 있을까요?</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a2" class="text-body" style="font-weight: bold;">Q. 특별한 지원 자격이 있을까요?</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 특별한 지원 자격은 없습니다.<br>
                                 <br>
@@ -149,7 +149,7 @@
                             </p>
                         </li>
                         <li class="article" id="a3">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a3" style="font-weight: bold;">Q. 활동 일정을 알고싶어요</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a3" class="text-body" style="font-weight: bold;">Q. 활동 일정을 알고싶어요</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 매주 목요일엔 오후 6시 부터 9시 까지 스터디형태의 교육 세션이 있고<br>
                                 매주 토요일엔 오후 3시 부터 7시 까지 실전 코딩연습 세션이 있을 예정입니다.<br>
@@ -176,7 +176,7 @@
                     </div>
                     <ul class="faqBody ml-5 p-0">
                         <li class="article" id="a1">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a1" style="font-weight: bold;">1. 주요 활동 및 일정</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a1" class="text-body" style="font-weight: bold;">1. 주요 활동 및 일정</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 정규 세션 : 매주 목(오후 6시 ~ 9시), 토(오후 3시 ~ 7시)<br>
                                 OT 및 첫 세션 : 4/9 (목) 오후 6시<br>
@@ -187,7 +187,7 @@
                             </p>
                         </li>
                         <li class="article" id="a2">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a2" style="font-weight: bold;">2. 활동 규칙</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a2" class="text-body" style="font-weight: bold;">2. 활동 규칙</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 1. 모든 회원은 정규 세션 및 중앙 공식 행사에 참여해야 합니다<br>
                                 2. 모든 회원은 4회 이상 결석 시 제명되며, 제명당한 회원은 멋쟁이 사자차럼 가천대학교의 활동에 참여가 제한됩니다<br>
@@ -197,7 +197,7 @@
                             </p>
                         </li>
                         <li class="article" id="a3">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a3" style="font-weight: bold;">3. 팀 프로젝트에 대하여</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a3" class="text-body" style="font-weight: bold;">3. 팀 프로젝트에 대하여</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 매주 토요일은 팀프로젝트를 진행하는 날입니다<br>
                                 팀은 2주에 한 번씩 랜덤으로 매칭되며, 함께하는 운영진 또한 매번 변경됩니다<br>
@@ -206,7 +206,7 @@
                             </p>
                         </li>
                         <li class="article" id="a4">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a4" style="font-weight: bold;">4. 커리큘럼에 대하여</a></p>
+                            <p class="q row text-body border-bottom pb-3"><a href="#a4" class="text-body" style="font-weight: bold;">4. 커리큘럼에 대하여</a></p>
                             <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 기존의 멋쟁이 사자처럼은 코딩 교육 동아리였다면, 이번 8기는 스타트업 사관학교를 지향하고 있습니다<br>
                                 코딩 교육과 더불어 간단한 디자인, 아이디어 및 기획, 창업과 관련된 교육도 진행 될 예정입니다<br><br>
