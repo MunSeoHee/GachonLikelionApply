@@ -8,13 +8,13 @@
     <meta charset="utf-8">
   <style>
       /* FAQ */
-.faq{border-bottom:0px solid #ddd;margin:1em 0;}
-.faq .faqHeader{position:relative;zoom:1}
-.faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
-.faq .faqBody{margin:0;padding:0}
-.faq .faqBody .article{list-style:none}
-.faq .q{margin:}
-.faq .q a{display:block;text-align:left; 
+    .faq{border-bottom:0px solid #ddd;margin:1em 0;}
+    .faq .faqHeader{position:relative;zoom:1}
+    .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
+    .faq .faqBody{margin:0;padding:0}
+    .faq .faqBody .article{list-style:none}
+    .faq .q{margin:}
+    .faq .q a{display:block;text-align:left; 
     background:url("faq1_icon_q.png") no-repeat 0 0;
     padding:0 0 0 35px;
     font-size:18px;
@@ -22,7 +22,7 @@
     font-weight:bold;
     line-height: 27px;
     cursor:pointer;
-    margin: 10px 0; !important}
+    margin: 10px 0!important;}
 .faq .q a:hover, .faq .q a:active, .faq .q a:focus{}
 .faq .a{background:#f8f8f8 url("faq1_icon_a.png") no-repeat 40px 10px;padding: 10px 75px 10px 75px;
     font-size: 16px;
@@ -30,10 +30,11 @@
     line-height: 22px;
     border-top: 1px solid #bdbdbd;
     margin:5px 0 0 0;}
+
     .bgimg {
     border: 0;
     padding: 0; 
-    background-color: black;
+    background-color: black!important;
     min-height: 100%;    
 		}
      @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff%27') format('woff'); font-weight: normal; font-style: normal; }
