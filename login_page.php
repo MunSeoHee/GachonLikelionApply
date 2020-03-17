@@ -66,7 +66,7 @@
             <label for="exampleInputEmail1">이메일</label>
             <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
-          <div class="form-group" class="badge badge-warning">Warning</span>>
+          <div class="form-group" class="badge badge-warning"></span>
             <label for="exampleInputPassword1">비밀번호</label>
             <input name="pw" type="password" class="form-control" id="exampleInputPassword1">
           </div>              
