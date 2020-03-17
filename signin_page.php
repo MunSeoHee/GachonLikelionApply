@@ -123,8 +123,12 @@
                 </form>       
             </div>           
         </div>
-        <div class="row mt-5">
-            <div style="border: 1px solid #fff; border-radius: 5px; height: 300px; width: 600px; overflow: scroll; font-size: 10px; padding: 17px; line-height:1.9em ;background-color: white;">
+        <div class="container">
+            <div class="row">
+        <div class="col-sm">      
+       </div>
+      <div class="col-sm">
+      <div style="border: 1px solid #fff; border-radius: 5px; height: 300px; width: 600px; overflow: scroll; font-size: 10px; padding: 17px; line-height:1.9em ;background-color: white;">
                 멋쟁이사자처럼 가천대학교는 「정보통신 이용촉진 및 정보보호등에 관한 법률」, 「개인정보보호법 제15조」 등 법령상의 개인정보보호 규정을 준수하며,
             <br>
             관련 법령에 의거에 의거하여, 아래와 같은 내용으로 개인정보를 수집하고 있습니다.
@@ -169,8 +173,12 @@
                  <!--제출 버튼-->
         <div style="cursor:pointer" onclick="check_input()" class="mt-5"><p>회원가입<div class="text-center"></div></p></div>
         </div>
-        <div class="col-sm mt-5">         
-        </div> 
+    </div>
+     <div class="col-sm">    
+     </div>
+     </div>
+    </div>
+        
     </div>
 </div>
 </body>
