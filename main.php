@@ -160,7 +160,7 @@ body {
         <li class="ghost">처</li>
         <li class="ghost">럼</li>
         <br><br><br><br>
-        <div id="server_time" >현재 서버시간 : <?php echo date("Y-m-d H:i:s", time()); ?></div>
+        <div id="server_time" ><p>현재 서버시간 : </p><?php echo date("Y-m-d H:i:s", time()); ?></div>
         <li class="ghost pl-5 ml-5"> <button type="button"  class="btn btn-dark ghost ml-5"onclick="apply()">APPLY</button></li>
         
     <br> <br> <br><br><br>
