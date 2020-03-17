@@ -34,8 +34,8 @@
     border-top: 1px solid #bdbdbd;
     margin:5px 0 0 0;} */
     a:link { color: black; text-decoration: none;}
- a:visited { color: black; text-decoration: none;}
- a:hover { color: black; text-decoration: underline;}
+    a:visited { color: black; text-decoration: none;}
+    a:hover { color: black; text-decoration: none;}
     .bg {
     border: 0;
     padding: 0; 
