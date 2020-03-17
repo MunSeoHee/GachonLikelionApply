@@ -122,8 +122,8 @@
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">복전/부전</label>
                         <div class="col-sm-8">
                             <input type="text" name="doublemajor" readonly class="form-control" id="staticEmail" value="기계공학과">
-                        </div>
-                        <div style="border: 1px solid #ced4da; border-radius: 5px; height: 300px; overflow: scroll; font-size: 10px; padding: 17px; line-height:1.9em;">
+                        </div><br><br>
+                        <div style="border: 1px solid #fff; border-radius: 5px; height: 300px; overflow: scroll; font-size: 10px; padding: 17px; line-height:1.9em ;background-color: white;">
                             멋쟁이사자처럼 가천대학교는 「정보통신 이용촉진 및 정보보호등에 관한 법률」, 「개인정보보호법 제15조」 등 법령상의 개인정보보호 규정을 준수하며,
                         <br>
                         관련 법령에 의거에 의거하여, 아래와 같은 내용으로 개인정보를 수집하고 있습니다.
@@ -164,22 +164,14 @@
                         <br><br>
                         ○ 정보주체는 개인정보 수집·이용 동의를 거부 할 수 있으며, 이 경우 "주소"에서 제공하는 서비스를 이용하는데 제한이 있을 수 있습니다.
                     </div>
-<<<<<<< HEAD:signin_page.html
-                    <label class="custom-control-label" for="jb-checkbox">개인정보 수집 및 이용에 동의합니다.</label><br><br>
-    
+                    <label class="custom-control-label" for="jb-checkbox">개인정보 수집 및 이용에 동의합니다.</label><br><br>    
                              <!--제출 버튼-->
                     <div style="cursor:pointer" onclick="check_input()"><p>회원가입</p></div>
                 </form>       
-=======
-                    <!--제출 버튼-->
-                    <div style="cursor:pointer" class="btn btn-warning text-light mt-5" onclick="check_input()">회원가입</div>
-                </form>
-        
->>>>>>> 24c13496de94ed422f804ea1506c407892c2bb87:signin_page.php
-            </div>
-            <div class="col-sm mt-5">         
-            </div> 
+            </div>           
         </div>
+        <div class="col-sm mt-5">         
+        </div> 
     </div>
 </div>
 </body>
