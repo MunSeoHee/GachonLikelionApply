@@ -160,19 +160,19 @@ body {
         <li class="ghost">처</li>
         <li class="ghost">럼</li>
         <br><br><br><br>
-        <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div>
         <li class="ghost pl-5 ml-5"> <button type="button"  class="btn btn-dark ghost ml-5"onclick="apply()">APPLY</button></li>
         
-    <br> <br> <br><br><br>
-    
-    <p  font-size: 5em; >
-      모집 : 2020.00.00~2020.00.00 00:00 <br>
-      서류 및 면접 : 2020.00.00~2020.00.00 <br>
-      공식 오리엔테이션 :2020.00.00 
-   </p>
+        <br> <br> <br><br><br>
+        
+        <p  font-size: 5em; >
+          모집 : 2020.00.00~2020.00.00 00:00 <br>
+          서류 및 면접 : 2020.00.00~2020.00.00 <br>
+          공식 오리엔테이션 :2020.00.00 
+        </p>
       </ul>
-
+      
     </div>
+    <!-- <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div> -->
 
 
 </body>
