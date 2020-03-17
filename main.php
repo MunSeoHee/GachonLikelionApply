@@ -17,32 +17,42 @@
         location.href = 'login_page.php';
     };
  //자동스크롤함수//
- function startScroll(interval) {
-    setInterval("autoScroll()", interval);
-}
+//  function startScroll(interval) {
+//     setInterval("autoScroll()", interval);
+// }
  
-function autoScroll() {
-    window.scrollBy(0,20); // 20픽셀 위로 스크롤
-}
-  //자동스크롤함수//
+// function autoScroll() {
+//     window.scrollBy(0,20); // 20픽셀 위로 스크롤
+// }
+//   //자동스크롤함수//
 
 
 
+// //스크롤펼치는함수//
+// $(function() {
+//   var text = $(".text");
+//   $(window).scroll(function() {
+//     var scroll = $(window).scrollTop();
+
+//     if (scroll) {
+//       text.removeClass("hidden");
+//     } else {
+//       text.addClass("hidden");
+//     }
+//   });
+// });
 //스크롤펼치는함수//
-$(function() {
-  var text = $(".text");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll) {
-      text.removeClass("hidden");
-    } else {
-      text.addClass("hidden");
-    }
-  });
+$(document).ready(function(){
+    $("#my-btn").trigger("click");
 });
-//스크롤펼치는함수//
 
+  
+  function check(){
+    var text = $(".text");
+ 
+    text.removeClass("hidden");
+  
+  };
 //서버시간 표시
 var srv_time = "<?php print date("F d, Y H:i:s", time()); ?>";
 var now = new Date(srv_time);
