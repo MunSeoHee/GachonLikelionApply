@@ -140,8 +140,8 @@
                             </p>
                         </li>
                         <li class="article" id="a2">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a2">지원자격을 알고싶어요</a></p>
-                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a2" style="font-weight: bold;">Q. 특별한 지원 자격이 있을까요?</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 특별한 지원 자격은 없습니다.<br>
                                 <br>
                                 나이와 학년, 전공에 상관없이 모두 지원이 가능합니다.<br>
@@ -149,8 +149,8 @@
                             </p>
                         </li>
                         <li class="article" id="a3">
-                            <p class="q row text-body border-bottom pb-3"><a href="#a3">활동 일정을 알고싶어요</a></p>
-                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a3" style="font-weight: bold;">Q. 활동 일정을 알고싶어요</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
                                 매주 목요일엔 오후 6시 부터 9시 까지 스터디형태의 교육 세션이 있고<br>
                                 매주 토요일엔 오후 3시 부터 7시 까지 실전 코딩연습 세션이 있을 예정입니다.<br>
                                 방학 중에는 팀프로젝트와 중간 발표 등 각종 행사가 진행됩니다.<br>
