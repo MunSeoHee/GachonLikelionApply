@@ -1,52 +1,22 @@
-<!Doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<!-- 모바일 뷰포트 -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
-		maximum-scale=1.0, minimum-scale=1.0">
-		
-		</script>
-		<style>
-			.bgimg {
-				border: 0;
-				padding: 0; 
-				background-image: url(\lion.jpg);
-				min-height: 100%;
-				background-position: center;
-				background-size: cover;
-			}
-			
-			@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+<Doctype html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 			@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
 			h1{
 				color:rgba(243, 212, 73, 0.904);
 				font-family:'GmarketSansBold'; 
+        
 			}
 			p{
 				font-size: 120%;
 				color:rgba(243, 212, 73, 0.904);
 				font-family: 'yg-jalnan'; 
 			}
-			#exampleFormControlInput1
-			{
-				margin:0;
-			}
-		
-			.text-warning
-			{
-				margin:0;
-			}
-			.hr
-			{
-				color:rgb(243, 212, 73);
-			}
-   
 
+<<<<<<< HEAD
       .wrap {
         position: relative;}
 
@@ -304,34 +274,69 @@ $('textarea#question8').keyup(function(){
 bytesHandler(this);
 });
 });
+=======
 
-function getTextLength(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
+.base
+{
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color:aqua;
+  height:5rem; width:5rem;
+ margin-top:10rem;
 }
 
-function bytesHandler(obj){
-var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+div#side-left
+{
+width:20%;
+height:100%;
+float:left;
+>>>>>>> e9aeeaf9ce9fdd0ee3769bd338bb8eadc57c1b97
+
 }
-///
+div#side-middle
+{
+  width:60%;
+  height:100%;
+float:left;
+  background-color: rgb(60, 92, 53);
+}
+.middle-1
+{
+  height:20%;
+}
+.middle-2
+{
+  border-width:0.2rem;
+  height:10rem;
+  width:10rem;
+  border-style:solid;
+  border-color:black;
+  padding:20rem;
+  margin-top:3rem;
+}
+.middle-3
+{
+  height:20%;
+}
+div#side-right
+{
+  width:20%;
+  height:100%;
+  float:left;
 
+}
 
+</style>
 
-	</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<script>
 
-	<title>회원가입</title>
+</script>
 
-	</head>
-
+<<<<<<< HEAD
 	<body class="bgimg">
 		<!--배경이미지-->
 		<div class=" container-fluid">
@@ -433,30 +438,37 @@ $('.bytes').text(getTextLength(text));
               <span class="counter bytes">1000</span>
               
             </div>
+=======
+  </head>
 
-
-
-              <!--제출버튼-->
-              <div class ="row">
-              <div class="col"></div>
-              <div class="col">
-              <div class="btn btn-secondary btn-lg" onclick="check_input()">제출</div>
-              </div>
-              <div class="col"></div>
-              </div>
-            </div>
+  <body>
+<div id="side-left"class="row" ></div>>
+<div id="side-middle"class="row">
+<div class="middle-1"></div>
+<div class="middle-2 !important">
+<div class="row">
+<h1>THANKYOU</h1>
 </div>
-        
-					</form>	
-      
-          
-				
-			</div>
 
-	</div><!--배경사진-->
-	</body>
+<div class="row">
+  <h1>THANKYOU</h1>
+</div>
+
+<div class="row"></div>
+
+<h1>THANKYOU</h1>
+>>>>>>> e9aeeaf9ce9fdd0ee3769bd338bb8eadc57c1b97
 
 
 
-			
+</div>
+<div class="middle-3"></div>
+
+
+
+
+
+</div>>
+<div id="side-right"class="row"></div>>
+  </body>
 </html>

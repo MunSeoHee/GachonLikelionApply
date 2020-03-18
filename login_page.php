@@ -24,16 +24,19 @@
     .bgimg {
     border: 0;
     padding: 0; 
-    background-image: url(\lion.jpg);
+    background-color: black;
+    /* background-image: url(\lion.jpg); */
     min-height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat : no-repeat;
 		}
-     @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff%27') format('woff'); font-weight: normal; font-style: normal; }
-        @font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff%27') format('woff'); font-weight: normal; font-style: normal; }
-        h2,label,h1{
-            color:rgba(243, 212, 73, 0.904);
+    @font-face { font-family: 'MapoHongdaeFreedom'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoHongdaeFreedomA.woff') format('woff'); font-weight: normal; font-style: normal; }
+     	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+    	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+	h2,label,h1,.btn{
+            /* color:rgba(243, 212, 73, 0.904); */
+            color:white;
             font-family:'GmarketSansBold'; 
         }
         p{
@@ -50,28 +53,31 @@
       include_once "nav.php"; 
 ?>
   <div class="container">
+    <div class="row" style="height:20vh"></div>
     <div class="row">
       <div class="col-sm">
        
       </div>
-      <div class="col-sm text-center">
-        <h2>
-            멋쟁이 사자처럼 <br> 지원하기전에
+      <div class="col-sm text-center ml-5 mr-5">
+        <div class="row">
+          <img src="https://startup.likelion.org/img/logo.png" class="container">
+        </div>
+        <h2 class="mt-3">
+            Sign in
         </h2>
-        <h1>
-        ㅡ
-        </h1>
-        <form name="user" method="post" action="login.php">
+        
+        <form name="user" method="post" action="login.php" class="mt-5">
           <div class="form-group text-center">
-            <label for="exampleInputEmail1">이메일</label>
-            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- <label for="exampleInputEmail1 text-white">이메일</label> -->
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일">
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">비밀번호</label>
-            <input name="pw" type="password" class="form-control" id="exampleInputPassword1">
-          </div>              
-          <a onclick="check_input()" class="btn btn-dark text-light">로그인</a>
-          <a href="signin_page.php" class="btn btn-dark">회원가입</a>
+          <div class="form-group" class="badge badge-warning"></span>
+            <!-- <label for="exampleInputPassword1 text-white" >비밀번호</label> -->
+            <input name="pw" type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
+          </div>
+          <div class="form-group" class="badge badge-warning"></span>
+            <a onclick="check_input()" class="btn btn-warning text-light container-fluid">로그인</a>
+          </div>               
         </form>
       </div>
       <div class="col-sm">        

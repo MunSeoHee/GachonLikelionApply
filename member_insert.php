@@ -2,6 +2,13 @@
     include_once 'settings.php';
     $email = $_POST["email"];
     $pw = $_POST["pw"];
+    $name = $_POST["name"];
+    $major = $_POST["major"];
+    $year = $_POST["year"];
+    $gender = $_POST["gender"];
+    $phone = $_POST["phone"];
+    $degree = $_POST["degree"];
+    $doublemajor = $_POST["doublemajor"];
 
     $sql = "select * from user where email='$email'";
     $result = mysqli_query($con, $sql);
@@ -17,7 +24,7 @@
     //아이디가 DB에 없을 경우
     else{
         //DB에 user 정보 삽입
-        $sql = "insert into user (email, pw, userlevel) values ('$email', '$pw', 1)";
+        $sql = "insert into user (email, pw, userlevel, name, major, year, gender, phone, degree, doublemajor) values ('$email', '$pw', 1, '$name', '$major', '$year', '$gender', '$phone', '$degree', '$doublemajor')";
         $result = mysqli_query($con, $sql);
         //결과가 성공적일 경우
         if($result){
@@ -25,7 +32,7 @@
             echo "<script> alert('가입 되었습니다.');</script>";
             echo " 
             <script>
-                location.href = 'main.php';
+                location.href = 'index.php';
             </script>
         ";
         }

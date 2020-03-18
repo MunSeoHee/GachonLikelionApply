@@ -46,8 +46,8 @@
             }
     </style>  
 </head>
-<body>
-<div class="bgimg container-fluid" style="height:100vh">
+<body class="bgimg">
+<div class="container" style="height:100vh">
 <?php 
       include_once "nav.php"; 
 ?>
@@ -99,7 +99,7 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label>
                         <div class="col-sm-8">
-                            <input type="number" name="phone" class="form-control" id="staticEmail" value="01012341234">
+                            <input type="text" name="phone" class="form-control" id="staticEmail" value="01012341234">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -118,15 +118,57 @@
                         <div class="col-sm-8">
                             <input type="text" name="doublemajor" readonly class="form-control" id="staticEmail" value="기계공학과">
                         </div>
+                        <div style="border: 1px solid #ced4da; border-radius: 5px; height: 300px; overflow: scroll; font-size: 10px; padding: 17px; line-height:1.9em;">
+                            멋쟁이사자처럼 가천대학교는 「정보통신 이용촉진 및 정보보호등에 관한 법률」, 「개인정보보호법 제15조」 등 법령상의 개인정보보호 규정을 준수하며,
+                        <br>
+                        관련 법령에 의거에 의거하여, 아래와 같은 내용으로 개인정보를 수집하고 있습니다.
+                        <br>
+                        지원자는 아래 내용을 자세히 읽어 보시고, 모든 내용을 이해하신 후에 동의 여부를 결정해 주시기 바랍니다.
+                        <br>
+                        이용자가 제공한 모든 정보는 다음의 목적을 위해 활용되며, 하기 목적 이외의 용도로는 사용되지 않습니다.
+                        <br><br>
+                        1. 개인정보의 수집방법 및 이용목적
+                        <br><br>
+                        ○ 수집방법 : "주소" 신규가입 및 기존사용자를 통한 수집
+                        <br>
+                        ○ 이용목적 : "주소"의 회원가입 및 개인정보 관리, 지원서 작성과 수정 등 서비스 이용에 필요한 최소한의 정보를 수집합니다.
+                        <br>
+                        ○ 시스템목록 : 멋쟁이사자처럼 8기 가천대학교 신입회원 선발
+                        <br><br>
+                        2. 개인정보의 수집항목
+                        <br><br>
+                        멋쟁이사자처럼 가천대학교에서는 기본적인 회원 서비스 제공을 위한 필수정보와,
+                        <br>
+                        정보주체 각각의 기호와 필요에 맞는 서비스를 제공하기 위한 선택정보로 구분하여 다음의 정보를 수집하고 있습니다.
+                        <br>
+                        ○ 수집항목 : 성명, 아이디, 비밀번호, 연락처, 이메일주소, 전공, 누적학기, 희망면접일
+                        <br>
+                        ○ "주소"을 이용할 경우 접속IP, 방문일시 등의 정보는 시스템을 통하여 자동적으로 수집·저장 됩니다.
+                        <br><br>
+                        3. 개인정보의 보유 및 이용기간
+                        <br><br>
+                        멋쟁이사자처럼 가천대학교에서는 정보주체의 회원 가입일로부터 서비스를 제공하는 기간 동안에 한하여
+                        <br>
+                        멋쟁이사자처럼 가천대학교 리크루팅 서비스를 이용하기 위한 최소한의 개인정보를 보유 및 이용하게 됩니다.
+                        <br>
+                        ○ 회원가입 등을 통해 개인정보의 수집·이용, 제공 등에 대해 동의하신 내용은 언제든지 철회 할 수 있습니다.
+                        <br>
+                        ○ 회원 탈퇴를 요청하거나 개인정보의 수집 및 이용에 대한 동의를 철회하는 경우, 보유/이용기간이 종료한 경우 등의 사유발생시 당해 개인정보를 지체없이 파기합니다.
+                        <br><br>
+                        4. 동의 거부 권리 안내
+                        <br><br>
+                        ○ 정보주체는 개인정보 수집·이용 동의를 거부 할 수 있으며, 이 경우 "주소"에서 제공하는 서비스를 이용하는데 제한이 있을 수 있습니다.
                     </div>
+                    <label class="custom-control-label" for="jb-checkbox">개인정보 수집 및 이용에 동의합니다.</label><br><br>
+
                     <!--제출 버튼-->
                     <div style="cursor:pointer" class="btn btn-warning text-light mt-5" onclick="check_input()">회원가입</div>
                 </form>
-        
             </div>
-            <div class="col-sm mt-5">         
-            </div> 
+            
         </div>
+        <div class="col-sm mt-5">         
+        </div> 
     </div>
 </div>
 </body>
