@@ -28,10 +28,10 @@
 <nav class="navbar navbar-light container-fluid p-0" style="background-color: black;">
     <div class="container-fluid p-0">
         <div class="row w-100 d-flex justify-content-between">
-            <div class="col-sm">
+            <div class="col-lg-9">
                 <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
             </div>
-            <div class="col-sm text-right text-light">
+            <div class="col-lg-3 text-right text-light">
                 <div class="row">
                 <?php
                     if(!$name){
