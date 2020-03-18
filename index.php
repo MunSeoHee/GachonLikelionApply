@@ -228,11 +228,12 @@
         
   </div>
 </div>
-<?php 
-      include_once "footer.html"; 
-?>
+
 
 </body>
+<footer><?php 
+      include_once "footer.html"; 
+?></footer>
 </html>
 
 
