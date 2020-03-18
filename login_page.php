@@ -63,7 +63,7 @@
           <img src="https://startup.likelion.org/img/logo.png" class="container">
         </div>
         <h2 class="mt-3">
-            Sign in
+            login
         </h2>
         
         <form name="user" method="post" action="login.php" class="mt-5">
