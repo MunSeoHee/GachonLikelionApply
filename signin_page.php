@@ -134,8 +134,8 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="container-fluid">
-                            <input type="number" name="year" class="form-control" id="staticEmail" placeholder="입학년도">
+                        <div class="container-fluid"> 
+                            <input type="number" name="year" class="form-control" id="staticEmail" placeholder="입학년도 (20XX)">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="container-fluid">
-                            <input type="number" name="phone" class="form-control" id="staticEmail" placeholder="전화번호">
+                            <input type="number" name="phone" class="form-control" id="staticEmail" placeholder="전화번호(숫자만)">
                         </div>
                     </div>
                     <div class="form-group row">
