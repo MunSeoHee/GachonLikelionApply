@@ -58,7 +58,7 @@
       <div class="col-sm">
        
       </div>
-      <div class="col-sm text-center">
+      <div class="col-sm text-center ml-5 mr-5">
         <div class="row">
           <img src="https://startup.likelion.org/img/logo.png" class="container">
         </div>
