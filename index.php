@@ -227,9 +227,16 @@
         
         
   </div>
+  <footer>
+  <div class="row d-flex justify-content-end p-3 container-fluid" style="background-color: black; font-family: none;">
+    <div class="text-white text-right">Copyright 2020. GachonLikelion, All Rights Reserved.<br>video by 멋쟁이사자처럼 한국항공대학교</div>
+    </div>
+</footer>
 </div>
 
+
 </body>
+
 </html>
 
 

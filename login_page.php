@@ -54,7 +54,7 @@
 ?>
   <div class="container">
     <div class="row" style="height:20vh"></div>
-    <div class="row">
+    <div class="row" style="height:67vh">
       <div class="col-sm">
        
       </div>
@@ -63,7 +63,7 @@
           <img src="https://startup.likelion.org/img/logo.png" class="container">
         </div>
         <h2 class="mt-3">
-            Sign in
+            login
         </h2>
         
         <form name="user" method="post" action="login.php" class="mt-5">
@@ -83,7 +83,11 @@
       <div class="col-sm">        
       </div>
     </div>
-  </div>           
+  </div>  
+  <?php 
+      include_once "footer.html"; 
+?>
+         
 </body>
 </html>
 

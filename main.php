@@ -141,7 +141,7 @@ body {
 <body>
 <body class="bgimg" id="my-btn" onclick ="check()"><!-- onload="startScroll(0) ">-->
   <div class="row" style="height:20vh"></div>
-<div style="overflow:auto" class="mt-5">
+<div style="overflow:auto; height:65vh" class="mt-5">
   <!-- 깐지글자 -->
       <ul class="text hidden container mt-5">
         <div class="row d-flex justify-content-center">
@@ -182,6 +182,12 @@ body {
     </div>
 
 
+
 </body>
+<footer>
+<?php 
+      include_once "footer.html"; 
+?>
+</footer>
 
 </html>
