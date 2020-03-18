@@ -56,22 +56,22 @@
       </div>
       <div class="col-sm text-center">
         <h2>
-            멋쟁이 사자처럼 <br> 지원하기전에
+            로그인
         </h2>
         <h1>
         ㅡ
         </h1>
         <form name="user" method="post" action="login.php">
           <div class="form-group text-center">
-            <label for="exampleInputEmail1">이메일</label>
+            <label for="exampleInputEmail1 text-white">이메일</label>
             <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="form-group" class="badge badge-warning"></span>
-            <label for="exampleInputPassword1">비밀번호</label>
+            <label for="exampleInputPassword1 text-white">비밀번호</label>
             <input name="pw" type="password" class="form-control" id="exampleInputPassword1">
           </div>              
-          <a onclick="check_input()" class="btn btn-dark text-light">로그인</a>
-          <a href="signin_page.php" class="btn btn-dark">회원가입</a>
+          <a onclick="check_input()" class="btn btn-warning text-light">로그인</a>
+          <a href="signin_page.php" class="btn btn-warning text-white">회원가입</a>
         </form>
       </div>
       <div class="col-sm">        
