@@ -180,6 +180,9 @@ body {
       
      
     </div>
+    <?php 
+      include_once "footer.html"; 
+?>
 
 
 </body>

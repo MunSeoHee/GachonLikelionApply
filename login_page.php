@@ -83,7 +83,11 @@
       <div class="col-sm">        
       </div>
     </div>
-  </div>           
+  </div>  
+  <?php 
+      include_once "footer.html"; 
+?>
+         
 </body>
 </html>
 

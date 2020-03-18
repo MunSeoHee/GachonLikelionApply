@@ -148,7 +148,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="container-fluid">
-                            <input type="number" name="phone" class="form-control" id="staticEmail" placeholder="전화번호(숫자만)">
+                            <input type="number" name="phone" class="form-control" id="staticEmail" placeholder="전화번호 (숫자만)">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -230,6 +230,10 @@
         </div> 
     </div>
 </div>
+<?php 
+      include_once "footer.html"; 
+?>
+
 </body>
 </html>
 
