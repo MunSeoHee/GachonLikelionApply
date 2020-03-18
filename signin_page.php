@@ -22,6 +22,42 @@
             document.member.pw.focus();
             return;
         }
+        if(!document.member.name.value){
+            alert("이름을 입력해주세요");
+            document.member.name.focus();
+            return;
+        }
+        if(!document.member.major.value){
+            alert("학과를 입력해주세요");
+            document.member.major.focus();
+            return;
+        }
+        if(!document.member.year.value){
+            alert("입학년도를 입력해주세요");
+            document.member.year.focus();
+            return;
+        }
+        if(!document.member.gender.value){
+            alert("성별을 입력해주세요");
+            document.member.gender.focus();
+            return;
+        }
+        if(!document.member.phone.value){
+            alert("전화번호를 입력해주세요");
+            document.member.phone.focus();
+            return;
+        }
+        if(!document.member.degree.value){
+            alert("학년을 입력해주세요");
+            document.member.degree.focus();
+            return;
+        }
+        if(!document.member.check.value){
+            alert("개인정보 수집 및 이용 약관에 동의해주세요");
+            document.member.check.focus();
+            return;
+        }
+
         document.member.submit();
     };
     
@@ -78,37 +114,31 @@
                 </div>
                 <form name="member" method="post" action="member_insert.php" class="container-fluid mt-5">
                     <div class="form-group row ">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">이메일</label> -->
                         <div class="container-fluid">
                             <input type="email" name="email" class="form-control" id="staticEmail" placeholder="이메일">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="inputPassword" class="col-sm-4 col-form-label text-white">비밀번호</label> -->
                         <div class="container-fluid">
                             <input type="password" name="pw" class="form-control" id="inputPassword" placeholder="비밀번호">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">이름</label> -->
                         <div class="container-fluid">
                             <input type="text" name="name" class="form-control" id="staticEmail" placeholder="이름">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">학과</label> -->
                         <div class="container-fluid">
                             <input type="text" name="major" class="form-control" id="staticEmail" placeholder="학과">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">입학년도</label> -->
                         <div class="container-fluid">
                             <input type="number" name="year" class="form-control" id="staticEmail" placeholder="입학년도">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">성별</label> -->
                         <div class="container-fluid">
                             <select name="gender" class="form-control">
                                 <option value="1">남자</option>
@@ -117,13 +147,11 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label> -->
                         <div class="container-fluid">
                             <input type="text" name="phone" class="form-control" id="staticEmail" placeholder="전화번호">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">학년</label> -->
                         <div class="container-fluid">
                             <select name="degree" class="form-control">
                                 <option value="1">1학년</option>
@@ -134,14 +162,13 @@
                         </div>
                     </div>
                     <div class="form-group row ">
-                        <!-- <label for="staticEmail" class="col-sm-4 col-form-label text-white">복전/부전</label> -->
                         <div class="container-fluid">
                             <input type="text" name="doublemajor" class="form-control" id="staticEmail" placeholder="복부전 학과 (없을 경우 공백)">
                         </div>
                     </div>
                     <div class="form-group row d-flex justify-content-center">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="Check1" name="check">
                             <label class="text-white"><a href="javascript:doDisplay();" class="border-bottom">개인정보 수집 및 이용</a>에 동의합니다.</label>
                         </div>
                     </div>
