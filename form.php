@@ -316,7 +316,7 @@ $('.bytes').text(getTextLength(text));
 		<div class=" container-fluid">
 		<?php 
 			include_once "nav.php"; 
-			if($email==""){
+			if($name==""){
 				echo("
 					<script>
 						alert('지원서 작성은 로그인 후 해주세요!');
