@@ -67,7 +67,7 @@ function server_time()
 .bgimg {
 				border: 0;
 				padding: 0; 
-				background-image: url(\wal.jpg);
+				background-image: url(hack.png);
 				min-height: 100%;
 				background-position: center;
 				background-size: cover;
