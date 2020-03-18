@@ -148,7 +148,7 @@
                     </div>
                     <div class="form-group row">
                         <div class="container-fluid">
-                            <input type="text" name="phone" class="form-control" id="staticEmail" placeholder="전화번호">
+                            <input type="number" name="phone" class="form-control" id="staticEmail" placeholder="전화번호">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -168,7 +168,7 @@
                     </div>
                     <div class="form-group row d-flex justify-content-center">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Check1" name="check">
+                            <input class="form-check-input" type="checkbox" id="Check1" name="check">
                             <label class="text-white"><a href="javascript:doDisplay();" class="border-bottom">개인정보 수집 및 이용</a>에 동의합니다.</label>
                         </div>
                     </div>
