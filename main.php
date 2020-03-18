@@ -129,7 +129,7 @@ body {
   max-width: 0;
 }
 .gachon{
-  font-size:10rem!important;
+  font-size:0.5rem!important;
 }
 </style>
 
