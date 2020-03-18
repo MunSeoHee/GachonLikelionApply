@@ -142,7 +142,7 @@
                     <div class="form-group row d-flex justify-content-center">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="text-white"><a href="javascript:doDisplay();">개인정보 수집 및 이용</a>에 동의합니다.</label>
+                            <label class="text-white"><a href="javascript:doDisplay();" class="border-bottom">개인정보 수집 및 이용</a>에 동의합니다.</label>
                         </div>
                     </div>
                     <div class="form-group row " id="myDIV" style="display: none; ">
