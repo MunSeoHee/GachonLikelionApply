@@ -54,7 +54,7 @@
 ?>
   <div class="container">
     <div class="row" style="height:20vh"></div>
-    <div class="row">
+    <div class="row" style="height:67vh">
       <div class="col-sm">
        
       </div>
