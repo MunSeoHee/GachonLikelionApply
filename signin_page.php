@@ -52,7 +52,7 @@
             document.member.degree.focus();
             return;
         }
-        if(!document.member.check.value){
+        if($("input:checkbox[name=check]").is(":checked") == false) {
             alert("개인정보 수집 및 이용 약관에 동의해주세요");
             document.member.check.focus();
             return;
@@ -168,7 +168,7 @@
                     </div>
                     <div class="form-group row d-flex justify-content-center">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="Check1" name="check">
+                            <input class="form-check-input" type="checkbox" id="check" name="check">
                             <label class="text-white"><a href="javascript:doDisplay();" class="border-bottom">개인정보 수집 및 이용</a>에 동의합니다.</label>
                         </div>
                     </div>
