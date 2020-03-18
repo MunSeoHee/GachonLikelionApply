@@ -184,7 +184,10 @@ body {
 
 
 </body>
+<footer>
 <?php 
       include_once "footer.html"; 
 ?>
+</footer>
+
 </html>
