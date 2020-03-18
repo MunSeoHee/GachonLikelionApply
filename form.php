@@ -45,7 +45,27 @@
 			{
 				color:rgb(243, 212, 73);
 			}
-	</style>
+   
+/* 박스 스펠링카운터 */
+      .wrap {
+    position: relative;
+            }
+.wrap span {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+            }
+
+#counter {
+  background:rgba(248, 73, 73, 0.5);
+  border-radius: 0.5rem;
+  padding: 0 .5rem 0 .5rem;
+  font-size: 0.75rem;
+}
+/* 박스 스펠링카운터 */
+  </style>
+  
+
 	<script>
 		$(document).ready(function(){ 
 			$('#input_text1').keyup(function(){ 
@@ -117,25 +137,171 @@
             return;
         }
         document.written.submit();
-    }
-////
-<textarea style="width:600px;" class="DOC_TEXT" name="DOC_TEXT" placeholder="선택하신 서류사항 항목에 대한 내용을 200자 이내로 기재해주세요.">
-</textarea>
-<br />
-<span style="color:#aaa;" id="counter">(0 / 최대 200자)</span>
+    };
 
-//서류사항 textarea 체크
-$('.DOC_TEXT').keyup(function (e){
-    var content = $(this).val();
-    $('#counter').html("("+content.length+" / 최대 200자)");    //글자수 실시간 카운팅
-
-    if (content.length > 200){
-        alert("최대 200자까지 입력 가능합니다.");
-        $(this).val(content.substring(0, 200));
-        $('#counter').html("(200 / 최대 200자)");
-    }
+// 스펠링카운터 함수   1
+$(function(){
+$("textarea#question1").keyup(function(){
+bytesHandler(this);
 });
-////
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$(".byte").text(getTextLength(text));
+}
+// 스펠링카운터 함수   2
+$(function(){
+$("textarea#question2").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수   3
+$(function(){
+$("textarea#question3").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수   4
+$(function(){
+$("textarea#question4").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수  5 
+$(function(){
+$("textarea#question5").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+
+// 스펠링카운터 함수   6
+$(function(){
+$("textarea#question6").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수   8
+$(function(){
+$("textarea#question8").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수  
 
 
 
@@ -151,7 +317,7 @@ $('.DOC_TEXT').keyup(function (e){
 		<div class=" container-fluid">
 		<?php 
 			include_once "nav.php"; 
-			if(!$_SESSION["email"]){
+			if($email==""){
 				echo("
 					<script>
 						alert('지원서 작성은 로그인 후 해주세요!');
@@ -164,105 +330,94 @@ $('.DOC_TEXT').keyup(function (e){
 			<div class="row d-flex justify-content-center">
 				
 				<div class="col-lg-4">
-					<h1>회원가입</h1>
+					<h1>가천대학교 멋쟁이 사자처럼</h1>
 					<hr></hr>
 					<form name="written" method="post" action="form_insert.php">
 						<!--색상 class="text-warning"-->
 						<!--이름-->
-						<div class="form-group mb-4">
-							
-							<label for="exampleFormControlInput1" class="text-warning"><p>이름</p></label>
-							<input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="홍길동">
-							
-						</div>
-						<div class="form-group mb-4">
-							<label for="exampleFormControlInput1" class="text-warning"><p>학과</p></label>
-							<input type="text" name="major" class="form-control" id="exampleFormControlInput1" placeholder="학과">
-						</div>
-						
-						<!--입학년도-->
-						<div class="form-group mb-4" >
-				
-						<label for="exampleFormControlInput1"class="text-warning"><p>입학년도</p></label>
-						<input type="number" name="year" class="form-control" id="exampleFormControlInput1" placeholder="입학년도">
-						</div>
-				
-						<!--성별-->
-						<div class="form-group mb-4">
-						<label for="exampleFormControlSelect1"class="text-warning"><p>성별</p></label>
-						<select name="gender" class="form-control" id="exampleFormControlSelect1">
-							<option value="1">남자</option>
-							<option value="2">여자</option>
-						</select>
-						</div>
-				
-					<!--연락처-->
-						<div class="form-group mb-4">
-				
-							<label for="exampleFormControlInput1"class="text-warning"><p>연락처</p></label>
-							<input name="phone" type="text" class="form-control" id="exampleFormControlInput1" placeholder="010xxxxxxxx">
+		
+					<!--1번질문-->
+						<div class="form-group mb-4 wrap">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
+              <textarea name="question1" class="form-control" id="question1"  maxlength="1000" id="input_text1" rows="3"></textarea>
+              <span id="counter" class="bytes">0</span>  
             </div>
             
-					<!--학년-->
-						<div class="form-group mb-4">
-							<label for="exampleFormControlSelect1"class="text-warning"><p>학년</p></label>
-							<select name="dgree" class="form-control" id="exampleFormControlSelect1">
-							<option value="1">1학년</option>
-							<option value="2">2학년</option>
-							<option value="3">3학년</option>
-							<option value="4">4학년</option>
-							</select>
-						</div>
-					<!--1번질문-->
-						<div class="form-group mb-4">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text1" rows="3"></textarea>
-              </div>
-            
             <!--2번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+              <textarea name="question2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
             
             <!--3번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
 
  <!--4번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
  <!--5번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
+              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
               아르바이트: 주말 아르바이트13~15
               격전: 토요일오전 9~"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
  <!--6번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
  <!--7번질문-->
- <p>면접희망날짜<p>
-            <div class="">
-              <div class="row d-inline-flex p-3 bd-highlight mr-5 "><input type="radio" name="IDATE" value="4월1일"><p>4월1일(수)</div>
-                <div class="row d-inline-flex p-3 bd-highlight mr-5"><input type="radio" name="IDATE" value="4월1일"><p>4월1일(수)</div>
-                  <div class="row d-inline-flex p-3 bd-highlight mr-2"><input type="radio" name="IDATE" value="4월1일"><p>4월1일(수)</div>    
-             </div>
+
+  <div class="form-group mb-4">
+    <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
+    <select name="gender" class="form-control" id="exampleFormControlSelect1">
+      <option value="1">4월1일</option>
+      <option value="2">4월2일</option>
+      <option value="2">4월3일</option>
+    </select>
+    </div>
  <!--8번질문-->
-             <div class="form-group mb-4">
+             <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
- <!--8번질문-->
+ <!--그외질문-->
             <p>그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org
             </p>
+<!--박스 카운팅-->
+
+            <ul class="handler-ul">
+
+              <li><p class="bytes">0</p></li>
+              
+              <li><textarea class="content"></textarea></li>
+              
+              </ul>
+<!--박스 이쁜거-->
+              <div class="wrap">
+                <textarea id="content" class="content"1000"></textarea>
+                <span id="counter"class="bytes">0</span>
+            </div>
+<!--박스 설명-->
+            <div class="form-group mb-4 wrap">
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
+              <textarea name="quest3" id="question3" class="form-control  content counter"  maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <span id="counter" class="bytes">0</span>
+            </div>
+
+
 
               <!--제출버튼-->
               <div class ="row">

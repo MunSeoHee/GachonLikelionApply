@@ -46,8 +46,8 @@
             }
     </style>  
 </head>
-<body>
-<div class="bgimg container-fluid" style="height:100vh">
+<body class="bgimg">
+<div class="container" style="height:100vh">
 <?php 
       include_once "nav.php"; 
 ?>
