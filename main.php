@@ -139,6 +139,12 @@ body {
 <div style="overflow:auto" >
   <!-- 깐지글자 -->
       <ul class="text hidden">
+      <li class="ghost">가</li>
+      <li class="ghost">천</li>
+      <li class="ghost">대</li>
+      <li class="ghost">학</li>
+      <li class="ghost">교</li>
+      <br>
         <li>멋</li>
         <li class="ghost">쟁</li>
         <li class="ghost">이</li>
