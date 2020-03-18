@@ -227,13 +227,14 @@
         
         
   </div>
+  <footer><?php 
+      include_once "footer.html"; 
+?></footer>
 </div>
 
 
 </body>
-<footer><?php 
-      include_once "footer.html"; 
-?></footer>
+
 </html>
 
 
