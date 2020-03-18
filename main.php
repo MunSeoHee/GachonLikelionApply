@@ -128,8 +128,9 @@ body {
   opacity: 0;
   max-width: 0;
 }
-
-
+.gachon{
+  font-size:50%;
+}
 </style>
 
 </head>
@@ -139,11 +140,11 @@ body {
 <div style="overflow:auto" >
   <!-- 깐지글자 -->
       <ul class="text hidden">
-        <li class="ghost">가</li>
-        <li class="ghost">천</li>
-        <li class="ghost">대</li>
-        <li class="ghost">학</li>
-        <li class="ghost">교</li>
+        <li class="ghost ml-5 gachon">가</li>
+        <li class="ghost gachon">천</li>
+        <li class="ghost gachon text-white">대</li>
+        <li class="ghost gachon text-white">학</li>
+        <li class="ghost gachon text-white">교</li>
         <br><br><br><br>
         <li>멋</li>
         <li class="ghost">쟁</li>
