@@ -169,14 +169,14 @@ body {
         <li class="ghost time text-white">지원까지 남은 시간</li>
        </div>
        <div class="row justify-content-center">
-        <li class="ghost time text-white">00:00:00</li>
+        <li class="ghost time text-white"><div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div></li>
        </div>
        <div class="row d-flex justify-content-center">
         <li class="ghost"> <button type="button"  class="btn btn-warning ghost text-white"onclick="apply()">APPLY</button></li>
        </div>
       </ul>
       
-      <!-- <div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div> -->
+     
     </div>
 
 
