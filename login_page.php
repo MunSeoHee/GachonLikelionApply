@@ -35,6 +35,7 @@
     	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
 	h2,label,h1,.btn{
             /* color:rgba(243, 212, 73, 0.904); */
+            color:white;
             font-family:'GmarketSansBold'; 
         }
         p{
