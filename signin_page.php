@@ -99,7 +99,7 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-4 col-form-label text-white">연락처</label>
                         <div class="col-sm-8">
-                            <input type="number" name="phone" class="form-control" id="staticEmail" value="01012341234">
+                            <input type="text" name="phone" class="form-control" id="staticEmail" value="01012341234">
                         </div>
                     </div>
                     <div class="form-group row">
