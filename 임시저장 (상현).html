@@ -48,29 +48,17 @@
    
 
       .wrap {
-    width: 300px;
-    height: auto;
-    position: relative;
-    display: inline-block;
-}
-.wrap textarea {
-    width: 100%;
-    resize: none;
-    min-height: 4.5em;
-    line-height:1.6em;
-    max-height: 9em;
-}
-.wrap span {
-    position: absolute;
+        position: relative;}
+
+.counter {
+  background:rgba(255,0,0,0.5);
+  border-radius: 0.5rem;
+  padding: 0 .5rem 0 .5rem;
+  font-size: 0.75rem;
+
+  position: absolute;
     bottom: 5px;
     right: 5px;
-}
-
-#counter {
-  background:rgba(255,0,0,0.5);
-  border-radius: 0.5em;
-  padding: 0 .5em 0 .5em;
-  font-size: 0.75em;
 }
 
 	</style>
@@ -99,57 +87,220 @@
 
 
 		function check_input(){
-        if(!document.written.name.value){
-            alert("이름을 입력하세요");
-            document.written.name.focus();
-            return;
-        }
-        if(!document.written.major.value){
-            alert("학과를 입력하세요");
-            document.written.major.focus();
-            return;
-        }
-		if(!document.written.year.value){
-            alert("입학년도를 입력하세요");
-            document.written.year.focus();
-            return;
-        }
-		if(!document.written.gender.value){
-            alert("성별을 입력하세요");
-            document.written.gender.focus();
-            return;
-        }
-		if(!document.written.phone.value){
-            alert("전화번호를 입력하세요");
-            document.written.phone.focus();
-            return;
-        }
-		if(!document.written.dgree.value){
-            alert("학년을 입력하세요");
-            document.written.dgree.focus();
-            return;
-        }
-		if(!document.written.question1.value){
-            alert("질문 문항 1을 작성하세요");
+        if(!document.written.question1.value){
+            alert("지원동기를 작성해주세요");
             document.written.question1.focus();
             return;
         }
-		if(!document.getElementById('question2').value){
-            alert("질문 문항 2을 작성하세요");
-            document.getElementById('question2').focus();
+        if(!document.written.question2.value){
+            alert("만들 서비스를 입력하세요");
+            document.written.question2.focus();
             return;
         }
-		if(!document.getElementById('question3').value){
-            alert("질문 문항 3을 작성하세요");
-            document.getElementById('question3').focus();
+        if(!document.written.question3.value){
+            alert("다뤄본 프로그램을 적어주세요");
+            document.written.question3.focus();
             return;
         }
+        if(!document.written.question4.value){
+            alert("다뤄본 디자인툴을 적어주세요");
+            document.written.question4.focus();
+            return;
+        }
+        if(!document.written.question5.value){
+            alert("활동을 알려주세요");
+            document.written.question5.focus();
+            return;
+        }
+        if(!document.written.question6.value){
+            alert("일정이 있는지 적어주세요");
+            document.written.question6.focus();
+            return;
+        }
+        if(!document.written.question7.value){
+            alert("면접날짜를 적어주세요");
+            document.written.question7.focus();
+            return;
+        }
+        if(!document.written.question8.value){
+            alert("깃허브 없을시 없다고 적어주세요");
+            document.written.question8.focus();
+            return;
+        }
+        
         document.written.submit();
     }
-////
-
+//// Q1
 $(function(){
-$('textarea.content').keyup(function(){
+$('textarea#question1').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q2
+$(function(){
+$('textarea#question2').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q3
+$(function(){
+$('textarea#question3').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q4
+$(function(){
+$('textarea#question4').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q5
+$(function(){
+$('textarea#question5').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q6
+$(function(){
+$('textarea#question6').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q7
+$(function(){
+$('textarea#question7').keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+///
+////Q8
+$(function(){
+$('textarea#question8').keyup(function(){
 bytesHandler(this);
 });
 });
@@ -206,45 +357,51 @@ $('.bytes').text(getTextLength(text));
 						<!--이름-->
 		
 					<!--1번질문-->
-						<div class="form-group mb-4">
+						<div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text1" rows="3"></textarea>
-              </div>
+              <textarea name="question1" class="form-control" id="question1"  maxlength="1000" id="input_text1" rows="3"></textarea>
+              <span class="counter bytes">1000</span>
+            </div>
             
             <!--2번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+              <textarea name="question2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+              <span class="counter bytes">1000</span> 
             </div>
             
             <!--3번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <span class="counter bytes">1000</span>
             </div>
 
  <!--4번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <span class="counter bytes">1000</span>
             </div>
  <!--5번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="quest3" id="question3"  class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
+              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
               아르바이트: 주말 아르바이트13~15
               격전: 토요일오전 9~"></textarea>
+              <span class="counter bytes">1000</span>
             </div>
  <!--6번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <span class="counter bytes">1000</span>
             </div>
  <!--7번질문-->
 
   <div class="form-group mb-4">
     <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
-    <select name="gender" class="form-control" id="exampleFormControlSelect1">
+    <select name="question7" class="form-control" id="exampleFormControlSelect1">
       <option value="1">4월1일</option>
       <option value="2">4월2일</option>
       <option value="2">4월3일</option>
@@ -253,31 +410,28 @@ $('.bytes').text(getTextLength(text));
  <!--8번질문-->
              <div class="form-group mb-4">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+              <textarea name="question8" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
             </div>
- <!--8번질문-->
+ <!--9번 이메일-->
             <p>그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org
             </p>
 <!--박스 카운팅-->
 
-            <ul class="handler-ul">
-
-              <li><p class="bytes">0</p></li>
+              <li><p class="bytes">01</p></li>
               
               <li><textarea class="content"></textarea></li>
-              
-              </ul>
+            
 <!--박스 이쁜거-->
               <div class="wrap">
-                <textarea id="content" class="content"1000"></textarea>
-                <span id="counter"class="bytes">0</span>
+                <textarea  class="content"></textarea>
+                <span class="counter bytes">1000</span>
             </div>
 
-            <div class="form-group mb-4" class="wrap">
+            <div class="form-group wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="quest3" id="question3" class="form-control" class="counter" class="content" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
-             
-              <span class="counter"class="bytes">0</span>
+              <textarea name="quest3" id="question3" class="form-control " maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <span class="counter bytes">1000</span>
+              
             </div>
 
 
