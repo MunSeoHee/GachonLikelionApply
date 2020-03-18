@@ -46,34 +46,26 @@
 				color:rgb(243, 212, 73);
 			}
    
-
+/* 박스 스펠링카운터 */
       .wrap {
-    width: 300px;
-    height: auto;
     position: relative;
-    display: inline-block;
-}
-.wrap textarea {
-    width: 100%;
-    resize: none;
-    min-height: 4.5em;
-    line-height:1.6em;
-    max-height: 9em;
-}
+            }
 .wrap span {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
+    bottom: 0.5rem;
+    right: 0.5rem;
+            }
 
 #counter {
-  background:rgba(255,0,0,0.5);
-  border-radius: 0.5em;
-  padding: 0 .5em 0 .5em;
-  font-size: 0.75em;
+  background:rgba(248, 73, 73, 0.5);
+  border-radius: 0.5rem;
+  padding: 0 .5rem 0 .5rem;
+  font-size: 0.75rem;
 }
+/* 박스 스펠링카운터 */
+  </style>
+  
 
-	</style>
 	<script>
 		$(document).ready(function(){ 
 			$('#input_text1').keyup(function(){ 
@@ -146,10 +138,33 @@
         }
         document.written.submit();
     };
-////
 
+// 스펠링카운터 함수   1
 $(function(){
-$('textarea.content').keyup(function(){
+$("textarea#question1").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$(".byte").text(getTextLength(text));
+}
+// 스펠링카운터 함수   2
+$(function(){
+$("textarea#question2").keyup(function(){
 bytesHandler(this);
 });
 });
@@ -170,7 +185,123 @@ function bytesHandler(obj){
 var text = $(obj).val();
 $('.bytes').text(getTextLength(text));
 }
-///
+// 스펠링카운터 함수   3
+$(function(){
+$("textarea#question3").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수   4
+$(function(){
+$("textarea#question4").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수  5 
+$(function(){
+$("textarea#question5").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+
+// 스펠링카운터 함수   6
+$(function(){
+$("textarea#question6").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수   8
+$(function(){
+$("textarea#question8").keyup(function(){
+bytesHandler(this);
+});
+});
+
+function getTextLength(str) {
+var len = 0;
+
+for (var i = 0; i < str.length; i++) {
+if (escape(str.charAt(i)).length == 6) {
+len++;
+}
+len++;
+}
+return len;
+}
+
+function bytesHandler(obj){
+var text = $(obj).val();
+$('.bytes').text(getTextLength(text));
+}
+// 스펠링카운터 함수  
 
 
 
@@ -206,39 +337,45 @@ $('.bytes').text(getTextLength(text));
 						<!--이름-->
 		
 					<!--1번질문-->
-						<div class="form-group mb-4">
+						<div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control" id="exampleFormControlTextarea1"  maxlength="1000" id="input_text1" rows="3"></textarea>
-              </div>
+              <textarea name="question1" class="form-control" id="question1"  maxlength="1000" id="input_text1" rows="3"></textarea>
+              <span id="counter" class="bytes">0</span>  
+            </div>
             
             <!--2번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="que2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+              <textarea name="question2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
             
             <!--3번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
 
  <!--4번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
  <!--5번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="quest3" id="question3"  class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
+              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
               아르바이트: 주말 아르바이트13~15
               격전: 토요일오전 9~"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
  <!--6번질문-->
-            <div class="form-group mb-4">
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
  <!--7번질문-->
 
@@ -251,11 +388,12 @@ $('.bytes').text(getTextLength(text));
     </select>
     </div>
  <!--8번질문-->
-             <div class="form-group mb-4">
+             <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
-              <textarea name="quest3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
- <!--8번질문-->
+ <!--그외질문-->
             <p>그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org
             </p>
 <!--박스 카운팅-->
@@ -272,12 +410,11 @@ $('.bytes').text(getTextLength(text));
                 <textarea id="content" class="content"1000"></textarea>
                 <span id="counter"class="bytes">0</span>
             </div>
-
-            <div class="form-group mb-4" class="wrap">
+<!--박스 설명-->
+            <div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="quest3" id="question3 content" class="form-control content" class="counter" class="content" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
-             
-              <span class="counter"class="bytes">0</span>
+              <textarea name="quest3" id="question3" class="form-control  content counter"  maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
+              <span id="counter" class="bytes">0</span>
             </div>
 
 
