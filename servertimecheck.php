@@ -11,7 +11,7 @@ date_default_timezone_set('Asia/Seoul');
 // echo "현재 시간 : ". date("H:i:s")."<br/>";
 // echo "현재 일시 : ". date("Y-m-d H:i:s")."<br/>";
 // echo (date("H"));
-$year = date("y");
+$year = date("Y");
 $month = date("m");
 $date = date("d");
 if($year == 2019 && $month == 3 && $date < 23){
