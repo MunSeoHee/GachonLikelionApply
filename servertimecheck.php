@@ -15,7 +15,7 @@ $year = date("Y");
 $month = date("m");
 $date = date("d");
 if($year == 2020 && $month == 3 && $date < 23){
-    echo $year +$month+ $date+"<script> alert('hi');</script>";
+    echo "<script> alert('hi');</script>";
     // if($check == "1"){
     //     echo "<script> alert('1 받음.');</script>";
     // }
