@@ -45,10 +45,12 @@ function server_time()
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
+    var countdown = "지원까지 남은 시간<br>"
     if(date < 23){
       date = 23 - date - 1;
     }else{
-      date = date - 23;
+      date = 27 - date - 1;
+      countdown = "마감까지 남은 시간<br>"
     }
     if( hours < 24){
       hours = 24 - hours - 1;
@@ -59,22 +61,22 @@ function server_time()
     if(seconds < 60 ){
       seconds = 60 - seconds - 1;
     }
-    if (month < 10){
-        month = "0" + month;
-    }
-    if (date < 10){
-        date = "0" + date;
-    }
-    if (hours < 10){
-        hours = "0" + hours;
-    }
-    if (minutes < 10){
-        minutes = "0" + minutes;
-    }
-    if (seconds < 10){
-        seconds = "0" + seconds;
-    }
-    document.getElementById("server_time").innerHTML = "" + date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
+    // if (month < 10){
+    //     month = "0" + month;
+    // }
+    // if (date < 10){
+    //     date = "0" + date;
+    // }
+    // if (hours < 10){
+    //     hours = "0" + hours;
+    // }
+    // if (minutes < 10){
+    //     minutes = "0" + minutes;
+    // }
+    // if (seconds < 10){
+    //     seconds = "0" + seconds;
+    // }
+    document.getElementById("server_time").innerHTML = "" + countdown +"" + date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
 }
 </script>
 <style>
