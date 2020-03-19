@@ -45,12 +45,12 @@ function server_time()
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
-    var countdown = "지원까지 남은 시간<br>"
     if(date < 23){
       date = 23 - date - 1;
+      document.getElementById(“due_time”).innerHTML = "마감까지 남은 시간";
     }else{
       date = 27 - date - 1;
-      countdown = "마감까지 남은 시간<br>"
+      document.getElementById(“due_time”).innerHTML = "마감까지 남은 시간";
     }
     if( hours < 24){
       hours = 24 - hours - 1;
@@ -76,7 +76,7 @@ function server_time()
     // if (seconds < 10){
     //     seconds = "0" + seconds;
     // }
-    document.getElementById("server_time").innerHTML = "" + countdown +"" + date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
+    document.getElementById("server_time").innerHTML = ""+ date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
 }
 </script>
 <style>
@@ -183,9 +183,9 @@ body {
         <li class="ghost text-white">모</li>
         <li class="ghost text-white">집</li>
        </div>
-       <!-- <div class="row justify-content-center">
-        <li class="ghost time text-white">지원까지 남은 시간</li>
-       </div> -->
+       <div class="row justify-content-center">
+        <li class="ghost time text-white" id = "due_time">지원까지 남은 시간</li>
+       </div>
        <div class="row justify-content-center">
         <li class="ghost time text-white"><div id="server_time"><?php echo date(" ", time()); ?></div></li>
        </div>
