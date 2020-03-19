@@ -15,7 +15,7 @@ $year = date("Y");
 $month = date("m");
 $date = date("d");
 if($year == 2020 && $month == 3 && $date >= 23 && $date < 28){
-    // echo "<script> alert('hi');</script>";
+    echo "<script> alert('hi');</script>";
     // if($check == "1"){
     //     echo "<script> alert('1 받음.');</script>";
     // }
@@ -23,7 +23,7 @@ if($year == 2020 && $month == 3 && $date >= 23 && $date < 28){
     //     echo "<script> alert('2 받음.');</script>";
     // }
 }else{
-    echo "<script> alert('아직 시간이 아닙니다.');
+    echo "<script> swal('아직 시간이 아닙니다.');
             history.back();
         </script>";
     //history.back();
