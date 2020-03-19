@@ -12,6 +12,12 @@
     else{
         $name = "";
     }
+    if(isset($_SESSION["email"])){
+        $email = $_SESSION["email"];
+    }
+    else{
+        $name = "";
+    }
     if(isset($_SESSION["pw"])){
         $pw = $_SESSION["pw"];
     }
