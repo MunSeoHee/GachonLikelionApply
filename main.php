@@ -45,22 +45,37 @@ function server_time()
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
-    if (month < 10){
-        month = "0" + month;
+    if(date < 23){
+      date = 23 - date - 1;
+    }else{
+      date = 27 - date - 1;
+      document.getElementById("due_time").innerHTML = "마감까지 남은 시간";
     }
-    if (date < 10){
-        date = "0" + date;
+    if( hours < 24){
+      hours = 24 - hours - 1;
     }
-    if (hours < 10){
-        hours = "0" + hours;
+    if(minutes < 60 ){
+      minutes = 60 - minutes - 1;
     }
-    if (minutes < 10){
-        minutes = "0" + minutes;
+    if(seconds < 60 ){
+      seconds = 60 - seconds - 1;
     }
-    if (seconds < 10){
-        seconds = "0" + seconds;
-    }
-    document.getElementById("server_time").innerHTML = "현재 서버시간 : " + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+    // if (month < 10){
+    //     month = "0" + month;
+    // }
+    // if (date < 10){
+    //     date = "0" + date;
+    // }
+    // if (hours < 10){
+    //     hours = "0" + hours;
+    // }
+    // if (minutes < 10){
+    //     minutes = "0" + minutes;
+    // }
+    // if (seconds < 10){
+    //     seconds = "0" + seconds;
+    // }
+    document.getElementById("server_time").innerHTML = ""+ date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
 }
 </script>
 <style>
@@ -168,10 +183,10 @@ body {
         <li class="ghost text-white">집</li>
        </div>
        <div class="row justify-content-center">
-        <li class="ghost time text-white">지원까지 남은 시간</li>
+        <li class="ghost time text-white" id = "due_time">지원까지 남은 시간</li>
        </div>
        <div class="row justify-content-center">
-        <li class="ghost time text-white"><div id="server_time"><?php echo date("Y-m-d H:i:s", time()); ?></div></li>
+        <li class="ghost time text-white"><div id="server_time"><?php echo date(" ", time()); ?></div></li>
        </div>
        <div class="row d-flex justify-content-center">
         <li class="ghost"> <button type="button"  class="btn btn-warning ghost text-white"onclick="apply()">APPLY</button></li>
