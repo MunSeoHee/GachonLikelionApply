@@ -13,23 +13,24 @@
   @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
       /* thankyou */
       h1{
-				color:rgba(22, 150, 235, 0.904);
+				color:rgba(255, 123, 0, 0.925);
 				font-family: '양진체';
         margin: auto;
+        font-size: 5rem;
 			}
       /* 세부내용 */
 			p{
 				font-size: 100%;
-				color:rgba(243, 212, 73, 0.904);
-        font-family: 'BBTreeGB'; 
+				color:rgb(255, 255, 255);
+        font-family: '양진체';
         margin-top:1rem
 			}
 /* 지원이완료되었습니다 */
       h2{
         font-weight: bold;
-				font-size: 1rem;
-				color:rgba(80, 172, 121, 0.904);
-        font-family: 'BBTreeGB'; 
+				font-size: 2rem;
+				color:rgb(231, 159, 77);
+        font-family: 'BBTreeGB';  
         padding:1rem 1rem 1rem 1rem;
         margin: auto;
         
@@ -37,10 +38,11 @@
       /* 지원설명 */
       h3{
         font-weight: bold;
-				font-size: 0.6rem;
+				font-size: 0.8rem;
         line-height: 300%;
-				color:rgba(243, 212, 73, 0.904);
-        font-family: 'BBTreeGR';
+				color:rgba(255, 255, 255, 0.904);
+      
+        font-family: 'BBTreeGB'; 
         padding-bottom: 2rem;
         padding:1rem 1rem 1rem 1rem;
         
@@ -54,16 +56,20 @@
 .middle
 {
   border-style: solid;
-  border-color: rgba(255, 153, 0, 0.986);
-  border-width: 0.06rem;
+  border-color: rgba(255, 255, 255, 0.986);
+  border-width: 0.1rem;
   padding-top: 2rem;
-
+  padding-bottom:1rem;
+border-radius: 1rem;
 
 }
 .middle-1
 {
   border-style: solid;
-  border-color: rgba(255, 153, 0, 0.986);
+  border-color: rgba(252, 252, 252, 0.986);
+
+  border-right: rgba(255, 255, 255, 0);
+  border-left: rgba(255, 255, 255, 0);
   border-width: 0.06rem;
 
 }
@@ -71,7 +77,12 @@
 .middle-2
 {
   border-style: solid;
-  border-color: rgba(255, 153, 0, 0.986);
+  border-color: rgba(252, 252, 252, 0.986);
+border-top:rgba(255, 255, 255, 0);
+border-bottom:rgba(255, 255, 255, 0);
+  border-left: rgba(255, 255, 255, 0);
+
+
   border-width: 0.06rem;
   box-sizing: border-box;
 
@@ -115,16 +126,16 @@
 
 
   <div class="row middle-1">
-    <div class="col middle-2"><p>3번 이름</p></div>
-    <div class="col middle-2"><p>3번 이름php</p></div>
+    <div class="col middle-2"><p>이름</p></div>
+    <div class="col middle-2"><p>이름php</p></div>
   </div>
   <div class="row middle-1" style="border-top-width: 0;">
-  <div class="col middle-2"><p>3번연락처</p> </div>
-  <div class="col middle-2"><p>3번연락처php</p> </div>
+  <div class="col middle-2"><p>연락처</p> </div>
+  <div class="col middle-2"><p>연락처php</p> </div>
   </div>
   <div class="row middle-1" style="border-top-width: 0;">
-  <div class="col middle-2"><p>3번 이메일</p></div>
-  <div class="col middle-2"><p>3번 이메일php</p> </div>
+  <div class="col middle-2"><p>이메일</p></div>
+  <div class="col middle-2"><p>이메일php</p> </div>
   </div>
 
 
