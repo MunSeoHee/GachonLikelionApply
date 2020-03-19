@@ -23,14 +23,24 @@
 			@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 			@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
 			h1{
-				color:rgba(243, 212, 73, 0.904);
+				color:rgb(255, 255, 255);
 				font-family:'GmarketSansBold'; 
+        
 			}
 			p{
-				font-size: 120%;
-				color:rgba(243, 212, 73, 0.904);
-				font-family: 'yg-jalnan'; 
+				font-size: 90%;
+				color:rgb(250, 250, 250);
+				font-family: 'yg-jalnan';
+        border-bottom: coral;
+        border-top: rgba(255, 255, 255, 0);
+        border-left:  rgba(255, 255, 255, 0);
+        border-right:  rgba(255, 255, 255, 0);;
+        border-style: solid;
+        border-width: 0.15rem;
+      padding-bottom:0.2rem;
+      border-radius: 0.5rem;
 			}
+      
 			#exampleFormControlInput1
 			{
 				margin:0;
@@ -42,7 +52,7 @@
 			}
 			.hr
 			{
-				color:rgb(243, 212, 73);
+				color:#F39926
 			}
    
 /* 박스 스펠링카운터 */
@@ -56,11 +66,14 @@
             }
 
 #counter {
-  background:rgba(248, 73, 73, 0.5);
+  background-color:rgba(245, 163, 163, 0.637);
   border-radius: 0.5rem;
   padding: 0 .5rem 0 .5rem;
   font-size: 0.75rem;
+  color: black;
 }
+
+
 /* 박스 스펠링카운터 */
   </style>
   
@@ -90,62 +103,52 @@
 
 
 		function check_input(){
-        if(!document.written.name.value){
-            alert("이름을 입력하세요");
-            document.written.name.focus();
-            return;
-        }
-        if(!document.written.major.value){
-            alert("학과를 입력하세요");
-            document.written.major.focus();
-            return;
-        }
-		if(!document.written.year.value){
-            alert("입학년도를 입력하세요");
-            document.written.year.focus();
-            return;
-        }
-		if(!document.written.gender.value){
-            alert("성별을 입력하세요");
-            document.written.gender.focus();
-            return;
-        }
-		if(!document.written.phone.value){
-            alert("전화번호를 입력하세요");
-            document.written.phone.focus();
-            return;
-        }
-		if(!document.written.dgree.value){
-            alert("학년을 입력하세요");
-            document.written.dgree.focus();
-            return;
-        }
-		if(!document.written.question1.value){
+ 
+		if(!document.getElementById('input_text1').value){
             alert("질문 문항 1을 작성하세요");
-            document.written.question1.focus();
+            document.getElementById('input_text1').focus();
             return;
         }
-		if(!document.getElementById('question2').value){
+		if(!document.getElementById('input_text2').value){
             alert("질문 문항 2을 작성하세요");
-            document.getElementById('question2').focus();
+            document.getElementById('input_text2').focus();
             return;
         }
-		if(!document.getElementById('question3').value){
+		if(!document.getElementById('input_text3').value){
             alert("질문 문항 3을 작성하세요");
-            document.getElementById('question3').focus();
+            document.getElementById('input_text3').focus();
             return;
         }
+
+        if(!document.getElementById('input_text4').value){
+            alert("질문 문항 4을 작성하세요");
+            document.getElementById('input_text4').focus();
+            return;
+        }
+
+        if(!document.getElementById('input_text5').value){
+            alert("질문 문항 5을 작성하세요");
+            document.getElementById('input_text5').focus();
+            return;
+        }
+
+        if(!document.getElementById('input_text6').value){
+            alert("질문 문항 6을 작성하세요");
+            document.getElementById('input_text6').focus();
+            return;
+        }
+ 
         document.written.submit();
     };
 
 // 스펠링카운터 함수   1
 $(function(){
-$("textarea#question1").keyup(function(){
-bytesHandler(this);
+$("textarea#input_text1").keyup(function(){
+bytesHandler1(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength1(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -157,18 +160,20 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler1(obj){
 var text = $(obj).val();
-$(".byte").text(getTextLength(text));
+$(".bytes1").text(getTextLength1(text));
 }
+
+
 // 스펠링카운터 함수   2
 $(function(){
-$("textarea#question2").keyup(function(){
-bytesHandler(this);
+$("textarea#input_text2").keyup(function(){
+bytesHandler2(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength2(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -180,18 +185,18 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler2(obj){
 var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+$('.bytes2').text(getTextLength2(text));
 }
 // 스펠링카운터 함수   3
 $(function(){
 $("textarea#question3").keyup(function(){
-bytesHandler(this);
+bytesHandler3(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength3(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -203,18 +208,18 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler3(obj){
 var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+$('.bytes3').text(getTextLength3(text));
 }
 // 스펠링카운터 함수   4
 $(function(){
 $("textarea#question4").keyup(function(){
-bytesHandler(this);
+bytesHandler4(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength4(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -226,18 +231,18 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler4(obj){
 var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+$('.bytes4').text(getTextLength4(text));
 }
 // 스펠링카운터 함수  5 
 $(function(){
 $("textarea#question5").keyup(function(){
-bytesHandler(this);
+bytesHandler5(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength5(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -249,19 +254,19 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler5(obj){
 var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+$('.bytes5').text(getTextLength5(text));
 }
 
 // 스펠링카운터 함수   6
 $(function(){
 $("textarea#question6").keyup(function(){
-bytesHandler(this);
+bytesHandler6(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength6(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -273,18 +278,18 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler6(obj){
 var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+$('.bytes6').text(getTextLength6(text));
 }
 // 스펠링카운터 함수   8
 $(function(){
 $("textarea#question8").keyup(function(){
-bytesHandler(this);
+bytesHandler8(this);
 });
 });
 
-function getTextLength(str) {
+function getTextLength8(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
@@ -296,9 +301,9 @@ len++;
 return len;
 }
 
-function bytesHandler(obj){
+function bytesHandler8(obj){
 var text = $(obj).val();
-$('.bytes').text(getTextLength(text));
+$('.bytes8').text(getTextLength8(text));
 }
 // 스펠링카운터 함수  
 
@@ -325,12 +330,17 @@ $('.bytes').text(getTextLength(text));
 				");
 				exit;
 			}
-		?>
+    ?>
+   
 			<div class="row d-flex justify-content-center">
 				
-				<div class="col-lg-4">
-					<h1>가천대학교 멋쟁이 사자처럼</h1>
-					<hr></hr>
+				<div class="col-lg-5 mt-5 ">
+          <div class="row d-flex justify-content-center">
+            <img src="https://startup.likelion.org/img/logo.png" style="width:80%; text-align: center;">
+          </div>
+          <div class="row d-flex justify-content-center mb-4 mt-2">	<h1 style="margin-top: 2rem; margin-bottom: 3rem;">멋쟁이 사자처럼 8기</h1>
+          </div>
+          
 					<form name="written" method="post" action="form_insert.php">
 						<!--색상 class="text-warning"-->
 						<!--이름-->
@@ -338,47 +348,47 @@ $('.bytes').text(getTextLength(text));
 					<!--1번질문-->
 						<div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control" id="question1"  maxlength="1000" id="input_text1" rows="3"></textarea>
-              <span id="counter" class="bytes">0</span>  
+              <textarea name="question1" class="form-control question1"maxlength="1000" id="input_text1" rows="6"></textarea>
+              <span id="counter" class="bytes1">0</span>  
             </div>
             
             <!--2번질문-->
-            <div class="form-group mb-4 wrap">
+            <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="question2" id="question2" class="form-control" maxlength="1000" id="input_text2" rows="3"></textarea>
-              <span id="counter" class="bytes">0</span>
+              <textarea name="question2" class="form-control question2" maxlength="1000" id="input_text2" rows="6"></textarea>
+              <span id="counter" class="bytes2">0</span>
             </div>
             
             <!--3번질문-->
-            <div class="form-group mb-4 wrap">
+            <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
-              <span id="counter" class="bytes">0</span>
+              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <span id="counter" class="bytes3">0</span>
             </div>
 
  <!--4번질문-->
-            <div class="form-group mb-4 wrap">
+            <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
-              <span id="counter" class="bytes">0</span>
+              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <span id="counter" class="bytes4">0</span>
             </div>
  <!--5번질문-->
-            <div class="form-group mb-4 wrap">
+            <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="              중동: 어플레이
+              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="              중동: 어플레이
               아르바이트: 주말 아르바이트13~15
               격전: 토요일오전 9~"></textarea>
-              <span id="counter" class="bytes">0</span>
+              <span id="counter" class="bytes5">0</span>
             </div>
  <!--6번질문-->
-            <div class="form-group mb-4 wrap">
+            <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
-              <span id="counter" class="bytes">0</span>
+              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="목x, 토 알바13~15시"></textarea>
+              <span id="counter" class="bytes6">0</span>
             </div>
  <!--7번질문-->
 
-  <div class="form-group mb-4">
+  <div class="form-group mt-5">
     <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
     <select name="gender" class="form-control" id="exampleFormControlSelect1">
       <option value="1">4월1일</option>
@@ -387,36 +397,14 @@ $('.bytes').text(getTextLength(text));
     </select>
     </div>
  <!--8번질문-->
-             <div class="form-group mb-4 wrap">
+             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
               <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
-              <span id="counter" class="bytes">0</span>
+              <span id="counter" class="bytes8">0</span>
             </div>
  <!--그외질문-->
-            <p>그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org
-            </p>
-<!--박스 카운팅-->
-
-            <ul class="handler-ul">
-
-              <li><p class="bytes">0</p></li>
-              
-              <li><textarea class="content"></textarea></li>
-              
-              </ul>
-<!--박스 이쁜거-->
-              <div class="wrap">
-                <textarea id="content" class="content"1000"></textarea>
-                <span id="counter"class="bytes">0</span>
-            </div>
-<!--박스 설명-->
-            <div class="form-group mb-4 wrap">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="quest3" id="question3" class="form-control  content counter"  maxlength="1000" id="input_text3" rows="3" placeholder="목x, 토 알바13~15시"></textarea>
-              <span id="counter" class="bytes">0</span>
-            </div>
-
-
+           <label mt-5 mb-5 style="color: white; font-family: 'yg-jalnan'; font-size: 80%;">그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org</label>
+           
 
               <!--제출버튼-->
               <div class ="row">
