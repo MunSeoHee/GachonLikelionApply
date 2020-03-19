@@ -99,6 +99,7 @@
 <div class="container-fluid" style="height:100vh">
     <?php 
         include_once "nav.php"; 
+        include_once "servertimecheck.php";
     ?>          
 
     <div class="row" style="height:50vh">
