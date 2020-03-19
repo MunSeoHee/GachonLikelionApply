@@ -45,7 +45,7 @@ function server_time()
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
-    if(date < 18){
+    if(date < 23){
       date = 18 - date;
     }else{
       date = date - 18;
@@ -74,7 +74,7 @@ function server_time()
     if (seconds < 10){
         seconds = "0" + seconds;
     }
-    document.getElementById("server_time").innerHTML = "남은 시간 : " + date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
+    document.getElementById("server_time").innerHTML = "" + date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
 }
 </script>
 <style>
