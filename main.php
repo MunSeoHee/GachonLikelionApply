@@ -183,9 +183,9 @@ body {
         <li class="ghost text-white">모</li>
         <li class="ghost text-white">집</li>
        </div>
-       <div class="row justify-content-center">
+       <!-- <div class="row justify-content-center">
         <li class="ghost time text-white">지원까지 남은 시간</li>
-       </div>
+       </div> -->
        <div class="row justify-content-center">
         <li class="ghost time text-white"><div id="server_time"><?php echo date(" ", time()); ?></div></li>
        </div>
