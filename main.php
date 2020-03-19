@@ -46,18 +46,18 @@ function server_time()
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
     if(date < 23){
-      date = 23 - date;
+      date = 23 - date - 1;
     }else{
       date = date - 23;
     }
     if( hours < 24){
-      hours = 24 - hours + 1;
+      hours = 24 - hours - 1;
     }
     if(minutes < 60 ){
-      minutes = 60 - minutes + 1;
+      minutes = 60 - minutes - 1;
     }
     if(seconds < 60 ){
-      seconds = 60 - seconds + 1;
+      seconds = 60 - seconds - 1;
     }
     if (month < 10){
         month = "0" + month;
