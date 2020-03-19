@@ -47,7 +47,6 @@ function server_time()
     var seconds = now.getSeconds();
     if(date < 23){
       date = 23 - date - 1;
-      document.getElementById("due_time").innerHTML = "마감까지 남은 시간";
     }else{
       date = 27 - date - 1;
       document.getElementById("due_time").innerHTML = "마감까지 남은 시간";
