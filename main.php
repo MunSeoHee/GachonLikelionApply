@@ -51,13 +51,13 @@ function server_time()
       date = date - 23;
     }
     if( hours < 24){
-      hours = 24 - hours;
+      hours = 24 - hours + 1;
     }
     if(minutes < 60 ){
-      minutes = 60 - minutes;
+      minutes = 60 - minutes + 1;
     }
     if(seconds < 60 ){
-      seconds = 60 - seconds;
+      seconds = 60 - seconds + 1;
     }
     if (month < 10){
         month = "0" + month;
