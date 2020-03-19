@@ -74,7 +74,7 @@ function server_time()
     if (seconds < 10){
         seconds = "0" + seconds;
     }
-    document.getElementById("server_time").innerHTML = "남은 시간 : " + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+    document.getElementById("server_time").innerHTML = "남은 시간 : " + date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
 }
 </script>
 <style>
