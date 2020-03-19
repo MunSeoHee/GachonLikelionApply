@@ -23,7 +23,7 @@ if($year == 2020 && $month == 3 && $date >= 23){
     //     echo "<script> alert('2 받음.');</script>";
     // }
 }else{
-    echo $year +$month+ $date+"<script> alert('아직 시간이 아닙니다.');
+    echo "<script> alert('아직 시간이 아닙니다.');
             history.back();
         </script>";
     //history.back();
