@@ -45,6 +45,20 @@ function server_time()
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
+    if(date<18){
+      date = 18 - date;
+    }else{
+      date = date - 18;
+    }
+    if( hours < 24){
+      hours = 24 - hours;
+    }
+    if(minutes < 60 ){
+      minutes = 60 - minutes;
+    }
+    if(seconds < 60 ){
+      seconds = 60 = seconds;
+    }
     if (month < 10){
         month = "0" + month;
     }
@@ -60,7 +74,7 @@ function server_time()
     if (seconds < 10){
         seconds = "0" + seconds;
     }
-    document.getElementById("server_time").innerHTML = "현재 서버시간 : " + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+    document.getElementById("server_time").innerHTML = "남은 시간 : " + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
 }
 </script>
 <style>
