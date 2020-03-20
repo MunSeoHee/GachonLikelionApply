@@ -1,6 +1,7 @@
 <Doctype html>
   <html>
   <head>
+    <title>Gachon Likelion</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>
 
@@ -126,10 +127,10 @@ border-bottom:rgba(255, 255, 255, 0);
 
 
 <div class="col-lg-5 middle">
-  <div class="row"><h1>THANKYOU</h1></div>
+  <div class="row text-warning"><h1>THANKYOU</h1></div>
 
 
-  <div class="row"><h2>지원이 완료되었습니다</h2></div>
+  <div class="row"><h2>지원해주셔서 감사합니다:)</h2></div>
 
 
   <div class="row middle-1">
@@ -146,9 +147,9 @@ border-bottom:rgba(255, 255, 255, 0);
   </div>
 
 
-  <div class="row"><h3>1. 지원서를 체줄하면 학교 운영진이 확인 후 합격여부를 지원자에게 전달합니다.<br>
-    2. 학교 별로 2차 면접을 진행하는 곳도 있습니다 <br>
-    3. 최종 선발 이후에는 멋쟁이 사자처럼 공식 OT 이후 정식 활동을 시작합니다. <br></h3></div>
+  <div class="row"><h3>1. 3/29(일)에 1차 합격자에게는 문자 공지가 될 예정입니다.<br>
+    2. 선택하신 희망 면접 날짜로 면접일이 배정되지 않을 수도 있습니다. <br>
+    3. 면접에 대한 자세한 안내는 문자를 통해 공지하겠습니다. <br></h3></div>
 
   <div class="row  container-fluid">
     <div class="fb-page  container-fluid"  
