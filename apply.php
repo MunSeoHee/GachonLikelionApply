@@ -6,15 +6,15 @@
 
 
 
-
+@font-face { font-family: 'CookieRun-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
 	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
   @font-face { font-family: '양진체'; src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); font-weight: normal; font-style: normal; }
   @font-face { font-family: 'fromdamiM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff'); font-weight: normal; font-style: normal; }    	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
   @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
-      /* thankyou */
+      /* thankyou */ 
       h1{
-				color:rgba(255, 123, 0, 0.925);
-				font-family: '양진체';
+				color:hsla(214, 87%, 70%, 0.932);
+        font-family: 'GmarketSansBold';
         margin: auto;
         font-size: 5rem;
 			}
@@ -139,7 +139,7 @@ border-bottom:rgba(255, 255, 255, 0);
   </div>
 
 
-  <div class="row"><h3>1. 지원서를 체줄하면 학교 운영진이 확인 후 합격여부를 지원자에게 전달합니다. <br>
+  <div class="row"><h3>1. 지원서를 체줄하면 학교 운영진이 확인 후 합격여부를 지원자에게 전달합니다.<br>
     2. 학교 별로 2차 면접을 진행하는 곳도 있습니다 <br>
     3. 최종 선발 이후에는 멋쟁이 사자처럼 공식 OT 이후 정식 활동을 시작합니다. <br></h3></div>
 

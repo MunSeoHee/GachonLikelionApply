@@ -1,438 +1,172 @@
-<!Doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<!-- 모바일 뷰포트 -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
-		maximum-scale=1.0, minimum-scale=1.0">
-		
-		<style>
-			.bgimg {
-				border: 0;
-				padding: 0; 
-			
-				min-height: 100%;
-				background-position: center;
-				background-size: cover;
-        background-color: black;
+<Doctype html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+
+
+
+@font-face { font-family: 'CookieRun-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+  @font-face { font-family: '양진체'; src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); font-weight: normal; font-style: normal; }
+  @font-face { font-family: 'fromdamiM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff'); font-weight: normal; font-style: normal; }    	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+  @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+      /* thankyou */ 
+      h1{
+				color:hsla(214, 87%, 70%, 0.932);
+        font-family: 'GmarketSansBold';
+        margin: auto;
+        font-size: 5rem;
 			}
-			
-			@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
-			@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
-			h1{
-				color:rgb(255, 255, 255);
-				font-family:'GmarketSansBold'; 
-        
-			}
+      /* 세부내용 */
 			p{
-				font-size: 90%;
-				color:rgb(250, 250, 250);
-				font-family: 'yg-jalnan';
-        border-bottom: coral;
-        border-top: rgba(255, 255, 255, 0);
-        border-left:  rgba(255, 255, 255, 0);
-        border-right:  rgba(255, 255, 255, 0);;
-        border-style: solid;
-        border-width: 0.15rem;
-      padding-bottom:0.2rem;
-      border-radius: 0.5rem;
+				font-size: 100%;
+				color:rgb(255, 255, 255);
+        font-family: '양진체';
+        margin-top:1rem
 			}
-      
-			#exampleFormControlInput1
-			{
-				margin:0;
-			}
-		
-			.text-warning
-			{
-				margin:0;
-			}
-			.hr
-			{
-				color:#F39926
-			}
-   
-/* 박스 스펠링카운터 */
-      .wrap {
-    position: relative;
-            }
-.wrap span {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-            }
-
-#counter {
-  background-color:rgba(245, 163, 163, 0.637);
-  border-radius: 0.5rem;
-  padding: 0 .5rem 0 .5rem;
-  font-size: 0.75rem;
-  color: black;
-}
-
-
-/* 박스 스펠링카운터 */
-  </style>
-  
-
-	<script>
-		$(document).ready(function(){ 
-			$('#input_text1').keyup(function(){ 
-				if ($(this).val().length > $(this).attr('maxlength')) { 
-					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
-				} 
-			}); 
-		});
-		$(document).ready(function(){ 
-			$('#input_text2').keyup(function(){ 
-				if ($(this).val().length > $(this).attr('maxlength')) { 
-					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
-				} 
-			}); 
-		});
-		$(document).ready(function(){ 
-			$('#input_text3').keyup(function(){ 
-				if ($(this).val().length > $(this).attr('maxlength')) { 
-					$(this).val($(this).val().substr(0, $(this).attr('maxlength'))); 
-				} 
-			}); 
-		});
-
-
-		function check_input(){
- 
-		if(!document.written.question1.value){
-            alert("질문 문항 1을 작성하세요");
-            document.written.question1.focus();
-            return;
-        }
-		if(!document.written.question2.value){
-            alert("질문 문항 2을 작성하세요");
-            document.written.question2.focus();
-            return;
-        }
-		if(!document.written.question3.value){
-            alert("질문 문항 3을 작성하세요");
-            document.written.question3.focus();
-            return;
-        }
-
-        if(!document.written.question4.value){
-            alert("질문 문항 4을 작성하세요");
-            document.written.question4.focus();
-            return;
-        }
-
-        if(!document.written.question5.value){
-            alert("질문 문항 5을 작성하세요");
-            document.written.question5.focus();
-            return;
-        }
-
-        if(!document.written.question6.value){
-            alert("질문 문항 6을 작성하세요");
-            document.written.question6.focus();
-            return;
-        }
-        if(!document.written.question7.value){
-            alert("질문 문항 7을 작성하세요");
-            document.written.question7.focus();
-            return;
-        }
- 
-        document.written.submit();
-    };
-
-// 스펠링카운터 함수   1
-$(function(){
-$("textarea#input_text1").keyup(function(){
-bytesHandler1(this);
-});
-});
-
-function getTextLength1(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler1(obj){
-var text = $(obj).val();
-$(".bytes1").text(getTextLength1(text));
-}
-
-
-// 스펠링카운터 함수   2
-$(function(){
-$("textarea#input_text2").keyup(function(){
-bytesHandler2(this);
-});
-});
-
-function getTextLength2(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler2(obj){
-var text = $(obj).val();
-$('.bytes2').text(getTextLength2(text));
-}
-// 스펠링카운터 함수   3
-$(function(){
-$("textarea#question3").keyup(function(){
-bytesHandler3(this);
-});
-});
-
-function getTextLength3(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler3(obj){
-var text = $(obj).val();
-$('.bytes3').text(getTextLength3(text));
-}
-// 스펠링카운터 함수   4
-$(function(){
-$("textarea#question4").keyup(function(){
-bytesHandler4(this);
-});
-});
-
-function getTextLength4(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler4(obj){
-var text = $(obj).val();
-$('.bytes4').text(getTextLength4(text));
-}
-// 스펠링카운터 함수  5 
-$(function(){
-$("textarea#question5").keyup(function(){
-bytesHandler5(this);
-});
-});
-
-function getTextLength5(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler5(obj){
-var text = $(obj).val();
-$('.bytes5').text(getTextLength5(text));
-}
-
-// 스펠링카운터 함수   6
-$(function(){
-$("textarea#question6").keyup(function(){
-bytesHandler6(this);
-});
-});
-
-function getTextLength6(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler6(obj){
-var text = $(obj).val();
-$('.bytes6').text(getTextLength6(text));
-}
-// 스펠링카운터 함수   8
-$(function(){
-$("textarea#question8").keyup(function(){
-bytesHandler8(this);
-});
-});
-
-function getTextLength8(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
-len++;
-}
-len++;
-}
-return len;
-}
-
-function bytesHandler8(obj){
-var text = $(obj).val();
-$('.bytes8').text(getTextLength8(text));
-}
-// 스펠링카운터 함수  
-
-
-
-	</script>
-
-
-	<title>회원가입</title>
-
-	</head>
-
-	<body class="bgimg">
-		<!--배경이미지-->
-		<div class=" container-fluid">
-		<?php 
-			include_once "nav.php"; 
-			if($name==""){
-				echo("
-					<script>
-						alert('지원서 작성은 로그인 후 해주세요!');
-						history.go(-1);
-					</script>
-				");
-				exit;
-			}
-    ?>
-   
-			<div class="row d-flex justify-content-center">
-				
-				<div class="col-lg-5 mt-5 ">
-          <div class="row d-flex justify-content-center">
-            <img src="https://startup.likelion.org/img/logo.png" style="width:80%; text-align: center;">
-          </div>
-          <div class="row d-flex justify-content-center mb-4 mt-2">	<h1 style="margin-top: 2rem; margin-bottom: 3rem;">멋쟁이 사자처럼 8기</h1>
-          </div>
-          
-					<form name="written" method="post" action="form_insert.php">
-						<!--색상 class="text-warning"-->
-						<!--이름-->
-		
-					<!--1번질문-->
-						<div class="form-group mb-4 wrap">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6"></textarea>
-              <span id="counter" class="bytes1">0</span>  
-            </div>
-            
-            <!--2번질문-->
-            <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="question2" class="form-control question2" maxlength="1000" id="input_text2" rows="6"></textarea>
-              <span id="counter" class="bytes2">0</span>
-            </div>
-            
-            <!--3번질문-->
-            <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
-              <span id="counter" class="bytes3">0</span>
-            </div>
-
- <!--4번질문-->
-            <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
-              <span id="counter" class="bytes4">0</span>
-            </div>
- <!--5번질문-->
-            <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="              중동: 어플레이
-              아르바이트: 주말 아르바이트13~15
-              격전: 토요일오전 9~"></textarea>
-              <span id="counter" class="bytes5">0</span>
-            </div>
- <!--6번질문-->
-            <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="목x, 토 알바13~15시"></textarea>
-              <span id="counter" class="bytes6">0</span>
-            </div>
- <!--7번질문-->
-
-  <div class="form-group mt-5">
-    <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
-    <select class="form-control" id="exampleFormControlSelect1" name="question7">
-      <option value="4/1">4월1일</option>
-      <option value="4/2">4월2일</option>
-      <option value="4/3">4월3일</option>
-    </select>
-    </div>
- <!--8번질문-->
-             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
-              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
-              <span id="counter" class="bytes8">0</span>
-            </div>
- <!--그외질문-->
-           <label mt-5 mb-5 style="color: white; font-family: 'yg-jalnan'; font-size: 80%;">그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org</label>
-           
-
-              <!--제출버튼-->
-              <div class ="row">
-              <div class="col"></div>
-              <div class="col">
-              <div class="btn btn-secondary btn-lg" onclick="check_input()">제출</div>
-              </div>
-              <div class="col"></div>
-              </div>
-            </div>
-</div>
+/* 지원이완료되었습니다 */
+      h2{
+        font-weight: bold;
+				font-size: 2rem;
+				color:rgb(231, 159, 77);
+        font-family: 'BBTreeGB';  
+        padding:1rem 1rem 1rem 1rem;
+        margin: auto;
         
-					</form>	
+			}
+      /* 지원설명 */
+      h3{
+        font-weight: bold;
+				font-size: 0.8rem;
+        line-height: 300%;
+				color:rgba(255, 255, 255, 0.904);
       
-          
-				
-			</div>
+        font-family: 'BBTreeGB'; 
+        padding-bottom: 2rem;
+        padding:1rem 1rem 1rem 1rem;
+        
+			}
+.base
+{
+  background-color: black;
+}
 
-	</div><!--배경사진-->
-	</body>
+
+.middle
+{
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.986);
+  border-width: 0.1rem;
+  padding-top: 2rem;
+  padding-bottom:1rem;
+border-radius: 1rem;
+
+}
+.middle-1
+{
+  border-style: solid;
+  border-color: rgba(252, 252, 252, 0.986);
+
+  border-right: rgba(255, 255, 255, 0);
+  border-left: rgba(255, 255, 255, 0);
+  border-width: 0.06rem;
+
+}
+
+.middle-2
+{
+  border-style: solid;
+  border-color: rgba(252, 252, 252, 0.986);
+border-top:rgba(255, 255, 255, 0);
+border-bottom:rgba(255, 255, 255, 0);
+  border-left: rgba(255, 255, 255, 0);
+
+
+  border-width: 0.06rem;
+  box-sizing: border-box;
+
+}
 
 
 
-			
+</style>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<!--페이스북-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<!--바디시작-->
+<body class="base bgimg">
+<div class="row" style="height:20vh;"></div>
+
+
+<div class="row">
+<div class="col"style="width:20vh;"></div>
+
+
+<div class="col middle">
+  <div class="row"><h1>THANKYOU</h1></div>
+
+
+  <div class="row"><h2>지원이 완료되었습니다</h2></div>
+
+
+  <div class="row middle-1">
+    <div class="col middle-2"><p>이름</p></div>
+    <div class="col middle-2"><p>이름php</p></div>
+  </div>
+  <div class="row middle-1" style="border-top-width: 0;">
+  <div class="col middle-2"><p>연락처</p> </div>
+  <div class="col middle-2"><p>연락처php</p> </div>
+  </div>
+  <div class="row middle-1" style="border-top-width: 0;">
+  <div class="col middle-2"><p>이메일</p></div>
+  <div class="col middle-2"><p>이메일php</p> </div>
+  </div>
+
+
+  <div class="row"><h3>1. 지원서를 체줄하면 학교 운영진이 확인 후 합격여부를 지원자에게 전달합니다.<br>
+    2. 학교 별로 2차 면접을 진행하는 곳도 있습니다 <br>
+    3. 최종 선발 이후에는 멋쟁이 사자처럼 공식 OT 이후 정식 활동을 시작합니다. <br></h3></div>
+
+  <div class="row  container-fluid">
+    <div class="fb-page  container-fluid"  
+    data-href="https://www.facebook.com/likeliongachon"
+    data-width="1000" 
+    data-hide-cover="false"
+    data-show-facepile="false"></div>  
+  </div>
+
+
+</div>
+
+
+<div class="col"></div>
+
+
+</div>
+
+
+<div class="row" style="height:20vh;"></div>
+
+
+
+</body>
+
+
+
 </html>
