@@ -184,7 +184,6 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-}
 return len;
 }
 
