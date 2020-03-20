@@ -428,7 +428,17 @@ $('.bytes8').text(getTextLength8(text));
               <div class ="row">
               <div class="col"></div>
               <div class="col">
+                <?php
+                  if(!$res){
+                ?>
               <div class="btn btn-warning text-white btn-lg container-fluid mt-5" onclick="check_input()">제출</div>
+              <?php
+                  }
+              ?>
+              <?php else{
+                ?>
+                <div class="btn btn-warning text-white btn-lg container-fluid mt-5" onclick="check_input()">수정하기</div>
+              <?php }?>
               </div>
               <div class="col"></div>
               </div>
