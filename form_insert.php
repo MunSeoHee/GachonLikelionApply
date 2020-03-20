@@ -7,22 +7,21 @@
         $email = "";
     }
     // echo $id;
-    $name=$_POST["name"];
-    $major=$_POST["major"];
-    $year=$_POST["year"];
-    $gender=$_POST["gender"];
-    $phone=$_POST["phone"];
-    $dgree=$_POST["dgree"];
     $question1=$_POST["question1"];
-    $question2=$_POST["que2"];
-    $question3=$_POST["quest3"];
+    $question2=$_POST["question2"];
+    $question3=$_POST["question3"];
+    $question4=$_POST["question4"];
+    $question5=$_POST["question5"];
+    $question6=$_POST["question6"];
+    $question7=$_POST["question7"];
+    $question8=$_POST["question8"];
     // echo nl2br($question2);
     // echo $question3;
     $date = date("Y-m-d H:i:s");
     include_once "settings.php";
 
-    $sql="insert into written (name, major, year, gender, phone, degree, question1, question2, question3, date, userid)
-            values ('$name', '$major', '$year', '$gender', '$phone', '$dgree', '$question1', '$question2', '$question3', '$date', '$email')";
+    $sql="insert into written (question1, question2, question3, question4, question5, question6, question7, question8, date, email)
+            values ('$question1', '$question2', '$question3', '$question4', '$question5', '$question6', '$question7', '$question8', '$date', '$email')";
 
     $result = mysqli_query($con, $sql);
 

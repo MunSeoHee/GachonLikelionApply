@@ -102,7 +102,7 @@
 <body class="base bgimg">
 <?php 
         include_once "nav.php"; 
-        $sql = "select phone, name, email form user where name='$email'";
+        $sql = "select phone, name, email from user where email='$email'";
         include_once "settings.php";
         $result = mysqli_query($con, $sql);
         $row = mysqli_fetch_array($result);
