@@ -202,6 +202,12 @@
                                 자세한 행사 및 활동 개요는 이후 전파하겠습니다.<br>
                             </p>
                         </li>
+                        <li class="article" id="a4">
+                            <p class="q row text-body border-bottom pb-3"><a href="#a4" class="text-body" style="font-weight: bold;">Q. 그 외 더 궁금한 사항이 있다면?</a></p>
+                            <p class="a container-fluid row bg-light text-muted p-4" style="font-size:90%; line-height:200%;">
+                                가천대학교X멋쟁이사자처럼 페이스북 페이지(https://www.facebook.com/likeliongachon/)로 페이스북 메세지 보내주세요!
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
