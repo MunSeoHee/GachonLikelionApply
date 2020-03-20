@@ -12,6 +12,11 @@
             document.member.id.focus();
             return;
         }
+        if(!(document.member.pw.value == document.member.pw_check.value)){
+            alert("비밀번호와 비밀번호 확인이 일치하지 않습니다");
+            document.member.pw.focus();
+            return;
+        }
         if(document.member.email.value == "admin"){
             alert("다른 이메일을 사용해주세요!");
             document.member.id.focus();
@@ -19,6 +24,11 @@
         }
         if(!document.member.pw.value){
             alert("비밀번호를 입력해주세요");
+            document.member.pw.focus();
+            return;
+        }
+        if(!document.member.pw_check.value){
+            alert("비밀번호 확인을 입력해주세요");
             document.member.pw.focus();
             return;
         }
@@ -121,6 +131,11 @@
                     <div class="form-group row">
                         <div class="container-fluid">
                             <input type="password" name="pw" class="form-control" id="inputPassword" placeholder="비밀번호">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="container-fluid">
+                            <input type="password" name="pw_check" class="form-control" id="inputPassword" placeholder="비밀번호 확인">
                         </div>
                     </div>
                     <div class="form-group row">
