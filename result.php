@@ -127,7 +127,7 @@ border-bottom:rgba(255, 255, 255, 0);
 <div class="col"></div>
 
 
-<div class="col-lg-4 middle">
+<div class="col-lg-5 middle">
   <div class="row"><h1>THANKYOU</h1></div>
 
 
@@ -171,7 +171,7 @@ border-bottom:rgba(255, 255, 255, 0);
 
 <div class="row mt-5 mb-5">
   <div class="col" ></div>
-  <div class="col-lg-4">
+  <div class="col-lg-5">
     <div class="row">
       <div class="col">
         <a href="index.php" class="btn btn-warning text-white container-fluid">FAQ 및 8기 안내</a>
