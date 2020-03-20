@@ -113,7 +113,7 @@
         <div class="col-sm">      
         </div>
         <div class="col-sm text-center">
-        <a href="form.php" class="btn btn-warning text-light">지원하기</a>
+        <a href="form" class="btn btn-warning text-light">지원하기</a>
         </div>
         <div class="col-sm">      
         </div>
