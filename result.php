@@ -167,8 +167,20 @@ border-bottom:rgba(255, 255, 255, 0);
 
 </div>
 
-
-<div class="row" style="height:20vh;"></div>
+<div class="row mt-5">
+  <div class="col"></div>
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <a href="index.php" class="btn btn-warning text-white container-fluid">FAQ 및 8기 안내</a>
+      </div>
+      <div class="col">
+        <a href="form.php" class="btn btn-warning text-white container-fluid">지원서 수정</a>
+      </div>
+    </div>
+  </div>
+  <div class="col"></div>
+</div>
 
 
 
