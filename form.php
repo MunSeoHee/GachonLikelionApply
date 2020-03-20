@@ -359,7 +359,7 @@ $('.bytes8').text(getTextLength8(text));
 					<!--1번질문-->
 						<div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6" value="<?$row['question1']?>"></textarea>
+              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6" value="<?=$row['question1']?>"></textarea>
               <span id="counter" class="bytes1">0</span>  
             </div>
             
