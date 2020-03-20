@@ -122,7 +122,7 @@ border-bottom:rgba(255, 255, 255, 0);
 
 
 <div class="row">
-<div class="col"style="width:20vh;"></div>
+<div class="col" style="width:20vh;"></div>
 
 
 <div class="col middle">
@@ -167,9 +167,9 @@ border-bottom:rgba(255, 255, 255, 0);
 
 </div>
 
-<div class="row mt-5">
+<div class="row mt-5 mb-5">
   <div class="col"></div>
-  <div class="col">
+  <div class="col" style="width:20vh;">
     <div class="row">
       <div class="col">
         <a href="index.php" class="btn btn-warning text-white container-fluid">FAQ 및 8기 안내</a>
@@ -186,6 +186,11 @@ border-bottom:rgba(255, 255, 255, 0);
 
 </body>
 
+<footer>
+  <?php
+    include_once 'footer.html';
+  ?>
 
+</footer>
 
 </html>
