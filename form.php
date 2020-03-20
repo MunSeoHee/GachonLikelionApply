@@ -14,10 +14,11 @@
 			.bgimg {
 				border: 0;
 				padding: 0; 
-				background-image: url(\lion.jpg);
+			
 				min-height: 100%;
 				background-position: center;
 				background-size: cover;
+        background-color: black;
 			}
 			
 			@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
