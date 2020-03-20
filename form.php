@@ -269,7 +269,7 @@ $('.bytes6').text(getTextLength6(text));
 	</script>
 
 
-	<title>회원가입</title>
+	<title>Gachon Likelion</title>
 
 	</head>
 
@@ -299,7 +299,7 @@ $('.bytes6').text(getTextLength6(text));
           <div class="row d-flex justify-content-center">
             <img src="https://startup.likelion.org/img/logo.png" style="width:80%; text-align: center;">
           </div>
-          <div class="row d-flex justify-content-center mb-4 mt-2">	<h1 style="margin-top: 2rem; margin-bottom: 3rem;">멋쟁이 사자처럼 8기</h1>
+          <div class="row d-flex justify-content-center mb-4 mt-2">	<h1 style="margin-top: 2rem; margin-bottom: 3rem;">멋쟁이 사자처럼 8기 지원서</h1>
           </div>
           
 					<form name="written" method="post" action="form_insert.php">
