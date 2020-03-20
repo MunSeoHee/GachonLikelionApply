@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once "servertimecheck.php";
     if(isset($_SESSION["email"])){
         $email = $_SESSION["email"];
     }
