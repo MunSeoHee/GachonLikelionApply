@@ -408,27 +408,27 @@ $('.bytes8').text(getTextLength8(text));
   <div class="form-group mt-5">
     <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
     <select class="form-control" id="exampleFormControlSelect1" name="question7">
-      <?
+      <?php
         if($row['question7']=='4/1'){
       ?>
       <option selected value="4/1">4월1일</option>
       <option value="4/2">4월2일</option>
       <option value="4/3">4월3일</option>
-      <?}?>
-      <?
+      <?php}?>
+      <?php
         else if($row['question7']=='4/2'){
       ?>
       <option value="4/1">4월1일</option>
       <option selected value="4/2">4월2일</option>
       <option value="4/3">4월3일</option>
-      <?}?>
-      <?
+      <?php}?>
+      <?php
         else if($row['question7']=='4/3'){
       ?>
       <option value="4/1">4월1일</option>
       <option value="4/2">4월2일</option>
       <option selected value="4/3">4월3일</option>
-      <?}?>
+      <?php}?>
     </select>
     </div>
  <!--8번질문-->
