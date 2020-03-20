@@ -335,7 +335,12 @@ $('.bytes8').text(getTextLength8(text));
 					</script>
 				");
 				exit;
-			}
+      }
+      $sql = "select * from written where email='$email'";
+      include_once "settings.php";
+      $result = mysqli_query($con, $sql);
+      $res = mysqli_num_rows($result);
+      $row = mysqli_fetch_array($result);
     ?>
    
 			<div class="row d-flex justify-content-center">
@@ -354,34 +359,34 @@ $('.bytes8').text(getTextLength8(text));
 					<!--1번질문-->
 						<div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6"></textarea>
+              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6" value="<?$row['question1']?>"></textarea>
               <span id="counter" class="bytes1">0</span>  
             </div>
             
             <!--2번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="question2" class="form-control question2" maxlength="1000" id="input_text2" rows="6"></textarea>
+              <textarea name="question2" class="form-control question2" maxlength="1000" id="input_text2" rows="6" value="<?$row['question2']?>"></textarea>
               <span id="counter" class="bytes2">0</span>
             </div>
             
             <!--3번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
+              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" value="<?$row['question3']?>" placeholder="EX) C/상, JAVA/중, Python/하"></textarea>
               <span id="counter" class="bytes3">0</span>
             </div>
 
  <!--4번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
+              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="6" value="<?$row['question4']?>" placeholder="EX) 포토샵/하, 프리미어/상"></textarea>
               <span id="counter" class="bytes4">0</span>
             </div>
  <!--5번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="              중동: 어플레이
+              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6"  value="<?$row['question5']?>" placeholder="              중동: 어플레이
               아르바이트: 주말 아르바이트13~15
               격전: 토요일오전 9~"></textarea>
               <span id="counter" class="bytes5">0</span>
@@ -389,14 +394,14 @@ $('.bytes8').text(getTextLength8(text));
  <!--6번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="목x, 토 알바13~15시"></textarea>
+              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" value="<?$row['question6']?>" placeholder="목x, 토 알바13~15시"></textarea>
               <span id="counter" class="bytes6">0</span>
             </div>
  <!--7번질문-->
 
   <div class="form-group mt-5">
     <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
-    <select class="form-control" id="exampleFormControlSelect1" name="question7">
+    <select class="form-control" id="exampleFormControlSelect1" name="question7" value="<?$row['question7']?>">
       <option value="4/1">4월1일</option>
       <option value="4/2">4월2일</option>
       <option value="4/3">4월3일</option>
@@ -405,7 +410,7 @@ $('.bytes8').text(getTextLength8(text));
  <!--8번질문-->
              <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
-              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
+              <textarea name="question8" id="question8" class="form-control"  value="<?$row['question8']?>" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"></textarea>
               <span id="counter" class="bytes8">0</span>
             </div>
  <!--그외질문-->
