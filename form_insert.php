@@ -55,7 +55,7 @@
         if($result){
             echo("
                 <script>
-                    location.href = 'result.php';
+                    location.href = 'result';
                 </script>
             ");
         }
