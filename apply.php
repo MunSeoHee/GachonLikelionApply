@@ -113,6 +113,7 @@ border-bottom:rgba(255, 255, 255, 0);
 <body class="base bgimg">
 <?php 
         include_once "nav.php"; 
+        include_once "servertimecheck.php";
         $sql = "select phone, name, email from user where email='$email'";
         include_once "settings.php";
         $result = mysqli_query($con, $sql);
