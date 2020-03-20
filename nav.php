@@ -38,12 +38,12 @@
                 <a class="navbar-brand" href="main.php"><img src="https://startup.likelion.org/img/logo.png" width="120" height="30"/></a>
             </div>
             <div class="col text-right text-light">
-                <div class="row">
+                <div class="row d-flex justify-content-end">
                 <?php
                     if(!$name){
                 ?>
-                        <div class="col-sm d-flex justify-content-end"><a href="login_page.php">로그인</a></div>
-                        <div class="col-sm d-flex justify-content-start"><a href="signin_page.php">회원가입</a></div>
+                        <a href="login_page.php">로그인</a>
+                        <a href="signin_page.php">회원가입</a>
                         
                         
                 <?php
