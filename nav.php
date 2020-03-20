@@ -43,14 +43,14 @@
                     if(!$name){
                 ?>
                         <a class="mr-3" href="login_page.php">로그인</a>
-                        <a class="mr-5" href="signin_page.php">회원가입</a>
+                        <a class="mr-3" href="signin_page.php">회원가입</a>
                         
                         
                 <?php
                     }
                     else{
                 ?>      <a class="mr-3" href="#"><?=$name?>님</a>
-                        <a class="mr-5" href="logout.php">로그아웃</a>
+                        <a class="mr-3" href="logout.php">로그아웃</a>
                 <?php
                     }
                 ?>
