@@ -173,10 +173,10 @@ border-bottom:rgba(255, 255, 255, 0);
   <div class="col-lg-5">
     <div class="row">
       <div class="col">
-        <a href="index.php" class="btn btn-warning text-white container-fluid">FAQ 및 8기 안내</a>
+        <a href="index" class="btn btn-warning text-white container-fluid">FAQ 및 8기 안내</a>
       </div>
       <div class="col">
-        <a href="form.php" class="btn btn-warning text-white container-fluid">지원서 수정</a>
+        <a href="form" class="btn btn-warning text-white container-fluid">지원서 수정</a>
       </div>
     </div>
   </div>
