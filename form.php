@@ -416,7 +416,7 @@ $('.bytes8').text(getTextLength8(text));
               <div class ="row">
               <div class="col"></div>
               <div class="col">
-              <div class="btn btn-secondary btn-lg" onclick="check_input()">제출</div>
+              <div class="btn btn-warning text-white btn-lg" onclick="check_input()">제출</div>
               </div>
               <div class="col"></div>
               </div>
