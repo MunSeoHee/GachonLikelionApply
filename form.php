@@ -343,7 +343,10 @@ $('.bytes8').text(getTextLength8(text));
       $row = mysqli_fetch_array($result);
     ?>
     <script>
-      $("exampleFormControlSelect1").val("<?=$row['question7']?>").attr("selected", "selected");
+      $(document).ready(function(){ 
+        $("exampleFormControlSelect1").val("<?=$row['question7']?>").attr("selected", "selected");
+		});
+     
     </script>
    
 			<div class="row d-flex justify-content-center">
