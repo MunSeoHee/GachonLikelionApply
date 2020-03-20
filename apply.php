@@ -111,6 +111,13 @@ border-bottom:rgba(255, 255, 255, 0);
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 <!--바디시작-->
 <body class="base bgimg">
+<?php 
+        include_once "nav.php"; 
+        $sql = "select phone, name, email from user where email='$email'";
+        include_once "settings.php";
+        $result = mysqli_query($con, $sql);
+        $row = mysqli_fetch_array($result);
+    ?>  
 <div class="row" style="height:20vh;"></div>
 
 
@@ -127,15 +134,15 @@ border-bottom:rgba(255, 255, 255, 0);
 
   <div class="row middle-1">
     <div class="col middle-2"><p>이름</p></div>
-    <div class="col middle-2"><p>이름php</p></div>
+    <div class="col middle-2"><p><?=$row['name']?></p></div>
   </div>
   <div class="row middle-1" style="border-top-width: 0;">
   <div class="col middle-2"><p>연락처</p> </div>
-  <div class="col middle-2"><p>연락처php</p> </div>
+  <div class="col middle-2"><p><?=$row['phone']?></p> </div>
   </div>
   <div class="row middle-1" style="border-top-width: 0;">
   <div class="col middle-2"><p>이메일</p></div>
-  <div class="col middle-2"><p>이메일php</p> </div>
+  <div class="col middle-2"><p><?=$row['email']?></p> </div>
   </div>
 
 

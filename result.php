@@ -6,30 +6,31 @@
 
 
 
-
+@font-face { font-family: 'CookieRun-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
 	@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
   @font-face { font-family: '양진체'; src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); font-weight: normal; font-style: normal; }
   @font-face { font-family: 'fromdamiM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff'); font-weight: normal; font-style: normal; }    	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
   @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
-      /* thankyou */
+      /* thankyou */ 
       h1{
-				color:rgba(22, 150, 235, 0.904);
-				font-family: '양진체';
+				color:hsla(214, 87%, 70%, 0.932);
+        font-family: 'GmarketSansBold';
         margin: auto;
+        font-size: 5rem;
 			}
       /* 세부내용 */
 			p{
 				font-size: 100%;
-				color:rgba(243, 212, 73, 0.904);
-        font-family: 'BBTreeGB'; 
+				color:rgb(255, 255, 255);
+        font-family: '양진체';
         margin-top:1rem
 			}
 /* 지원이완료되었습니다 */
       h2{
         font-weight: bold;
-				font-size: 1rem;
-				color:rgba(80, 172, 121, 0.904);
-        font-family: 'BBTreeGB'; 
+				font-size: 2rem;
+				color:rgb(231, 159, 77);
+        font-family: 'BBTreeGB';  
         padding:1rem 1rem 1rem 1rem;
         margin: auto;
         
@@ -37,10 +38,11 @@
       /* 지원설명 */
       h3{
         font-weight: bold;
-				font-size: 0.6rem;
+				font-size: 0.8rem;
         line-height: 300%;
-				color:rgba(243, 212, 73, 0.904);
-        font-family: 'BBTreeGR';
+				color:rgba(255, 255, 255, 0.904);
+      
+        font-family: 'BBTreeGB'; 
         padding-bottom: 2rem;
         padding:1rem 1rem 1rem 1rem;
         
@@ -54,16 +56,20 @@
 .middle
 {
   border-style: solid;
-  border-color: rgba(255, 153, 0, 0.986);
-  border-width: 0.06rem;
+  border-color: rgba(255, 255, 255, 0.986);
+  border-width: 0.1rem;
   padding-top: 2rem;
-
+  padding-bottom:1rem;
+border-radius: 1rem;
 
 }
 .middle-1
 {
   border-style: solid;
-  border-color: rgba(255, 153, 0, 0.986);
+  border-color: rgba(252, 252, 252, 0.986);
+
+  border-right: rgba(255, 255, 255, 0);
+  border-left: rgba(255, 255, 255, 0);
   border-width: 0.06rem;
 
 }
@@ -71,7 +77,12 @@
 .middle-2
 {
   border-style: solid;
-  border-color: rgba(255, 153, 0, 0.986);
+  border-color: rgba(252, 252, 252, 0.986);
+border-top:rgba(255, 255, 255, 0);
+border-bottom:rgba(255, 255, 255, 0);
+  border-left: rgba(255, 255, 255, 0);
+
+
   border-width: 0.06rem;
   box-sizing: border-box;
 
@@ -106,7 +117,7 @@
         include_once "settings.php";
         $result = mysqli_query($con, $sql);
         $row = mysqli_fetch_array($result);
-    ?>   
+    ?>  
 <div class="row" style="height:20vh;"></div>
 
 
@@ -122,20 +133,20 @@
 
 
   <div class="row middle-1">
-    <div class="col middle-2"><p>3번 이름</p></div>
+    <div class="col middle-2"><p>이름</p></div>
     <div class="col middle-2"><p><?=$row['name']?></p></div>
   </div>
   <div class="row middle-1" style="border-top-width: 0;">
-  <div class="col middle-2"><p>3번연락처</p> </div>
+  <div class="col middle-2"><p>연락처</p> </div>
   <div class="col middle-2"><p><?=$row['phone']?></p> </div>
   </div>
   <div class="row middle-1" style="border-top-width: 0;">
-  <div class="col middle-2"><p>3번 이메일</p></div>
+  <div class="col middle-2"><p>이메일</p></div>
   <div class="col middle-2"><p><?=$row['email']?></p> </div>
   </div>
 
 
-  <div class="row"><h3>1. 지원서를 체줄하면 학교 운영진이 확인 후 합격여부를 지원자에게 전달합니다. <br>
+  <div class="row"><h3>1. 지원서를 체줄하면 학교 운영진이 확인 후 합격여부를 지원자에게 전달합니다.<br>
     2. 학교 별로 2차 면접을 진행하는 곳도 있습니다 <br>
     3. 최종 선발 이후에는 멋쟁이 사자처럼 공식 OT 이후 정식 활동을 시작합니다. <br></h3></div>
 
@@ -158,6 +169,8 @@
 
 
 <div class="row" style="height:20vh;"></div>
+
+
 
 </body>
 
