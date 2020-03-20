@@ -104,37 +104,42 @@
 
 		function check_input(){
  
-		if(!document.getElementById('input_text1').value){
+		if(!document.written.question1.value){
             alert("질문 문항 1을 작성하세요");
-            document.getElementById('input_text1').focus();
+            document.written.question1.focus();
             return;
         }
-		if(!document.getElementById('input_text2').value){
+		if(!document.written.question2.value){
             alert("질문 문항 2을 작성하세요");
-            document.getElementById('input_text2').focus();
+            document.written.question2.focus();
             return;
         }
-		if(!document.getElementById('input_text3').value){
+		if(!document.written.question3.value){
             alert("질문 문항 3을 작성하세요");
-            document.getElementById('input_text3').focus();
+            document.written.question3.focus();
             return;
         }
 
-        if(!document.getElementById('input_text4').value){
+        if(!document.written.question4.value){
             alert("질문 문항 4을 작성하세요");
-            document.getElementById('input_text4').focus();
+            document.written.question4.focus();
             return;
         }
 
-        if(!document.getElementById('input_text5').value){
+        if(!document.written.question5.value){
             alert("질문 문항 5을 작성하세요");
-            document.getElementById('input_text5').focus();
+            document.written.question5.focus();
             return;
         }
 
-        if(!document.getElementById('input_text6').value){
+        if(!document.written.question6.value){
             alert("질문 문항 6을 작성하세요");
-            document.getElementById('input_text6').focus();
+            document.written.question6.focus();
+            return;
+        }
+        if(!document.written.question7.value){
+            alert("질문 문항 7을 작성하세요");
+            document.written.question7.focus();
             return;
         }
  
@@ -348,7 +353,7 @@ $('.bytes8').text(getTextLength8(text));
 					<!--1번질문-->
 						<div class="form-group mb-4 wrap">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control question1"maxlength="1000" id="input_text1" rows="6"></textarea>
+              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6"></textarea>
               <span id="counter" class="bytes1">0</span>  
             </div>
             
@@ -390,10 +395,10 @@ $('.bytes8').text(getTextLength8(text));
 
   <div class="form-group mt-5">
     <label for="exampleFormControlSelect1"class="text-warning"><p>면접희망 날짜</p></label>
-    <select name="gender" class="form-control" id="exampleFormControlSelect1">
-      <option value="1">4월1일</option>
-      <option value="2">4월2일</option>
-      <option value="2">4월3일</option>
+    <select class="form-control" id="exampleFormControlSelect1" name="question7">
+      <option value="4/1">4월1일</option>
+      <option value="4/2">4월2일</option>
+      <option value="4/3">4월3일</option>
     </select>
     </div>
  <!--8번질문-->
