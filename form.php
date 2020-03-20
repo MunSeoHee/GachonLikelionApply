@@ -323,7 +323,7 @@ $('.bytes6').text(getTextLength6(text));
             <!--3번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>다뤄본 컴퓨터 언어를 실력 상, 중, 하를 포함하여 모두 적어주세요.<br>또한 디자인에 대한 경험이 있으실 경우, 그에 대한 내용과 다뤄본 디자인 툴을 실력 상, 중, 하를 포함하여 모두 적어주세요</p></label>
-              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="ex) python 하, C 상, html 중, css 중 / 포토샵 상, 프리미어 중 등"><?=$row['question3']?></textarea>
+              <textarea name="question3" id="question3" class="form-control" maxlength="300" id="input_text3" rows="6" placeholder="ex) python 하, C 상, html 중, css 중 / 포토샵 상, 프리미어 중 등"><?=$row['question3']?></textarea>
               <span id="counter" class="bytes3">0</span>
             </div>
 
@@ -336,13 +336,13 @@ $('.bytes6').text(getTextLength6(text));
  <!--5번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>2020년 한 해 동안 참여하거나 참여할 예정인 동아리, 아르바이트, 대외활동 및 프로젝트, 인턴쉽 프로그램, 공모전 등을 적어주세요</p></label>
-              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6"  placeholder="ex) 2020년 2학기 졸업 프로젝트 및 p 실무 프로젝트, 화 수 목 저녁 6시 강남 카페 아르바이트 등"><?=$row['question5']?></textarea>
+              <textarea name="question5" id="question5"  class="form-control" maxlength="300" id="input_text3" rows="6"  placeholder="ex) 2020년 2학기 졸업 프로젝트 및 p 실무 프로젝트, 화 수 목 저녁 6시 강남 카페 아르바이트 등"><?=$row['question5']?></textarea>
               <span id="counter" class="bytes5">0</span>
             </div>
  <!--6번질문-->
             <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>가천대학교 멋쟁이 사자처럼 8기는 매주 2회, 목요일 6시 및 토요일 3시 이후에 정규 스터디 및 팀 프로젝트를 진행할 예정입니다. 목요일, 토요일 정기 세션에 참여가 가능하신가요? 해당 요일에 일정이 있거나 일정이 생길 수도 있다면 이에 대한 내용을 적어주세요</p></label>
-              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="ex) 목요일 1~5시 학교 수업, 이후 일정 없음 / 토요일 1~3시 학교 주변 카페 아르바이트 등"><?=$row['question6']?></textarea>
+              <textarea name="question6" id="question6" class="form-control" maxlength="300" id="input_text3" rows="6" placeholder="ex) 목요일 1~5시 학교 수업, 이후 일정 없음 / 토요일 1~3시 학교 주변 카페 아르바이트 등"><?=$row['question6']?></textarea>
               <span id="counter" class="bytes6">0</span>
             </div>
  <!--7번질문-->
@@ -358,7 +358,7 @@ $('.bytes6').text(getTextLength6(text));
  <!--8번질문-->
              <div class="form-group mb-4 wrap mt-5">
               <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소가 있으신 분은 적어주세요 (없더라도 불이익은 없습니다)</p></label>
-              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"><?=$row['question8']?></textarea>
+              <textarea name="question8" id="question8" class="form-control" maxlength="200" id="input_text3" rows="1" placeholder="https://github.com/닉네임"><?=$row['question8']?></textarea>
             </div>
  <!--그외질문-->
            <label mt-5 mb-5 style="color: white; font-family: 'yg-jalnan'; font-size: 80%;">그 외 포트폴리오 및 만들고 싶은 서비스 기획안을 제출하고 싶으신 분은 아래 메일로 보내주세요<br>nansh9815@likelion.org</label>
