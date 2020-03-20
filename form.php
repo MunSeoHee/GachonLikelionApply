@@ -159,8 +159,8 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
 }
+return len;
 };
 
 function bytesHandler1(obj){
@@ -181,8 +181,8 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
 }
+return len;
 };
 
 function bytesHandler2(obj){
@@ -201,8 +201,8 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
-}};
+}return len;
+};
 
 function bytesHandler3(obj){
 var text = $(obj).val();
@@ -220,8 +220,7 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
-}};
+}return len;};
 
 function bytesHandler4(obj){
 var text = $(obj).val();
@@ -239,8 +238,7 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
-}};
+}return len;};
 
 function bytesHandler5(obj){
 var text = $(obj).val();
@@ -259,8 +257,7 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
-}};
+}return len;};
 
 function bytesHandler6(obj){
 var text = $(obj).val();
@@ -278,8 +275,7 @@ var len = 0;
 
 for (var i = 0; i < str.length; i++) {
 len++;
-return len;
-}};
+}return len;};
 
 function bytesHandler8(obj){
 var text = $(obj).val();
