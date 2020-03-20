@@ -36,7 +36,7 @@
             $_SESSION["userlevel"] = $row["userlevel"];
             echo("
                 <script>
-                    location.href = 'form.php';
+                    location.href = 'form';
                 </script>
             ");
         }

@@ -32,7 +32,7 @@
             echo "<script> alert('가입 되었습니다.');</script>";
             echo " 
             <script>
-                location.href = 'index.php';
+                location.href = 'info';
             </script>
         ";
         }
