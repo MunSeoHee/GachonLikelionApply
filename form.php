@@ -22,7 +22,7 @@
 			}
 			
 			@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
-			@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+			@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: lighter; font-style: normal; }
 			h1{
 				color:rgb(255, 255, 255);
 				font-family:'GmarketSansBold'; 
@@ -38,7 +38,6 @@
         border-right:  rgba(255, 255, 255, 0);;
         border-style: solid;
         border-width: 0.15rem;
-        font-weight:0.5%;
       padding-bottom:0.2rem;
       border-radius: 0.5rem;
 			}
