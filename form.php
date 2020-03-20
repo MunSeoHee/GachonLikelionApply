@@ -308,49 +308,41 @@ $('.bytes6').text(getTextLength6(text));
 		
 					<!--1번질문-->
 						<div class="form-group mb-4 wrap">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (1000자)</p></label>
-              <textarea name="question1" class="form-control question1" maxlength="1000" id="input_text1" rows="6"><?=$row['question1']?></textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>지원동기 (700자 이내)</p></label>
+              <textarea name="question1" class="form-control question1" maxlength="700" id="input_text1" rows="6"><?=$row['question1']?></textarea>
               <span id="counter" class="bytes1">0</span>  
             </div>
             
             <!--2번질문-->
             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스</p></label>
-              <textarea name="question2" class="form-control question2" maxlength="1000" id="input_text2" rows="6"><?=$row['question2']?></textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>만들고 싶은 서비스를 적어주세요 (1000자 이내)</p></label>
+              <textarea name="question2" class="form-control question2" maxlength="1000" id="input_text2" rows="6" placeholder="ex) 코로나 확진자 안내 서비스 등"><?=$row['question2']?></textarea>
               <span id="counter" class="bytes2">0</span>
             </div>
             
             <!--3번질문-->
             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 프로그래밍 언어 / 실력(상중하)</p></label>
-              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) C/상, JAVA/중, Python/하">
-              <?=$row['question3']?>
-              </textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>다뤄본 컴퓨터 언어를 실력 상, 중, 하를 포함하여 모두 적어주세요. 또한 디자인에 대한 경험이 있으실 경우, 그에 대한 내용과 다뤄본 디자인 툴을 실력 상, 중, 하를 포함하여 모두 적어주세요</p></label>
+              <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="ex) python 하, C 상, html 중, css 중 / 포토샵 상, 프리미어 중 등"><?=$row['question3']?></textarea>
               <span id="counter" class="bytes3">0</span>
             </div>
 
  <!--4번질문-->
             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 다뤄 본 디자인툴 / 실력(상중하)</p></label>
-              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="EX) 포토샵/하, 프리미어/상">
-              <?=$row['question4']?>
-              </textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>멋사에서 활동하게 된다면 멋사를 통해 얻어가고 싶은 것과 팀을 위해 어떤 노력 및 기여를 할 수 있는지 적어주세요 (1000자 이내)</p></label>
+              <textarea name="question4" id="question4" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder=""><?=$row['question4']?></textarea>
               <span id="counter" class="bytes4">0</span>
             </div>
  <!--5번질문-->
             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>현재 활동중인 중앙동아리, 아르바이트 대외활동 및 프로젝트는 무엇이 있는지?</p></label>
-              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6"  placeholder="              중동: 어플레이
-              아르바이트: 주말 아르바이트13~15
-              격전: 토요일오전 9~"><?=$row['question5']?></textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>2020년 한 해 동안 참여하거나 참여할 예정인 동아리, 아르바이트, 대외활동 및 프로젝트, 인턴쉽 프로그램, 공모전 등을 적어주세요</p></label>
+              <textarea name="question5" id="question5"  class="form-control" maxlength="1000" id="input_text3" rows="6"  placeholder="ex) 2020년 2학기 졸업 프로젝트 및 p 실무 프로젝트, 화 수 목 저녁 6시 강남 카페 아르바이트 등"><?=$row['question5']?></textarea>
               <span id="counter" class="bytes5">0</span>
             </div>
  <!--6번질문-->
             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>목요일 5시이후, 토요일 3시이후 일정이 있나요?</p></label>
-              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="목x, 토 알바13~15시">
-              <?=$row['question6']?>
-              </textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>가천대학교 멋쟁이 사자처럼 8기는 매주 2회, 목요일 6시 및 토요일 3시 이후에 정규 스터디 및 팀 프로젝트를 진행할 예정입니다. 목요일, 토요일 정기 세션에 참여가 가능하신가요? 해당 요일에 일정이 있거나 일정이 생길 수도 있다면 이에 대한 내용을 적어주세요</p></label>
+              <textarea name="question6" id="question6" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="ex) 목요일 1~5시 학교 수업, 이후 일정 없음 / 토요일 1~3시 학교 주변 카페 아르바이트 등"><?=$row['question6']?></textarea>
               <span id="counter" class="bytes6">0</span>
             </div>
  <!--7번질문-->
@@ -365,13 +357,11 @@ $('.bytes6').text(getTextLength6(text));
     </div>
  <!--8번질문-->
              <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소</p></label>
-              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임">
-                <?=$row['question8']?>
-              </textarea>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>깃허브 주소가 있으신 분은 적어주세요 (없더라도 불이익은 없습니다)</p></label>
+              <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임"><?=$row['question8']?></textarea>
             </div>
  <!--그외질문-->
-           <label mt-5 mb-5 style="color: white; font-family: 'yg-jalnan'; font-size: 80%;">그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org</label>
+           <label mt-5 mb-5 style="color: white; font-family: 'yg-jalnan'; font-size: 80%;">그 외 포트폴리오 및 만들고 싶은 서비스 기획안을 제출하고 싶으신 분은 아래 메일로 보내주세요<br>nansh9815@likelion.org</label>
            
 
               <!--제출버튼-->
