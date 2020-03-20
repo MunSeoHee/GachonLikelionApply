@@ -127,7 +127,7 @@ border-bottom:rgba(255, 255, 255, 0);
 
 
 <div class="col-lg-5 middle">
-  <div class="row text-warning"><h1>THANKYOU</h1></div>
+  <div class="row "><h1 class="text-warning">THANKYOU</h1></div>
 
 
   <div class="row"><h2>지원해주셔서 감사합니다:)</h2></div>
