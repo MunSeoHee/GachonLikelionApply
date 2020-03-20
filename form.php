@@ -262,8 +262,7 @@ len++;
 function bytesHandler6(obj){
 var text = $(obj).val();
 $('.bytes6').text(getTextLength6(text));
-};
-
+}
 
 
 
@@ -370,7 +369,6 @@ $('.bytes6').text(getTextLength6(text));
               <textarea name="question8" id="question8" class="form-control" maxlength="1000" id="input_text3" rows="1" placeholder="https://github.com/닉네임">
                 <?=$row['question8']?>
               </textarea>
-              <span id="counter" class="bytes8">0</span>
             </div>
  <!--그외질문-->
            <label mt-5 mb-5 style="color: white; font-family: 'yg-jalnan'; font-size: 80%;">그 외 포트폴리오는 아래 메일로 보네주세요 <br>nansh9815@likelion.org</label>
