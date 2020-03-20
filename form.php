@@ -322,7 +322,7 @@ $('.bytes6').text(getTextLength6(text));
             
             <!--3번질문-->
             <div class="form-group mb-4 wrap mt-5">
-              <label for="exampleFormControlTextarea1"class="text-warning"><p>다뤄본 컴퓨터 언어를 실력 상, 중, 하를 포함하여 모두 적어주세요. 또한 디자인에 대한 경험이 있으실 경우, 그에 대한 내용과 다뤄본 디자인 툴을 실력 상, 중, 하를 포함하여 모두 적어주세요</p></label>
+              <label for="exampleFormControlTextarea1"class="text-warning"><p>다뤄본 컴퓨터 언어를 실력 상, 중, 하를 포함하여 모두 적어주세요.<br>또한 디자인에 대한 경험이 있으실 경우, 그에 대한 내용과 다뤄본 디자인 툴을 실력 상, 중, 하를 포함하여 모두 적어주세요</p></label>
               <textarea name="question3" id="question3" class="form-control" maxlength="1000" id="input_text3" rows="6" placeholder="ex) python 하, C 상, html 중, css 중 / 포토샵 상, 프리미어 중 등"><?=$row['question3']?></textarea>
               <span id="counter" class="bytes3">0</span>
             </div>
