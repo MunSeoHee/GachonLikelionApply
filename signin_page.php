@@ -98,10 +98,6 @@
                 color:#B49920;
                 font-family:'GmarketSansBold'; 
             }
-            p{
-                color:#B49920;
-                font-family:'Arita-buri-SemiBold';
-            }
     </style>  
 </head>
 <body class="bgimg">
@@ -122,7 +118,7 @@
                           Sign in
                       </h2>
                 </div>
-                <div class="row text-white mb-3 mt-5">
+                <div class="row text-white mb-3 mt-5 text-left">
                     <p>회원가입 시 유의 사항</p>
                     <p>1. 회원 정보는 수정이 불가능하며, 모든 정보는 8기 모집 종료 후 일괄 삭제됩니다.</p>
                     <p>2. 수정이 불가능하니, 모든 정보를 정확하게 입력해주세요.</p>
