@@ -91,7 +91,9 @@ border-bottom:rgba(255, 255, 255, 0);
 
 
 </style>
-
+		<!-- 모바일 뷰포트 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+		maximum-scale=1.0, minimum-scale=1.0">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -122,10 +124,10 @@ border-bottom:rgba(255, 255, 255, 0);
 
 
 <div class="row">
-<div class="col" style="width:20vh;"></div>
+<div class="col"></div>
 
 
-<div class="col middle">
+<div class="col-lg-6 middle">
   <div class="row"><h1>THANKYOU</h1></div>
 
 
@@ -168,8 +170,8 @@ border-bottom:rgba(255, 255, 255, 0);
 </div>
 
 <div class="row mt-5 mb-5">
-  <div class="col" style="width:20vh;"></div>
-  <div class="col">
+  <div class="col" ></div>
+  <div class="col-lg-6">
     <div class="row">
       <div class="col">
         <a href="index.php" class="btn btn-warning text-white container-fluid">FAQ 및 8기 안내</a>
@@ -179,7 +181,7 @@ border-bottom:rgba(255, 255, 255, 0);
       </div>
     </div>
   </div>
-  <div class="col" style="width:20vh;"></div>
+  <div class="col" ></div>
 </div>
 
 
