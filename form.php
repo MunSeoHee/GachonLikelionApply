@@ -158,11 +158,7 @@ function getTextLength1(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
 len++;
-}
-len++;
-}
 return len;
 }
 
@@ -202,11 +198,7 @@ function getTextLength3(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
 len++;
-}
-len++;
-}
 return len;
 }
 
@@ -225,11 +217,7 @@ function getTextLength4(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
 len++;
-}
-len++;
-}
 return len;
 }
 
@@ -248,11 +236,7 @@ function getTextLength5(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
 len++;
-}
-len++;
-}
 return len;
 }
 
@@ -272,11 +256,7 @@ function getTextLength6(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
 len++;
-}
-len++;
-}
 return len;
 }
 
@@ -295,11 +275,7 @@ function getTextLength8(str) {
 var len = 0;
 
 for (var i = 0; i < str.length; i++) {
-if (escape(str.charAt(i)).length == 6) {
 len++;
-}
-len++;
-}
 return len;
 }
 
