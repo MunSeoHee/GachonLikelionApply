@@ -118,12 +118,6 @@
                           Sign in
                       </h2>
                 </div>
-                <div class="row text-white mb-3 mt-5 text-left">
-                    <p>회원가입 시 유의 사항</p>
-                    <p>1. 회원 정보는 수정이 불가능하며, 모든 정보는 8기 모집 종료 후 일괄 삭제됩니다.</p>
-                    <p>2. 수정이 불가능하니, 모든 정보를 정확하게 입력해주세요.</p>
-                    <p>3. 연락처와 이메일은 합불 통보에 이용 될 수 있습니다. 정확히 기입되었는지 확인해주세요.</p>
-                </div>
                 <form name="member" method="post" action="member_insert.php" class="container-fluid mt-5">
                     <div class="form-group row ">
                         <div class="container-fluid">
@@ -232,6 +226,12 @@
                             ○ 정보주체는 개인정보 수집·이용 동의를 거부 할 수 있으며, 이 경우 "주소"에서 제공하는 서비스를 이용하는데 제한이 있을 수 있습니다.
                         </div>
                     </div>
+                    <div class="row text-white mb-3 mt-5 text-left">
+                    <p>회원가입 시 유의 사항</p>
+                    <p>1. 회원 정보는 수정이 불가능하며, 모든 정보는 8기 모집 종료 후 일괄 삭제됩니다.</p>
+                    <p>2. 수정이 불가능하니, 모든 정보를 정확하게 입력해주세요.</p>
+                    <p>3. 연락처와 이메일은 합불 통보에 이용 될 수 있습니다. 정확히 기입되었는지 확인해주세요.</p>
+                </div>
                     <div class="form-group row d-flex justify-content-center mb-5">
                         <div class="row container-fluid">
                             <div style="cursor:pointer" class="btn btn-warning text-light  container-fluid" onclick="check_input()">회원가입</div>
@@ -240,6 +240,7 @@
 
                     
                 </form>
+
             </div>
             
        
