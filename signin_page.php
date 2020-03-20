@@ -112,7 +112,7 @@
         <div class="row mt-5">
             <div class="col-sm mt-5">         
             </div>
-            <div class="col-sm mt-5 text-center container-fluid ml-5 mr-5 pl-5 pr-5">
+            <div class="col-sm mt-5 text-center container-fluid ml-5 mr-5 ">
                 <div class="row container-fluid d-flex justify-content-center m-0">
                     <div class="row">
                         <img src="https://startup.likelion.org/img/logo.png" class="container">
