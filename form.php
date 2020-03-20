@@ -262,26 +262,8 @@ len++;
 function bytesHandler6(obj){
 var text = $(obj).val();
 $('.bytes6').text(getTextLength6(text));
-}
-// 스펠링카운터 함수   8
-$(function(){
-$("textarea#question8").keyup(function(){
-bytesHandler8(this);
-});
-});
+};
 
-function getTextLength8(str) {
-var len = 0;
-
-for (var i = 0; i < str.length; i++) {
-len++;
-}return len;};
-
-function bytesHandler8(obj){
-var text = $(obj).val();
-$('.bytes8').text(getTextLength8(text));
-}
-// 스펠링카운터 함수  
 
 
 
