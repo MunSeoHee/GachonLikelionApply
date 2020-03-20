@@ -38,6 +38,7 @@
         border-right:  rgba(255, 255, 255, 0);;
         border-style: solid;
         border-width: 0.15rem;
+        font-weight:0.5%;
       padding-bottom:0.2rem;
       border-radius: 0.5rem;
 			}
