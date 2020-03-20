@@ -430,7 +430,12 @@ $('.bytes8').text(getTextLength8(text));
 			</div>
 
 	</div><!--배경사진-->
-	</body>
+  </body>
+  <footer>
+         <?php
+          include_once 'footer.html';
+         ?>     
+</footer>
 
 
 
