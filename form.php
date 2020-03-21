@@ -277,7 +277,8 @@ $('.bytes6').text(getTextLength6(text));
 		<!--배경이미지-->
 		<div class=" container-fluid">
 		<?php 
-			include_once "nav.php"; 
+      include_once "nav.php"; 
+      include_once "servertimecheck.php";
 			if($name==""){
 				echo("
 					<script>
