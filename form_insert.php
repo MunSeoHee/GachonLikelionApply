@@ -5,7 +5,12 @@
         $email = $_SESSION["email"];
     }
     else{
-        $email = "";
+        echo("
+            <script>
+                window.alert('세션이 만료되었습니다. 로그인을 다시 해주세요.')
+                location.href = 'info';
+            </script>
+        ");
     }
     // echo $id;
     $question1=$_POST["question1"];
