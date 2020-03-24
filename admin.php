@@ -6,20 +6,23 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <?php
-include_once "nav.php";
-if($userlevel!=0){
-    echo("
-        <script>
-            window.alert('권한이 없습니다.')
-            history.go(-1)
-        </script>
-    ");
-}
     include_once "settings.php";
     $sql = "select email from written";
     $result = mysqli_query($con, $sql);
 ?>
 <body>
+    <?php
+    include_once "nav.php"; 
+          if($email!="admin"){
+              echo("
+                  <script>
+                      alert('권한이 없습니다');
+                      history.go(-1);
+                  </script>
+              ");
+              exit;
+    }
+    ?>
     <div class="container">
         <div class="row mt-3">
             <?php
