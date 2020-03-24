@@ -9,21 +9,13 @@
     include_once "settings.php";
     $sql = "select email from written";
     $result = mysqli_query($con, $sql);
-    
-    while ($row = mysqli_fetch_array($result)){
-
-        print_r($row);
-
-        echo '<br>';
-
-    }
 ?>
 <body>
     <div class="container">
         <div class="row mt-3">
             <?php
-                foreach ( $row as $email ) {
-                    echo $email;
+                while ( $row = mysqli_fetch_array($result) ) {
+                    $email = $row["email"];
                     $sql = "select * from user where email='$email'";
                     $res = mysqli_query($con, $sql);
                     $r = mysqli_fetch_array($res);
