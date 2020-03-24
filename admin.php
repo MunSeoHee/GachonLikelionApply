@@ -6,7 +6,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <?php
-    include_once "settings.php"
+    include_once "settings.php";
     $sql = "select email from written";
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
