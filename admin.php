@@ -27,9 +27,9 @@
                                 <h6 class="card-subtitle mb-2 text-muted"><?=$r["major"]?>
                                     <?php
                                         if($r["gender"] == 1){
-                                            echo "남자"
+                                            echo "남자";
                                         }else{
-                                            echo "여자"
+                                            echo "여자";
                                         }
                                     ?>
                                 </h6>
