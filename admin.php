@@ -10,6 +10,9 @@
     $sql = "select email from written";
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
+    foreach($row as $email){
+        echo $email;
+    }
 ?>
 <body>
     <div class="container">
