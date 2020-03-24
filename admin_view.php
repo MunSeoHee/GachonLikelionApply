@@ -19,7 +19,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="card container-fluid" style="width: 18rem;">
+                <div class="card container-fluid">
                     <div class="card-header">
                         개인정보
                     </div>
