@@ -3,7 +3,10 @@
     $email=$_GET["email"];
     $sql = "select * from written where email='$email'";
     $result = mysqli_query($con, $sql);
-    $row = mysqli_fetch_array($result)
+    $row = mysqli_fetch_array($result);
+    $sql = "select * from user where email='$email'";
+    $result = mysqli_query($con, $sql);
+    $user = mysqli_fetch_array($result);
 ?>
 
 <!doctype html>
@@ -16,6 +19,27 @@
     <body>
         <div class="container">
             <div class="row">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    개인정보
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">이름 : <?=$user['name']?></li>
+                    <li class="list-group-item">학과 : <?=$user['major']?></li>
+                    <?php
+                                        if($user["gender"] == 1){
+                                            echo "<li class='list-group-item'>성별 : 남자</li>";
+                                        }else{
+                                            echo "<li class='list-group-item'>성별 : 여자</li>";
+                                        }
+                                    ?>
+                    <li class="list-group-item">복수전공 : <?=$user['doublemajor']?></li>
+                    <li class="list-group-item">입학년도 : <?=$user['year']?></li>
+                    <li class="list-group-item">학년 : <?=$user['degree']?></li>
+                    <li class="list-group-item">연락처 : <?=$user['phone']?></li>
+                    <li class="list-group-item">이메일 : <?=$user['email']?></li>
+                </ul>
+            </div>
                 <div class="card">
                     <div class="card-header">
                     지원동기 (700자 이내)
