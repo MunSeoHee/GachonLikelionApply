@@ -7,7 +7,7 @@
 </head>
 <?php
     include_once "settings.php";
-    $sql = "select email from written;";
+    $sql = "select email from written";
     $result = mysqli_query($con, $sql);
     $row = mysqli_num_rows($result);
     foreach($row as $email){
