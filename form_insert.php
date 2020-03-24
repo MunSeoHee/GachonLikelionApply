@@ -50,7 +50,7 @@
         $result = mysqli_query($con, $sql);
 
         if($result){
-            echo("
+            echo("  
                 <script>
                     location.href = 'result';
                 </script>

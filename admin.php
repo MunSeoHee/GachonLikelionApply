@@ -10,6 +10,7 @@
     $sql = "select email from written";
     $result = mysqli_query($con, $sql);
 ?>
+
 <body>
     <?php
     include_once "nav.php"; 
@@ -23,6 +24,12 @@
               exit;
     }
     ?>
+    <style>
+     a:link { color: black; text-decoration: none;}
+    a:visited { color: black; text-decoration: none;}
+    a:hover { color: black!important; text-decoration: none!important;}
+
+</style>
     <div class="container">
         <div class="row mt-3">
             <?php
