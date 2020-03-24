@@ -10,7 +10,6 @@
     $sql = "select email from written";
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
-    $emails = array();
 ?>
 <body>
     <div class="container">
@@ -19,14 +18,14 @@
                 foreach ( $row as $email ) {
                     $sql = "select * from email='$email'";
                     $res = mysqli_query($con, $sql);
-                    $row = mysqli_fetch_array($res);
+                    $r = mysqli_fetch_array($res);
             ?>
             <div class="col-sm p-0">
                 <div class="card p-0 m-0" style="width: 15rem;">
                     <div class="card-body">
-                        <h5 class="card-title"><?=$res["name"]?></h5>
-                        <h6 class="card-subtitle mb-2 text-muted"><?=$res["major"]?> <?=$res["gender"]?></h6>
-                        <p class="card-text"><?=$res["year"]?>년도 입학<br><?=$res["degree"]?>학년<br><?=$res["doublemajor"]?></p>
+                        <h5 class="card-title"><?=$r["name"]?></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><?=$r["major"]?> <?=$r["gender"]?></h6>
+                        <p class="card-text"><?=$r["year"]?>년도 입학<br><?=$r["degree"]?>학년<br><?=$r["doublemajor"]?></p>
                         <a href="admin_view.php?email=<?=$email?>" class="card-link">지원서보기</a>
                     </div>
                 </div>
