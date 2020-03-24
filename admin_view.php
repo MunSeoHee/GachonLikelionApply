@@ -24,7 +24,9 @@
                         개인정보
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">이름 : <?=$user['name']?></li>
+                        <div class="row">
+                            <div class="col">
+                            <li class="list-group-item">이름 : <?=$user['name']?></li>
                         <li class="list-group-item">학과 : <?=$user['major']?></li>
                         <?php
                                             if($user["gender"] == 1){
@@ -33,11 +35,18 @@
                                                 echo "<li class='list-group-item'>성별 : 여자</li>";
                                             }
                                         ?>
-                        <li class="list-group-item">복수전공 : <?=$user['doublemajor']?></li>
+                            </div>
+                            <div class="col">
+                            <li class="list-group-item">복수전공 : <?=$user['doublemajor']?></li>
                         <li class="list-group-item">입학년도 : <?=$user['year']?></li>
                         <li class="list-group-item">학년 : <?=$user['degree']?></li>
-                        <li class="list-group-item">연락처 : <?=$user['phone']?></li>
+                            </div>
+                            <div class="col">
+                            <li class="list-group-item">연락처 : <?=$user['phone']?></li>
                         <li class="list-group-item">이메일 : <?=$user['email']?></li>
+                            </div>
+                        </div>
+  
                     </ul>
                 </div>
             </div>
