@@ -48,7 +48,7 @@ function server_time()
     if(date < 23){
       date = 23 - date - 1;
     }else{
-      date = 27 - date - 1;
+      date = 28 - date - 1;
       document.getElementById("due_time").innerHTML = "마감까지 남은 시간";
     }
     if( hours < 24){
