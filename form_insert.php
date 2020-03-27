@@ -4,14 +4,15 @@
     if(isset($_SESSION["email"])){
         $email = $_SESSION["email"];
         // echo $id;
-        $question1=$_POST["question1"];
-        $question2=$_POST["question2"];
-        $question3=$_POST["question3"];
-        $question4=$_POST["question4"];
-        $question5=$_POST["question5"];
-        $question6=$_POST["question6"];
-        $question7=$_POST["question7"];
-        $question8=$_POST["question8"];
+        $question1=str_replace("'" , '"', $_POST["question1"]);
+        $question2=str_replace("'" , '"', $_POST["question2"]);
+        $question3=str_replace("'" , '"', $_POST["question3"]);
+        $question4=str_replace("'" , '"', $_POST["question4"]);
+        $question5=str_replace("'" , '"', $_POST["question5"]);
+        $question6=str_replace("'" , '"', $_POST["question6"]);
+        $question7=str_replace("'" , '"', $_POST["question7"]);
+        $question8=str_replace("'" , '"', $_POST["question8"]);
+        
         // echo nl2br($question2);
         // echo $question3;
         $date = date("Y-m-d H:i:s");
