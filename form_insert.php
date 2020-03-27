@@ -72,7 +72,7 @@
     else{
         echo("
             <script>
-                window.alert('세션이 만료되었습니다. 로그인을 다시 해주세요.')
+                window.alert('세션이 만료되었습니다. 로그인을 다시 한 뒤 제출해주세요.')
                 history.go(-1)
             </script>
         ");
