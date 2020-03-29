@@ -12,7 +12,7 @@
         <div class="row mt-3">
             <?php
                 while ( $row = mysqli_fetch_array($result) ) {
-                    echo $row['name']." ".$row['gender']." ".$row['year']." ".$row['phone']." ".$row['degree'].$row['doublemajor']."<br>";
+                    echo $row['name']." ".$row['gender']." ".$row['year']." ".$row['phone']." ".$row['degree'].$row['email']."<br>";
            
             }?>
         </div>
