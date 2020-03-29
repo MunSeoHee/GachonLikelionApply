@@ -76,7 +76,7 @@ function server_time()
     // if (seconds < 10){
     //     seconds = "0" + seconds;
     // }
-    document.getElementById("server_time").innerHTML = ""+ date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
+    //document.getElementById("server_time").innerHTML = ""+ date + " 일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
 }
 </script>
 <style>
