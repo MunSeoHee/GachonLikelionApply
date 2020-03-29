@@ -13,16 +13,16 @@
 
 <body>
     <?php
-    include_once "nav.php"; 
-          if($email!="admin"){
-              echo("
-                  <script>
-                      alert('권한이 없습니다');
-                      history.go(-1);
-                  </script>
-              ");
-              exit;
-    }
+    // include_once "nav.php"; 
+    //       if($email!="admin"){
+    //           echo("
+    //               <script>
+    //                   alert('권한이 없습니다');
+    //                   history.go(-1);
+    //               </script>
+    //           ");
+    //           exit;
+    // }
     ?>
     <style>
      a:link { color: black; text-decoration: none;}
