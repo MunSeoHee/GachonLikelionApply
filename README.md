@@ -24,4 +24,4 @@ bootstrap, jQuery
 ##### main page
 ![index.html](./project03_2.gif)
 ##### Full service
-![service](https://github.com/MunSeoHee/GachonLikelionApply/issues/19#issue-634321698)
+![service](https://user-images.githubusercontent.com/38175311/84005947-e7fdef00-a9a8-11ea-854c-554b32026597.gif)
